@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Title - Circuit Auction</title>
+    <link rel="icon" href="img/Auction-House-Managment-Platform-Favion.png" type="image/png">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="description" content="Page-specific description here">
+    
+    <!-- Include component scripts -->
+    <script src="components/header.js" defer></script>
+    <script src="components/footer.js" defer></script>
+</head>
+<body>
+    <header-component></header-component>
+    
+    <main>
+        <!-- Your page-specific content here -->
+        <section class="section">
+            <h1>Page Title</h1>
+            <p>Page content goes here...</p>
+        </section>
+
+        <section id="contact" class="section">
+          <h2 class="scroll-reveal">Contact Us</h2>
+          <p class="scroll-reveal delay-1">Get in touch with our team to learn more about our services and products.</p>
+          <form id="contactForm" class="scroll-reveal delay-2 contact-form">
+              <!-- Same form fields as before -->
+              <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" name="name" id="name">
+              </div>
+              <div class="form-group">
+                  <label for="company">Company/Organization <span class="required">*</span></label>
+                  <input type="text" name="company" class="form-control" id="company" required>
+              </div>
+              <div class="form-group">
+                  <label for="email">Email <span class="required">*</span></label>
+                  <input type="email" name="_replyto" class="form-control" id="email" required>
+              </div>
+              <div class="form-group">
+                  <label for="phone">Phone</label>
+                  <input type="tel" name="phone" class="form-control" id="phone">
+              </div>
+              <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" rows="5" placeholder="Your Message..."></textarea>
+              </div>
+              <input type="hidden" name="_subject" value="Circuit Auction Website Inquiry">
+              <button type="submit" class="cta-button">Send Message</button>
+          </form>
+      </section>
+      
+    </main>
+    
+    <footer-component></footer-component>
+    
+    <div class="back-to-top">
+        <span class="arrow-up">^</span>
+    </div>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
