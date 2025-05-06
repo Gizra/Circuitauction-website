@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Title - Circuit Auction</title>
+    <title>Features - Circuit Auction</title>
     <link rel="icon" href="img/Auction-House-Managment-Platform-Favion.png" type="image/png">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <meta name="description" content="Page-specific description here">
+    <meta name="description" content="Explore the complete feature set of Circuit Auction's auction management platform - AI-powered tools for auction houses.">
     
     <!-- Include component scripts -->
     <script src="components/header.js" defer></script>
@@ -17,41 +17,52 @@
     <header-component></header-component>
     
     <main>
-        <!-- Your page-specific content here -->
-        <section class="section">
-            <h1>Page Title</h1>
-            <p>Page content goes here...</p>
+        <section class="features-intro">
+            <h1>Circuit Auction Features</h1>
+            <p>Discover the comprehensive set of tools and features that make Circuit Auction the leading platform for auction houses. From AI-powered catalog creation to seamless bidding experiences, we've built everything you need to run successful auctions.</p>
         </section>
-
-        <section id="contact" class="section">
-          <h2 class="scroll-reveal">Contact Us</h2>
-          <p class="scroll-reveal delay-1">Get in touch with our team to learn more about our services and products.</p>
-          <form id="contactForm" class="scroll-reveal delay-2 contact-form">
-              <!-- Same form fields as before -->
-              <div class="form-group">
-                  <label for="name">Name</label>
-                  <input type="text" name="name" id="name">
-              </div>
-              <div class="form-group">
-                  <label for="company">Company/Organization <span class="required">*</span></label>
-                  <input type="text" name="company" class="form-control" id="company" required>
-              </div>
-              <div class="form-group">
-                  <label for="email">Email <span class="required">*</span></label>
-                  <input type="email" name="_replyto" class="form-control" id="email" required>
-              </div>
-              <div class="form-group">
-                  <label for="phone">Phone</label>
-                  <input type="tel" name="phone" class="form-control" id="phone">
-              </div>
-              <div class="form-group">
-                  <label for="message">Message</label>
-                  <textarea id="message" name="message" rows="5" placeholder="Your Message..."></textarea>
-              </div>
-              <input type="hidden" name="_subject" value="Circuit Auction Website Inquiry">
-              <button type="submit" class="cta-button">Send Message</button>
-          </form>
-      </section>
+        
+        <section class="feature-filters">
+            <button class="filter-button active" data-filter="all">All Features</button>
+            <button class="filter-button" data-filter="group1">Group 1</button>
+            <button class="filter-button" data-filter="group2">Group 2</button>
+        </section>
+        
+        <section class="features-grid">
+            <!-- Group 1 Features -->
+            <div class="feature-card scroll-reveal" data-group="group1">
+                <div class="feature-icon">
+                    <img src="img/feature1.jpg" alt="Feature 1">
+                </div>
+                <div class="feature-title">Feature 1</div>
+                <div class="feature-text">This is the first feature in Group 1. It helps auction houses create catalogs faster, eliminate repetitive work, and manage their entire auction process with one unified system.</div>
+            </div>
+            
+            <div class="feature-card scroll-reveal" data-group="group1">
+                <div class="feature-icon">
+                    <img src="img/feature2.jpg" alt="Feature 2">
+                </div>
+                <div class="feature-title">Feature 2</div>
+                <div class="feature-text">This is the second feature in Group 1. It provides advanced analytics capabilities to help auction houses track performance and optimize their operations.</div>
+            </div>
+            
+            <!-- Group 2 Features -->
+            <div class="feature-card scroll-reveal" data-group="group2">
+                <div class="feature-icon">
+                    <img src="img/feature3.jpg" alt="Feature 3">
+                </div>
+                <div class="feature-title">Feature 3</div>
+                <div class="feature-text">This is the first feature in Group 2. It offers a sophisticated bidding platform that enhances the experience for both auctioneers and bidders.</div>
+            </div>
+            
+            <div class="feature-card scroll-reveal" data-group="group2">
+                <div class="feature-icon">
+                    <img src="img/feature4.jpg" alt="Feature 4">
+                </div>
+                <div class="feature-title">Feature 4</div>
+                <div class="feature-text">This is the second feature in Group 2. It provides comprehensive customer management tools to help auction houses build and maintain relationships with clients.</div>
+            </div>
+        </section>
     </main>
     
     <footer-component></footer-component>
@@ -61,5 +72,62 @@
     </div>
     
     <script src="js/main.js"></script>
+    <script>
+        // Feature filtering functionality with fade effect
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.filter-button');
+            const features = document.querySelectorAll('.feature-card');
+            
+            // Add click event to filter buttons
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    // Get filter value
+                    const filter = this.getAttribute('data-filter');
+                    
+                    // Apply fade effect and filter
+                    features.forEach(feature => {
+                        // Start fade out
+                        if (filter !== 'all' && feature.getAttribute('data-group') !== filter) {
+                            // Fade out
+                            feature.style.opacity = '0';
+                            feature.style.transform = 'translateY(20px)';
+                            
+                            // After fade out completes, hide the element
+                            setTimeout(() => {
+                                feature.style.display = 'none';
+                            }, 300);
+                        } else {
+                            // If it should be visible but is currently hidden
+                            if (feature.style.display === 'none') {
+                                // Set opacity to 0 but make it visible first
+                                feature.style.opacity = '0';
+                                feature.style.transform = 'translateY(20px)';
+                                feature.style.display = 'block';
+                                
+                                // Force a reflow to ensure the transition happens
+                                void feature.offsetWidth;
+                                
+                                // Now fade it in
+                                setTimeout(() => {
+                                    feature.style.opacity = '1';
+                                    feature.style.transform = 'translateY(0)';
+                                }, 10);
+                            } else {
+                                // If it's already visible, just ensure it stays that way
+                                feature.style.opacity = '1';
+                                feature.style.transform = 'translateY(0)';
+                            }
+                        }
+                    });
+                });
+            });
+        });
+    </script>
 </body>
 </html>
