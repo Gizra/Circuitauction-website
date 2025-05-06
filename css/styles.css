@@ -1,3 +1,7 @@
+img {
+  max-width: 100%;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .header {
@@ -1032,5 +1036,153 @@ footer {
   .footer-links-column {
     margin-bottom: 1.5rem;
     text-align: center;
+  }
+}
+/* Plans page specific styles */
+.plans-intro {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  padding: 4rem 1rem 0;
+}
+
+.plans-intro h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.plans-intro p {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.plans-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.plan-card {
+  flex: 1 1 300px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 350px;
+}
+
+.plan-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.plan-header {
+  padding: 2rem;
+  text-align: center;
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #eee;
+}
+
+.plan-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.plan-price {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #4a6cf7;
+  margin-bottom: 0.5rem;
+}
+
+.plan-price-note {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.plan-features {
+  padding: 2rem;
+}
+
+.features-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.features-list li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #f1f1f1;
+  display: flex;
+  align-items: center;
+}
+
+.features-list li:last-child {
+  border-bottom: none;
+}
+
+.features-list li i {
+  color: #4a6cf7;
+  margin-right: 0.75rem;
+}
+
+.features-list .not-included {
+  color: #999;
+  text-decoration: line-through;
+}
+
+.features-list .not-included i {
+  color: #ccc;
+}
+
+.plan-cta {
+  padding: 1.5rem 2rem;
+  text-align: center;
+}
+
+.enterprise-plan {
+  border-top: 5px solid #4a6cf7;
+}
+
+.business-plan {
+  border-top: 5px solid #b2dd4c;
+  transform: scale(1.05);
+}
+
+.business-plan .plan-header {
+  background-color: #b2dd4c;
+  color: white;
+}
+
+.business-plan .plan-price {
+  color: white;
+}
+
+.business-plan .plan-price-note {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.starter-plan {
+  border-top: 5px solid #f0c040;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .plan-card {
+      max-width: 100%;
+  }
+  
+  .business-plan {
+      transform: none;
+      order: -1;
+      margin-bottom: 2rem;
   }
 }

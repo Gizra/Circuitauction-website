@@ -17,42 +17,108 @@
     <header-component></header-component>
     
     <main>
-        <!-- Your page-specific content here -->
-        <section class="section">
-            <h1>Page Title</h1>
-            <p>Page content goes here...</p>
+        <section class="plans-intro">
+            <h1>Choose the Right Plan for Your Auction House</h1>
+            <p>Circuit Auction offers flexible pricing plans to match your auction house's size and needs. From our free starter plan to our comprehensive enterprise solution, we've got you covered.</p>
         </section>
-
-        <section id="contact" class="section">
-          <h2 class="scroll-reveal">Contact Us</h2>
-          <p class="scroll-reveal delay-1">Get in touch with our team to learn more about our services and products.</p>
-          <form id="contactForm" class="scroll-reveal delay-2 contact-form">
-              <!-- Same form fields as before -->
-              <div class="form-group">
-                  <label for="name">Name</label>
-                  <input type="text" name="name" id="name">
-              </div>
-              <div class="form-group">
-                  <label for="company">Company/Organization <span class="required">*</span></label>
-                  <input type="text" name="company" class="form-control" id="company" required>
-              </div>
-              <div class="form-group">
-                  <label for="email">Email <span class="required">*</span></label>
-                  <input type="email" name="_replyto" class="form-control" id="email" required>
-              </div>
-              <div class="form-group">
-                  <label for="phone">Phone</label>
-                  <input type="tel" name="phone" class="form-control" id="phone">
-              </div>
-              <div class="form-group">
-                  <label for="message">Message</label>
-                  <textarea id="message" name="message" rows="5" placeholder="Your Message..."></textarea>
-              </div>
-              <input type="hidden" name="_subject" value="Circuit Auction Website Inquiry">
-              <button type="submit" class="cta-button">Send Message</button>
-          </form>
-      </section>
-      
+        
+        <section class="plans-container">
+            <!-- Starter Plan -->
+            <div class="plan-card starter-plan">
+                <div class="plan-header">
+                    <div class="plan-name">Starter</div>
+                    <div class="plan-price">Free</div>
+                    <div class="plan-price-note">Forever</div>
+                </div>
+                <div class="plan-features">
+                    <ul class="features-list">
+                        <li><i class="fa fa-check"></i> Up to 50 items per auction</li>
+                        <li><i class="fa fa-check"></i> Basic catalog creation</li>
+                        <li><i class="fa fa-check"></i> Online bidding platform</li>
+                        <li><i class="fa fa-check"></i> Email notifications</li>
+                        <li><i class="fa fa-check"></i> Basic reporting</li>
+                        <li class="not-included"><i class="fa fa-times"></i> AI-powered item descriptions</li>
+                        <li class="not-included"><i class="fa fa-times"></i> Advanced customer insights</li>
+                        <li class="not-included"><i class="fa fa-times"></i> Premium support</li>
+                        <li class="not-included"><i class="fa fa-times"></i> White label options</li>
+                    </ul>
+                </div>
+                <div class="plan-cta">
+                    <button class="cta-button">Get Started Free</button>
+                </div>
+            </div>
+            
+            <!-- Business Plan -->
+            <div class="plan-card business-plan">
+                <div class="plan-header">
+                    <div class="plan-name">Business</div>
+                    <div class="plan-price">$100</div>
+                    <div class="plan-price-note">per month + 2% of winning bids</div>
+                </div>
+                <div class="plan-features">
+                    <ul class="features-list">
+                        <li><i class="fa fa-check"></i> Unlimited items per auction</li>
+                        <li><i class="fa fa-check"></i> AI-powered catalog creation</li>
+                        <li><i class="fa fa-check"></i> Advanced online bidding</li>
+                        <li><i class="fa fa-check"></i> Multi-channel notifications</li>
+                        <li><i class="fa fa-check"></i> Comprehensive analytics</li>
+                        <li><i class="fa fa-check"></i> AI-powered item descriptions</li>
+                        <li><i class="fa fa-check"></i> Customer relationship tools</li>
+                        <li><i class="fa fa-check"></i> Priority email support</li>
+                        <li class="not-included"><i class="fa fa-times"></i> White label options</li>
+                    </ul>
+                </div>
+                <div class="plan-cta">
+                    <button class="cta-button">Select Business Plan</button>
+                </div>
+            </div>
+            
+            <!-- Enterprise Plan -->
+            <div class="plan-card enterprise-plan">
+                <div class="plan-header">
+                    <div class="plan-name">Enterprise</div>
+                    <div class="plan-price">$1,200</div>
+                    <div class="plan-price-note">per month, no commission</div>
+                </div>
+                <div class="plan-features">
+                    <ul class="features-list">
+                        <li><i class="fa fa-check"></i> Unlimited items and auctions</li>
+                        <li><i class="fa fa-check"></i> Premium AI catalog creation</li>
+                        <li><i class="fa fa-check"></i> Enterprise-grade bidding platform</li>
+                        <li><i class="fa fa-check"></i> Custom notification system</li>
+                        <li><i class="fa fa-check"></i> Advanced data analytics</li>
+                        <li><i class="fa fa-check"></i> Enhanced AI descriptions</li>
+                        <li><i class="fa fa-check"></i> Advanced customer insights</li>
+                        <li><i class="fa fa-check"></i> 24/7 dedicated support</li>
+                        <li><i class="fa fa-check"></i> Full white labeling</li>
+                    </ul>
+                </div>
+                <div class="plan-cta">
+                    <button class="cta-button">Contact Sales</button>
+                </div>
+            </div>
+        </section>
+        
+        <section class="plans-faq">
+            <div class="section-container" style="max-width: 800px; margin: 4rem auto; padding: 0 2rem;">
+                <h2 style="text-align: center; margin-bottom: 2rem;">Frequently Asked Questions</h2>
+                
+                <div style="margin-bottom: 1.5rem;">
+                    <h3>Can I upgrade or downgrade my plan?</h3>
+                    <p>Yes, you can change your plan at any time. Upgrades take effect immediately, while downgrades will apply at the start of your next billing cycle.</p>
+                </div>
+                
+                <div style="margin-bottom: 1.5rem;">
+                    <h3>Is there a contract or commitment?</h3>
+                    <p>No long-term contracts required. Our Business and Enterprise plans are billed monthly and you can cancel anytime.</p>
+                </div>
+                
+                <div style="margin-bottom: 1.5rem;">
+                    <h3>What payment methods do you accept?</h3>
+                    <p>We accept all major credit cards and direct bank transfers for Enterprise plans.</p>
+                </div>
+            </div>
+        </section>
     </main>
     
     <footer-component></footer-component>
