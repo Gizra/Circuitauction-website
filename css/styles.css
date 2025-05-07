@@ -1331,3 +1331,254 @@ footer {
     max-width: 100%;
   }
 }
+
+
+/* About page specific styles */
+.about-hero {
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('img/auction-pattern-bg.jpg');
+  background-size: cover;
+  padding: 6rem 2rem;
+  text-align: center;
+}
+
+.about-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.about-hero p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #666;
+  line-height: 1.6;
+}
+
+.about-story {
+  padding: 5rem 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.about-story h2 {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #333;
+}
+
+.story-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.story-text {
+  flex: 1 1 60%;
+  min-width: 300px;
+}
+
+.story-text p {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #555;
+}
+
+.story-image {
+  flex: 1 1 30%;
+  min-width: 250px;
+  text-align: center;
+}
+
+.story-image img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.mission-values {
+  background-color: #f9f9f9;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.mission-values h2 {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.values-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.value-card {
+  flex: 1 1 300px;
+  max-width: 350px;
+  background: white;
+  border-radius: 10px;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-10px);
+}
+
+.value-icon {
+  font-size: 2.5rem;
+  color: #4a6cf7;
+  margin-bottom: 1rem;
+}
+
+.value-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.value-text {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.team-section {
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.team-section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 3rem;
+  color: #333;
+}
+
+.team-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.team-member {
+  flex: 1 1 250px;
+  max-width: 280px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.team-member.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.member-photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 1.5rem;
+  border: 5px solid #f5f5f5;
+  transition: transform 0.5s ease;
+}
+
+.team-member:hover .member-photo {
+  transform: scale(1.05);
+}
+
+.member-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.member-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.member-title {
+  font-size: 1.1rem;
+  color: #4a6cf7;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.member-bio {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.member-bio ul {
+  text-align: left;
+  display: inline-block;
+  padding-left: 1.5rem;
+}
+
+.member-bio li {
+  margin-bottom: 0.5rem;
+}
+
+.stats-section {
+  background-color: #4a6cf7;
+  color: white;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.stats-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.stat-item {
+  flex: 1 1 200px;
+  padding: 2rem;
+}
+
+.stat-number {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.stat-text {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .member-photo {
+      width: 150px;
+      height: 150px;
+  }
+  
+  .about-hero h1 {
+      font-size: 2.5rem;
+  }
+  
+  .about-hero p {
+      font-size: 1.1rem;
+  }
+}
