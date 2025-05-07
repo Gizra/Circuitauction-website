@@ -371,14 +371,18 @@ main {
 }
 
 .feature-box {
-  background-color: #4285F4;
-  color: white;
+  background-color: #3C3C3C;
+  color: #fff;
   padding: 2rem;
   border-radius: 8px;
   flex: 1 1 300px; /* Added for better sizing */
   max-width: 450px;
+  border: solid 4px #e4b951;
 }
 
+.feature-box p {
+  color: #fff;
+}
 
 /* Benefits Section */
 .benefits-section-title {
@@ -575,6 +579,10 @@ main {
 .testimonial-author-title {
   font-size: 0.9rem;
   color: #fff;
+}
+
+.testimonial-company-logo img {
+  max-height: 50px;
 }
 
 .testimonial-arrow {
