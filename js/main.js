@@ -131,25 +131,27 @@ document.addEventListener('DOMContentLoaded', function() {
      * @param {HTMLElement} element - The counter element to animate
      */
     function animateCounter(element) {
-        const counterNumber = element.querySelector('.counter-number');
-        const targetNumber = parseInt(counterNumber.textContent);
-        const duration = 2000; // 2 seconds
-        const frameRate = 60;
-        const totalFrames = duration / (1000 / frameRate);
-        const increment = targetNumber / totalFrames;
+    const counterNumber = element.querySelector('.counter-number');
+    const targetNumber = parseInt(counterNumber.textContent.replace(/,/g, '')); // Remove any existing commas
+    const duration = 2000; // 2 seconds
+    const frameRate = 60;
+    const totalFrames = duration / (1000 / frameRate);
+    const increment = targetNumber / totalFrames;
+    
+    let currentNumber = 0;
+    const counter = setInterval(() => {
+        currentNumber += increment;
         
-        let currentNumber = 0;
-        const counter = setInterval(() => {
-            currentNumber += increment;
-            
-            if(currentNumber >= targetNumber) {
-                clearInterval(counter);
-                counterNumber.textContent = targetNumber;
-            } else {
-                counterNumber.textContent = Math.floor(currentNumber);
-            }
-        }, 1000 / frameRate);
-    }
+        if (currentNumber >= targetNumber) {
+            clearInterval(counter);
+            // Format the final number with commas
+            counterNumber.textContent = targetNumber.toLocaleString('en-US');
+        } else {
+            // Format the current number with commas during animation
+            counterNumber.textContent = Math.floor(currentNumber).toLocaleString('en-US');
+        }
+    }, 1000 / frameRate);
+}
 
     /**
      * Handle scroll animation for all elements
