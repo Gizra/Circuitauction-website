@@ -227,7 +227,7 @@ main {
 .dark-strip {
   background: url("../img/App-Background.jpg") no-repeat;
   color: #fff;
-  font-size: 20px;
+  font-size: 1.5rem;
   text-align: center;
 }
 .dark-text {
@@ -775,11 +775,31 @@ main {
 }
 
 /* Contact Form */
-/* Contact Section with Background Images */
-.contact-section {
-  position: relative;
+.pre-contact-cta {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  padding: 1.5rem;
+  border: 3px solid #E4B951;
+  font-size: 1.1rem;
+  line-height: 1.6;
 }
 
+.pre-contact-cta p {
+  margin: 0;
+  color: #333;
+}
+.cup {
+  font-size: 32px;
+}
+.contact-section {
+  position: relative;
+  border-top: solid 1px #ccc;
+}
+
+.contact-section h2{
+  margin-bottom: -6px;
+}
 .contact-wrapper {
   width: 100%;
   max-width: 1400px;
@@ -792,7 +812,7 @@ main {
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin: 2rem auto;
+  margin: 0 auto 2rem;
 }
 
 .form-container {
@@ -968,10 +988,6 @@ textarea::placeholder {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-}
-
-.counter-number {
-  
 }
 
 .counter-bottom {

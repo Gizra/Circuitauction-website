@@ -30,6 +30,61 @@ if (mobileMenuToggle) {
 // Wait for the DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', function() {
 
+  // Add smooth scrolling for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+        
+        if (targetElement) {
+            const headerHeight = header.offsetHeight;
+            
+            // Special handling for contact section
+            if (targetId === '#contact') {
+                // Get the form element inside the contact section
+                const contactForm = targetElement.querySelector('.contact-form');
+                const formBottom = targetElement.offsetTop + contactForm.offsetTop + contactForm.offsetHeight;
+                
+                // Custom smooth scroll with slower animation
+                const startPosition = window.pageYOffset;
+                const targetPosition = formBottom - window.innerHeight + 100; // 100px from bottom
+                const distance = targetPosition - startPosition;
+                let startTime = null;
+                const duration = 1500; // Longer duration (1.5 seconds) for smoother scrolling
+                
+                function animation(currentTime) {
+                    if (startTime === null) startTime = currentTime;
+                    const timeElapsed = currentTime - startTime;
+                    const scrollY = easeInOutQuad(timeElapsed, startPosition, distance, duration);
+                    window.scrollTo(0, scrollY);
+                    
+                    if (timeElapsed < duration) {
+                        requestAnimationFrame(animation);
+                    }
+                }
+                
+                // Easing function for smoother animation
+                function easeInOutQuad(t, b, c, d) {
+                    t /= d/2;
+                    if (t < 1) return c/2*t*t + b;
+                    t--;
+                    return -c/2 * (t*(t-2) - 1) + b;
+                }
+                
+                requestAnimationFrame(animation);
+            } else {
+                // Original behavior for other anchor links
+                window.scrollTo({
+                    top: targetElement.offsetTop - headerHeight,
+                    behavior: 'smooth'
+                });
+            }
+        }
+    });
+});
+
   const contactForm = document.getElementById('contactForm');
     
   if (contactForm) {

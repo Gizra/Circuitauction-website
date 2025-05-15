@@ -1,10 +1,13 @@
 class ContactComponent extends HTMLElement {
   constructor() {
     super();
-    this.innerHTML = `
+    this.innerHTML = `      
       <section id="contact" class="section contact-section">
-        <h2 class="scroll-reveal">Write to Us</h2>
-        <div class="below-h-tag scroll-reveal"></div>
+        <div class="pre-contact-cta">
+          <p><span class="cup scroll-reveal">🏆</span> Bottom of Page Achievement Unlocked! <span class="cup scroll-reveal">🏆</span></p> 
+          <p>You're officially auction-software curious. Let's turn that curiosity into a conversation – use the form below and we'll talk details."</p>
+        </div>
+        <h2 class="scroll-reveal">Write to Us</h2>        
         <div class="contact-wrapper">
           <div class="contact-container">
             <div class="contact-bg-left">
