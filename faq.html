@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Title - Circuit Auction</title>
+    <title>Frequently Asked Questions - Circuit Auction</title>
     <link rel="icon" href="img/Auction-House-Managment-Platform-Favion.png" type="image/png">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <meta name="description" content="Page-specific description here">
+    <meta name="description" content="Find answers to common questions about Circuit Auction's platform, features, pricing, and support.">
     
     <!-- Include component scripts -->
     <script src="components/header.js" defer></script>
@@ -18,28 +18,432 @@
     <header-component></header-component>
     
     <main>
-        <!-- Your page-specific content here -->
-        <section id="services" class="section">
-            <h2 class="scroll-reveal revealed">FAQ</h2>
-            <p class="scroll-reveal delay-1 revealed">We offer a range of services to meet your electronic component needs.</p>
-            <div class="services-container">
-                <div class="scroll-reveal service-item revealed">
-                    <h3>Component Sourcing</h3>
-                    <p>We source hard-to-find and specialized electronic components from around the world.</p>
+        <section class="faq-intro">
+            <h1>Frequently Asked Questions</h1>
+            <div class="below-h-tag"></div>
+            <p>Find answers to common questions about our auction management platform. Can't find what you're looking for? Contact us directly.</p>
+        </section>
+        
+        <section class="faq-filters">
+            <button class="filter-button active" data-filter="all">ALL</button>
+            <button class="filter-button" data-filter="group1">CORE PLATFORM</button>
+            <button class="filter-button" data-filter="group2">CLIENT & INVENTORY</button>
+            <button class="filter-button" data-filter="group3">BIDDING & AUCTION</button>
+            <button class="filter-button" data-filter="group4">FINANCIAL</button>
+            <button class="filter-button" data-filter="group5">MARKETING</button>
+            <button class="filter-button" data-filter="group6">OPERATIONS</button>
+        </section>
+        
+        <section class="faq-container">
+            <!-- Group 1: Core Platform Features -->
+            <div class="faq-item scroll-reveal" data-group="group1">
+                <div class="faq-question">
+                    <h3>What is Circuit Auction and how is it different from other auction software?</h3>
+                    <div class="faq-toggle"><i class="fa fa-plus"></i></div>
                 </div>
-                <div class="scroll-reveal delay-1 service-item revealed">
-                    <h3>Circuit Design</h3>
-                    <p>Our engineering team can help design custom circuits tailored to your specific requirements.</p>
+                <div class="faq-answer">
+                    <p>Circuit Auction is a comprehensive all-in-one platform built specifically for auction houses. It combines cataloging, client management, bidding, invoicing, and shipping into a single interface. Unlike generic solutions, it is fully tailored to the needs of auction professionals.</p>
                 </div>
-                <div class="scroll-reveal delay-2 service-item revealed">
-                    <h3>Technical Consultation</h3>
-                    <p>Get expert advice on component selection and circuit optimization for your projects.</p>
+            </div>
+            
+            <div class="faq-item scroll-reveal" data-group="group1">
+                <div class="faq-question">
+                    <h3>Can I brand the platform with my auction house's identity?</h3>
+                    <div class="faq-toggle"><i class="fa fa-plus"></i></div>
+                </div>
+                <div class="faq-answer">
+                    <p>Absolutely. You can customize the entire interface — from logo and colors to layout — and run it under your own domain. Your clients experience a seamless, branded environment.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item scroll-reveal" data-group="group1">
+                <div class="faq-question">
+                    <h3>How can I create an auction catalog quickly and professionally?</h3>
+                    <div class="faq-toggle"><i class="fa fa-plus"></i></div>
+                </div>
+                <div class="faq-answer">
+                    <p>Our AI-powered assistant helps you build catalogs in minutes by generating descriptions, organizing categories, and estimating values based on historical data.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item scroll-reveal" data-group="group1">
+                <div class="faq-question">
+                    <h3>Does the platform support multiple languages?</h3>
+                    <div class="faq-toggle"><i class="fa fa-plus"></i></div>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes. The frontend and backend support multiple languages, allowing your staff and international bidders to work in their native language.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item scroll-reveal" data-group="group1">
+                <div class="faq-question">
+                    <h3>Is there a way to track changes made to auction lots?</h3>
+                    <div class="faq-toggle"><i class="fa fa-plus"></i></div>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, the Revision Control System logs every change and allows you to restore previous versions or see who edited what and when.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item scroll-reveal" data-group="group1">
+                <div class="faq-question">
+                    <h3>How does image handling work?</h3>
+                    <div class="faq-toggle"><i class="fa fa-plus"></i></div>
+                </div>
+                <div class="faq-answer">
+                    <p>With Amazon S3 integration, you can bulk upload images and let the system automatically match them to lots based on filenames.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item scroll-reveal" data-group="group1">
+                <div class="faq-question">
+                    <h3>How quickly can auction houses implement Circuit?</h3>
+                    <div class="faq-toggle"><i class="fa fa-plus"></i></div>
+                </div>
+                <div class="faq-answer">
+                    <p>It's a five-minute process — just install the plugin and you're ready to go.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item scroll-reveal" data-group="group1">
+                <div class="faq-question">
+                    <h3>What's included in your money-back guarantee?</h3>
+                    <div class="faq-toggle"><i class="fa fa-plus"></i></div>
+                </div>
+                <div class="faq-answer">
+                    <p>Circuit Auction offers a full money-back guarantee. If you're not fully satisfied, simply let us know and we'll refund you — no questions asked. We're confident our platform will exceed your expectations from day one.</p>
+                </div>
+            </div>
+            
+            <!-- Group 2: Client & Inventory Management -->
+            <div class="faq-item scroll-reveal" data-group="group2">
+                <div class="faq-question">
+                    <h3>Can I manage client relationships inside the platform?</h3>
+                    <div class="faq-toggle"><i class="fa fa-plus"></i></div>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes. The built-in CRM tracks client history, preferences, and communication, enabling personalized outreach and higher engagement.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item scroll-reveal" data-group="group2">
+                <div class="faq-question">
+                    <h3>How do I organize lots and apply numbering rules?</h3>
+                    <div class="faq-toggle"><i class="fa fa-plus"></i></div>
+                </div>
+                <div class="faq-answer">
+                    <p>Flexible lot numbering systems allow custom sequences and grouping that align with your house's practices.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item scroll-reveal" data-group="group2">
+                <div class="faq-question">
+                    <h3>Can I scan items with barcodes?</h3>
+                    <div class="faq-toggle"><i class="fa fa-plus"></i></div>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes. Barcode integration streamlines intake and tracking, reducing manual entry errors and speeding up workflows.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item scroll-reveal" data-group="group2">
+                <div class="faq-question">
+                    <h3>Is the system adaptable to my workflows?</h3>
+                    <div class="faq-toggle"><i class="fa fa-plus"></i></div>
+                </div>
+                <div class="faq-answer">
+                    <p>You can configure custom workflows, approval processes, and conditional actions to fit your internal processes.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item scroll-reveal" data-group="group2">
+                <div class="faq-question">
+                    <h3>Can I edit multiple items at once?</h3>
+                    <div class="faq-toggle"><i class="fa fa-plus"></i></div>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, batch update tools let you apply changes to dozens or hundreds of lots simultaneously.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item scroll-reveal" data-group="group2">
+                <div class="faq-question">
+                    <h3>How does consignment management work?</h3>
+                    <div class="faq-toggle"><i class="fa fa-plus"></i></div>
+                </div>
+                <div class="faq-answer">
+                    <p>Track each consignment from intake to settlement, auto-generate contracts, and offer real-time status updates to consignors.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item scroll-reveal" data-group="group2">
+                <div class="faq-question">
+                    <h3>Does the platform support item authentication tracking?</h3>
+                    <div class="faq-toggle"><i class="fa fa-plus"></i></div>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes. Store certificates, provenance, and expert opinions and generate downloadable authentication reports.</p>
+                </div>
+            </div>
+            
+            <!-- Group 3: Bidding & Auction Features -->
+            <div class="faq-item scroll-reveal" data-group="group3">
+                <div class="faq-question">
+                    <h3>Can I offer both pre-bidding and live bidding?</h3>
+                    <div class="faq-toggle"><i class="fa fa-plus"></i></div>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes. Pre-sale bids transition seamlessly into live events, with synchronized updates across desktop and mobile.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item scroll-reveal" data-group="group3">
+                <div class="faq-question">
+                    <h3>How does phone bidding work?</h3>
+                    <div class="faq-toggle"><i class="fa fa-plus"></i></div>
+                </div>
+                <div class="faq-answer">
+                    <p>Use digital phone bidding cards with real-time indicators and bidder details to manage telephone bids efficiently.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item scroll-reveal" data-group="group3">
+                <div class="faq-question">
+                    <h3>Can I set bidding limits per client?</h3>
+                    <div class="faq-toggle"><i class="fa fa-plus"></i></div>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes. Limits can be defined based on credit checks, deposits, or client history.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item scroll-reveal" data-group="group3">
+                <div class="faq-question">
+                    <h3>Can I import external bids into the system?</h3>
+                    <div class="faq-toggle"><i class="fa fa-plus"></i></div>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes. Bids from email, mail, or third-party systems can be imported and consolidated within the platform.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item scroll-reveal" data-group="group3">
+                <div class="faq-question">
+                    <h3>Is there bidding analytics?</h3>
+                    <div class="faq-toggle"><i class="fa fa-plus"></i></div>
+                </div>
+                <div class="faq-answer">
+                    <p>Detailed stats on bidding behavior, category performance, and bidder engagement help optimize future auctions.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item scroll-reveal" data-group="group3">
+                <div class="faq-question">
+                    <h3>Does the system support multiple currencies?</h3>
+                    <div class="faq-toggle"><i class="fa fa-plus"></i></div>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes. Display lots and generate invoices in the buyer's preferred currency, while keeping internal accounting in your base currency.</p>
+                </div>
+            </div>
+            
+            <!-- Group 4: Financial Management -->
+            <div class="faq-item scroll-reveal" data-group="group4">
+                <div class="faq-question">
+                    <h3>How are invoices generated and sent?</h3>
+                    <div class="faq-toggle"><i class="fa fa-plus"></i></div>
+                </div>
+                <div class="faq-answer">
+                    <p>Invoices are automatically created post-auction, with taxes, fees, and shipping included. Batch sending is supported.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item scroll-reveal" data-group="group4">
+                <div class="faq-question">
+                    <h3>Can I process credit card payments through the platform?</h3>
+                    <div class="faq-toggle"><i class="fa fa-plus"></i></div>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes. The system integrates with major gateways, offering secure payment and card-on-file for returning clients.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item scroll-reveal" data-group="group4">
+                <div class="faq-question">
+                    <h3>Can I generate shipping labels directly?</h3>
+                    <div class="faq-toggle"><i class="fa fa-plus"></i></div>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes. The system calculates costs and produces labels based on item details and buyer preferences.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item scroll-reveal" data-group="group4">
+                <div class="faq-question">
+                    <h3>How do I track payments and transactions?</h3>
+                    <div class="faq-toggle"><i class="fa fa-plus"></i></div>
+                </div>
+                <div class="faq-answer">
+                    <p>Real-time dashboards show payment status, aging receivables, and pending settlements with automatic reminders.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item scroll-reveal" data-group="group4">
+                <div class="faq-question">
+                    <h3>Can I set up different commission structures?</h3>
+                    <div class="faq-toggle"><i class="fa fa-plus"></i></div>
+                </div>
+                <div class="faq-answer">
+                    <p>Tiered commission models can be configured by consignor, item, or collection value.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item scroll-reveal" data-group="group4">
+                <div class="faq-question">
+                    <h3>Does the platform support finder's fee tracking?</h3>
+                    <div class="faq-toggle"><i class="fa fa-plus"></i></div>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes. You can assign and pay referral fees for consignors or buyers, building trusted networks.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item scroll-reveal" data-group="group4">
+                <div class="faq-question">
+                    <h3>Can I integrate my accounting software?</h3>
+                    <div class="faq-toggle"><i class="fa fa-plus"></i></div>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes. The system connects via API to QuickBooks, Xero, and others, streamlining bookkeeping.</p>
+                </div>
+            </div>
+            
+            <!-- Group 5: Marketing & Communication -->
+            <div class="faq-item scroll-reveal" data-group="group5">
+                <div class="faq-question">
+                    <h3>How can I manage my email marketing and mailing lists?</h3>
+                    <div class="faq-toggle"><i class="fa fa-plus"></i></div>
+                </div>
+                <div class="faq-answer">
+                    <p>Create segmented lists based on bidding history and send targeted campaigns with performance tracking.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item scroll-reveal" data-group="group5">
+                <div class="faq-question">
+                    <h3>What documentation do consignors receive?</h3>
+                    <div class="faq-toggle"><i class="fa fa-plus"></i></div>
+                </div>
+                <div class="faq-answer">
+                    <p>Generate pre-sale agreements and post-sale reports with detailed bidding and pricing performance.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item scroll-reveal" data-group="group5">
+                <div class="faq-question">
+                    <h3>Can I automate my email marketing?</h3>
+                    <div class="faq-toggle"><i class="fa fa-plus"></i></div>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes. Send auction announcements, onboarding sequences, and follow-ups automatically.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item scroll-reveal" data-group="group5">
+                <div class="faq-question">
+                    <h3>Are listings optimized for SEO?</h3>
+                    <div class="faq-toggle"><i class="fa fa-plus"></i></div>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes. Every listing includes SEO-optimized metadata, image alt-tags, and keywords for better search engine visibility.</p>
+                </div>
+            </div>
+            
+            <!-- Group 6: Operational Efficiency -->
+            <div class="faq-item scroll-reveal" data-group="group6">
+                <div class="faq-question">
+                    <h3>How can I manage my team's tasks?</h3>
+                    <div class="faq-toggle"><i class="fa fa-plus"></i></div>
+                </div>
+                <div class="faq-answer">
+                    <p>Use the built-in task management system to assign duties, track deadlines, and follow progress.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item scroll-reveal" data-group="group6">
+                <div class="faq-question">
+                    <h3>Is reporting available for analytics and performance?</h3>
+                    <div class="faq-toggle"><i class="fa fa-plus"></i></div>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes. Generate visual reports on auction results, buyer behavior, and financial performance.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item scroll-reveal" data-group="group6">
+                <div class="faq-question">
+                    <h3>Can I manage the platform from my phone?</h3>
+                    <div class="faq-toggle"><i class="fa fa-plus"></i></div>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes. The entire system is mobile-friendly, so you can work from anywhere.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item scroll-reveal" data-group="group6">
+                <div class="faq-question">
+                    <h3>Will Circuit preserve our auction workflow?</h3>
+                    <div class="faq-toggle"><i class="fa fa-plus"></i></div>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes. Circuit adapts to your existing workflows.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item scroll-reveal" data-group="group6">
+                <div class="faq-question">
+                    <h3>How simple is the process to leave Circuit?</h3>
+                    <div class="faq-toggle"><i class="fa fa-plus"></i></div>
+                </div>
+                <div class="faq-answer">
+                    <p>Very simple. Just click 'Cancel Subscription' in your account settings. We believe in earning your business every month — no tricky contracts. Your data can be exported in standard formats, and we provide a smooth transition period with full access.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item scroll-reveal" data-group="group6">
+                <div class="faq-question">
+                    <h3>Do I need technical skills to use Circuit?</h3>
+                    <div class="faq-toggle"><i class="fa fa-plus"></i></div>
+                </div>
+                <div class="faq-answer">
+                    <p>Not at all. Circuit was built for auction professionals, not tech experts. The interface is intuitive and most users master the system within a few days.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item scroll-reveal" data-group="group6">
+                <div class="faq-question">
+                    <h3>Is training included with subscription?</h3>
+                    <div class="faq-toggle"><i class="fa fa-plus"></i></div>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes. Full onboarding and training are included at no extra cost. We tailor the training to your auction workflows so your team can confidently manage everything from cataloging to invoicing.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item scroll-reveal" data-group="group6">
+                <div class="faq-question">
+                    <h3>How secure is my auction data?</h3>
+                    <div class="faq-toggle"><i class="fa fa-plus"></i></div>
+                </div>
+                <div class="faq-answer">
+                    <p>We use bank-level encryption and daily cloud backups. Your consignor and bidder data remain fully private and protected from unauthorized access. Additionally, we are fully GDPR compliant, ensuring your personal data is handled according to European data protection regulations.</p>
                 </div>
             </div>
         </section>
 
-        <contact-component></contact-component>
 
+        <contact-component></contact-component>
     </main>
     
     <footer-component></footer-component>

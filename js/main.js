@@ -30,6 +30,94 @@ if (mobileMenuToggle) {
 // Wait for the DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', function() {
 
+    // FAQ filtering functionality
+    const filterButtons = document.querySelectorAll('.faq-filters .filter-button');
+    const faqItems = document.querySelectorAll('.faq-item');
+    
+    // Add click event to filter buttons
+    filterButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            // Remove active class from all buttons
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            
+            // Add active class to clicked button
+            this.classList.add('active');
+            
+            // Get filter value
+            const filter = this.getAttribute('data-filter');
+            
+            // Apply filter
+            faqItems.forEach(item => {
+                // Get item's group
+                const itemGroup = item.getAttribute('data-group');
+                
+                // Apply fade effect and filter
+                if (filter !== 'all' && itemGroup !== filter) {
+                    // Fade out
+                    item.style.opacity = '0';
+                    item.style.transform = 'translateY(20px)';
+                    
+                    // Hide after animation completes
+                    setTimeout(() => {
+                        item.style.display = 'none';
+                    }, 300);
+                } else {
+                    // Show and fade in
+                    if (item.style.display === 'none') {
+                        item.style.opacity = '0';
+                        item.style.transform = 'translateY(20px)';
+                        item.style.display = 'block';
+                        
+                        // Force reflow
+                        void item.offsetWidth;
+                        
+                        // Fade in
+                        setTimeout(() => {
+                            item.style.opacity = '1';
+                            item.style.transform = 'translateY(0)';
+                        }, 10);
+                    } else {
+                        item.style.opacity = '1';
+                        item.style.transform = 'translateY(0)';
+                    }
+                }
+            });
+        });
+    });
+    
+    // FAQ accordion functionality
+    const faqQuestions = document.querySelectorAll('.faq-question');
+    
+    faqQuestions.forEach(question => {
+        question.addEventListener('click', function() {
+            const answer = this.nextElementSibling;
+            const toggle = this.querySelector('.faq-toggle i');
+            
+            // Check if this question is already active
+            const isActive = this.classList.contains('active');
+            
+            // Close all other answers
+            document.querySelectorAll('.faq-question').forEach(q => {
+                if (q !== this) {
+                    q.classList.remove('active');
+                    q.nextElementSibling.style.maxHeight = '0';
+                    q.querySelector('.faq-toggle i').className = 'fa fa-plus';
+                }
+            });
+            
+            // Toggle current answer
+            if (isActive) {
+                this.classList.remove('active');
+                answer.style.maxHeight = '0';
+                toggle.className = 'fa fa-plus';
+            } else {
+                this.classList.add('active');
+                answer.style.maxHeight = answer.scrollHeight + 'px';
+                toggle.className = 'fa fa-minus';
+            }
+        });
+    });
+
   // Add smooth scrolling for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {

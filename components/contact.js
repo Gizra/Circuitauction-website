@@ -4,7 +4,7 @@ class ContactComponent extends HTMLElement {
     this.innerHTML = `      
       <section id="contact" class="section contact-section">
         <div class="pre-contact-cta">
-          <p><span class="cup scroll-reveal">🏆</span> Bottom of Page Achievement Unlocked! <span class="cup scroll-reveal">🏆</span></p> 
+          <p class="large-text"><span class="cup scroll-reveal">🏆</span> Bottom of Page Achievement Unlocked! <span class="cup scroll-reveal">🏆</span></p> 
           <p>You're officially auction-software curious. Let's turn that curiosity into a conversation – use the form below and we'll talk details."</p>
         </div>
         <h2 class="scroll-reveal">Write to Us</h2>        

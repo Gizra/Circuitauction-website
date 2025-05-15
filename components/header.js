@@ -18,7 +18,6 @@ class HeaderComponent extends HTMLElement {
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
             <a href="features.html">Auction Features</a>
-            <a href="plans.html">Plans</a>
             <a href="faq.html">FAQ</a>
             <a href="#contact">Contact</a>
         </nav>
