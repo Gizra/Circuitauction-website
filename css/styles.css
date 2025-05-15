@@ -550,6 +550,11 @@ main {
   }
 }
 
+.specialized-text {
+  max-width: 1024px;
+  margin-bottom: 2rem;
+}
+
 /* Testimonials Section */
 .testimonials {
   padding: 3rem 2rem;
