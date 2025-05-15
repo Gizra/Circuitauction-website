@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitemap - Circuit Auction</title>
+    <link rel="icon" href="img/Auction-House-Managment-Platform-Favion.png" type="image/png">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="description" content="Sitemap of Circuit Auction's website">
+    
+    <!-- Include component scripts -->
+    <script src="components/header.js" defer></script>
+    <script src="components/footer.js" defer></script>
+    <script src="components/contact.js" defer></script>
+    
+    <style>
+        /* Simple sitemap styles */
+        .sitemap-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+        
+        .sitemap-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .sitemap-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+        
+        .sitemap-list {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .sitemap-list ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .sitemap-list li {
+            margin-bottom: 0.75rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        
+        .sitemap-list li:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        
+        .sitemap-list a {
+            color: #333;
+            text-decoration: none;
+            display: block;
+            padding: 0.5rem 0;
+            transition: color 0.3s ease;
+        }
+        
+        .sitemap-list a:hover {
+            color: #4285F4;
+        }
+    </style>
+</head>
+<body>
+    <header-component></header-component>
+    
+    <main>
+        <div class="sitemap-container">
+            <div class="sitemap-header">
+                <h1>Sitemap</h1>
+            </div>
+            
+            <div class="sitemap-list">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="features.html">Auction Features</a></li>
+                    <li><a href="plans.html">Plans</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="terms.html">Privacy & Terms</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <contact-component></contact-component>
+    </main>
+    
+    <footer-component></footer-component>
+    
+    <div class="back-to-top">
+        <span class="arrow-up">^</span>
+    </div>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
