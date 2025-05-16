@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Auctioneers - Circuit Auction</title>
+    <link rel="icon" href="img/Auction-House-Managment-Platform-Favion.png" type="image/png">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="description" content="Discover the auction houses working with Circuit Auction - a showcase of our global partners and their expertise.">
+    
+    <!-- Include component scripts -->
+    <script src="components/header.js" defer></script>
+    <script src="components/footer.js" defer></script>
+    <script src="components/contact.js" defer></script>
+    
+    <style>
+        /* Additional styles for the auctioneers page */
+        .auctioneers-intro {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 3rem;
+            padding: 4rem 1rem 0;
+        }
+        
+        .auctioneers-intro h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+        
+        .auctioneers-intro p {
+            font-size: 1.1rem;
+            color: #666;
+        }
+        
+        .auctioneers-grid {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 2rem 4rem;
+        }
+        
+        .auctioneer-item {
+            margin-bottom: 3rem;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .auctioneer-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+        
+        .auctioneer-header {
+            padding: 1.5rem;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        
+        .auctioneer-header h3 {
+            font-size: 1.5rem;
+            margin: 0;
+            color: #4285F4;
+        }
+        
+        .auctioneer-header a {
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        .auctioneer-content {
+            display: flex;
+            padding: 1.5rem;
+        }
+        
+        .auctioneer-logo {
+            flex: 0 0 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+        }
+        
+        .auctioneer-logo img {
+            max-width: 100%;
+            max-height: 100px;
+        }
+        
+        .auctioneer-description {
+            flex: 1;
+            padding: 0 1rem;
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #666;
+        }
+        
+        @media (max-width: 768px) {
+            .auctioneer-content {
+                flex-direction: column;
+            }
+            
+            .auctioneer-logo {
+                margin-bottom: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header-component></header-component>
+    
+    <main>
+        <section class="auctioneers-intro">
+            <h1>Our Auctioneers</h1>
+            <p>Discover the prestigious auction houses and philatelic organizations that work with Circuit Auction. Our global network of partners represents excellence in the collectibles industry, from stamps and coins to art and antiques.</p>
+        </section>
+        
+        <div class="auctioneers-grid">
+            <!-- Auktionshaus Heinrich Köhler -->
+            <div class="auctioneer-item scroll-reveal">
+                <div class="auctioneer-header">
+                    <h3><a href="https://heinrich-koehler.de/en" target="_blank">Auktionshaus Heinrich Köhler</a></h3>
+                </div>
+                <div class="auctioneer-content">
+                    <div class="auctioneer-logo">
+                        <a href="https://heinrich-koehler.de/en" target="_blank">
+                            <img src="img/koehler-logo.jpg" alt="Heinrich Köhler Logo">
+                        </a>
+                    </div>
+                    <div class="auctioneer-description">
+                        <p>Since 1913 the name of Heinrich Koehler has stood for outstanding auctions in the philatelic world. Such a reputation cannot simply be acquired or assumed; every day it encourages and demands new achievements. At Heinrich Koehler we are aware of this long tradition, and we gladly accept the challenge of its continuance. Not only this - it has become an integral part of our business culture.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Americana Stamps -->
+            <div class="auctioneer-item scroll-reveal delay-1">
+                <div class="auctioneer-header">
+                    <h3><a href="https://americanastamps.com" target="_blank">Americana Stamps</a></h3>
+                </div>
+                <div class="auctioneer-content">
+                    <div class="auctioneer-logo">
+                        <a href="https://americanastamps.com" target="_blank">
+                            <img src="img/americanastamps-logo.png" alt="Americana Stamps Logo">
+                        </a>
+                    </div>
+                    <div class="auctioneer-description">
+                        <p>Americana Stamps is the culmination of a lifelong passion for philately shared between father and daughter, Angelo Ismirnioglou and Alexa Valdez. What began as a family tradition evolved into a professional commitment to advancing the philatelic auction experience. Together, they combine tradition with innovation, offering collectors a fresh perspective on stamp collecting while upholding the integrity and scholarship that philately deserves.</p>
+                        <p>Their commitment to detailed research, high-quality imaging, and expert insights sets them apart in the industry. Specializing in Western Express postal history, Carriers, Locals, and Independent Mails, Americana Stamps is dedicated to preserving philatelic history, educating the next generation of collectors, and modernizing the philatelic auction experience.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- H.R. HARMER -->
+            <div class="auctioneer-item scroll-reveal delay-2">
+                <div class="auctioneer-header">
+                    <h3><a href="https://hrharmer.com" target="_blank">H.R. HARMER</a></h3>
+                </div>
+                <div class="auctioneer-content">
+                    <div class="auctioneer-logo">
+                        <a href="https://hrharmer.com" target="_blank">
+                            <img src="img/hrharmer-logo.png" alt="H.R. HARMER Logo">
+                        </a>
+                    </div>
+                    <div class="auctioneer-description">
+                        <p>Since 1940, H.R. Harmer has served as one of America's premier philatelic auction houses. First rising to widespread prominence with the sale of the late President Franklin Delano Roosevelt's collection in 1946, our firm would go on to sell some of the most significant collections of the 20th century, including those of Alfred H. Caspary and Alfred F. Lichtenstein. Now in our ninth decade, we are more committed than ever to providing our customers with the professional service and philatelic expertise that have long been synonymous with the Harmer name.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- John Bull -->
+            <div class="auctioneer-item scroll-reveal delay-1">
+                <div class="auctioneer-header">
+                    <h3><a href="https://jbull.com" target="_blank">John Bull</a></h3>
+                </div>
+                <div class="auctioneer-content">
+                    <div class="auctioneer-logo">
+                        <a href="https://jbull.com" target="_blank">
+                            <img src="img/jbull.jpg" alt="John Bull Logo">
+                        </a>
+                    </div>
+                    <div class="auctioneer-description">
+                        <p>John Bull, established in 1977, is the longest running auction house in Hong Kong dedicated to stamps, coins and banknotes. John Bull is a proud member of the Global Philatelic Network with four sister companies located in the US and Europe. Our partners include H.R. Harmer in the United States, Corinphila in Switzerland and the Netherlands, and Heinrich Köhler in Germany.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Carriers & Locals Society -->
+            <div class="auctioneer-item scroll-reveal delay-2">
+                <div class="auctioneer-header">
+                    <h3><a href="https://pennypost.org" target="_blank">Carriers & Locals Society</a></h3>
+                </div>
+                <div class="auctioneer-content">
+                    <div class="auctioneer-logo">
+                        <a href="https://pennypost.org" target="_blank">
+                            <img src="img/pennypost-logo.png" alt="Carriers & Locals Society Logo">
+                        </a>
+                    </div>
+                    <div class="auctioneer-description">
+                        <p>Established in 1991, the Carriers and Locals Society is a not-for-profit association of people interested in the carriers, local posts, independent mails and Eastern expresses of the 19th century, their stamps and postal history. The society publishes quarterly a gold medal winning journal, "The Penny Post", and is dedicated to furthering the understanding of private mail companies in the United States during the nineteenth century.</p>
+                        <p>The Society works to study the stamps, markings, and postal history of both private mail companies and government carrier services, while also cataloging the reprints, fakes, and fantasies of these issues. Their expertise in this specialized area of philately makes them a valuable partner for collectors and auction houses alike.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Peter F. Harlos KG -->
+            <div class="auctioneer-item scroll-reveal delay-2">
+                <div class="auctioneer-header">
+                    <h3><a href="https://harlos-auktion.de" target="_blank">Peter F. Harlos KG</a></h3>
+                </div>
+                <div class="auctioneer-content">
+                    <div class="auctioneer-logo">
+                        <a href="https://harlos-auktion.de" target="_blank">
+                            <img src="img/harlos-logo.jpg" alt="Peter F. Harlos KG Logo">
+                        </a>
+                    </div>
+                    <div class="auctioneer-description">
+                        <p>PETER F. HARLOS trading in German and international postal history for more than 20 years. PETER F. HARLOS holds a permanent stock of more than 200,000 letters and cards from the years 1700 to around 1960, which is constantly renewed and consists almost exclusively of required mail. PETER F. HARLOS strengths are areas such as air mail, zeppelin mail, field post, censorship and prisoner of war mail, colonial philately, postage stamps, motifs and entire collections from these areas. But also offers peripheral areas such as vignettes, stamps and literature.</p>
+                        <p>PETER F. HARLOS auction for German and international postal history offers hand-picked top-quality material at collector-friendly prices.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Romano House of Stamp Sales -->
+            <div class="auctioneer-item scroll-reveal">
+                <div class="auctioneer-header">
+                    <h3><a href="https://romanoauctions.com" target="_blank">Romano House of Stamp Sales</a></h3>
+                </div>
+                <div class="auctioneer-content">
+                    <div class="auctioneer-logo">
+                        <a href="https://romanoauctions.com" target="_blank">
+                            <img src="img/romano-logo.jpg" alt="Romano House of Stamp Sales Logo">
+                        </a>
+                    </div>
+                    <div class="auctioneer-description">
+                        <p>The Romano House of Stamps was founded in 1994 by Moshe and Mira Romano. The business has grown from a stamp store for local collectors to an international auction center for philatelic, numismatic and Judaica items serving collectors and consignors from every continent on the globe. Moshe had been a lifelong collector who was able to successfully turn his passions into his career. The company has always been a family business with family pride. Mira, formerly an attorney, has been vital in all the day-to-day operations of a growing company. Their daughter Sharon joined the firm in 2001 to assist in expanding the auction, especially to collectors overseas. The family's efforts have been a success. They have become a unique source in the Holyland for collectors everywhere.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Kedem Auction House -->
+            <div class="auctioneer-item scroll-reveal delay-1">
+                <div class="auctioneer-header">
+                    <h3><a href="https://www.kedem-auctions.com" target="_blank">Kedem Auction House</a></h3>
+                </div>
+                <div class="auctioneer-content">
+                    <div class="auctioneer-logo">
+                        <a href="https://www.kedem-auctions.com" target="_blank">
+                            <img src="img/kedem-logo.png" alt="Kedem Auction House Logo">
+                        </a>
+                    </div>
+                    <div class="auctioneer-description">
+                        <p>Kedem was established in 2008 by Meron Eren and Avishai Galer, both experienced professionals in the fields of Judaica and Israeliana. Avishai specializes in Jewish religious books ("Sifrei Kodesh") and rabbinical manuscripts, while Meron focuses on items related to Jewish and Israeli history and culture. As the company's co-founders and co-managers, their combined decades of expertise have helped build Kedem into one of the world's leading Judaica auction houses.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <contact-component></contact-component>
+    </main>
+    
+    <footer-component></footer-component>
+    
+    <div class="back-to-top">
+        <span class="arrow-up">^</span>
+    </div>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>

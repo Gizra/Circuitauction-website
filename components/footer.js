@@ -34,6 +34,8 @@ class FooterComponent extends HTMLElement {
               <li><a href="faq.html">FAQ</a></li>
               <li><a href="#contact">Contact</a></li>
               <li><a href="terms.html">Terms & Privacy</a></li>
+              <li><a href="https://docs.circuitauction.com/main">Doc & user guide</a></li>
+              
             </ul>
           </div>
           
