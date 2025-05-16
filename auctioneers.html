@@ -13,6 +13,146 @@
     <script src="components/header.js" defer></script>
     <script src="components/footer.js" defer></script>
     <script src="components/contact.js" defer></script>
+    <!-- Breadcrumb Navigation Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://circuitauction.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Our Auctioneers",
+          "item": "https://circuitauction.com/auctioneers.html"
+        }
+      ]
+    }
+    </script>
+
+    <!-- WebPage and ItemList Schema for All Auctioneers -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Our Auctioneers - Circuit Auction",
+      "description": "Discover the prestigious auction houses and philatelic organizations that work with Circuit Auction. Our global network of partners represents excellence in the collectibles industry, from stamps and coins to art and antiques.",
+      "url": "https://circuitauction.com/auctioneers.html",
+      "mainEntity": {
+        "@type": "ItemList",
+        "name": "Partner Auction Houses and Organizations",
+        "description": "Prestigious auction houses and philatelic organizations working with Circuit Auction",
+        "numberOfItems": 8,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "Organization",
+              "name": "Auktionshaus Heinrich Köhler",
+              "url": "https://heinrich-koehler.de/en",
+              "logo": "https://circuitauction.com/img/koehler-logo.jpg",
+              "description": "Since 1913 the name of Heinrich Koehler has stood for outstanding auctions in the philatelic world. Such a reputation cannot simply be acquired or assumed; every day it encourages and demands new achievements. At Heinrich Koehler we are aware of this long tradition, and we gladly accept the challenge of its continuance.",
+              "foundingDate": "1913"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@type": "Organization",
+              "name": "Americana Stamps",
+              "url": "https://americanastamps.com",
+              "logo": "https://circuitauction.com/img/americanastamps-logo.png",
+              "description": "Americana Stamps is the culmination of a lifelong passion for philately shared between father and daughter, Angelo Ismirnioglou and Alexa Valdez. What began as a family tradition evolved into a professional commitment to advancing the philatelic auction experience. Specializing in Western Express postal history, Carriers, Locals, and Independent Mails.",
+              "knowsAbout": ["Western Express postal history", "Carriers", "Locals", "Independent Mails"]
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@type": "Organization",
+              "name": "H.R. HARMER",
+              "url": "https://hrharmer.com",
+              "logo": "https://circuitauction.com/img/hrharmer-logo.png",
+              "description": "Since 1940, H.R. Harmer has served as one of America's premier philatelic auction houses. First rising to widespread prominence with the sale of the late President Franklin Delano Roosevelt's collection in 1946, our firm would go on to sell some of the most significant collections of the 20th century.",
+              "foundingDate": "1940"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "item": {
+              "@type": "Organization",
+              "name": "John Bull",
+              "url": "https://jbull.com",
+              "logo": "https://circuitauction.com/img/jbull.jpg",
+              "description": "John Bull, established in 1977, is the longest running auction house in Hong Kong dedicated to stamps, coins and banknotes. John Bull is a proud member of the Global Philatelic Network with four sister companies located in the US and Europe.",
+              "foundingDate": "1977",
+              "knowsAbout": ["Stamps", "Coins", "Banknotes"]
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "item": {
+              "@type": "Organization",
+              "name": "Carriers & Locals Society",
+              "url": "https://pennypost.org",
+              "logo": "https://circuitauction.com/img/pennypost-logo.png",
+              "description": "Established in 1991, the Carriers and Locals Society is a not-for-profit association of people interested in the carriers, local posts, independent mails and Eastern expresses of the 19th century, their stamps and postal history.",
+              "foundingDate": "1991",
+              "knowsAbout": ["Carriers", "Local posts", "Independent mails", "Eastern expresses"]
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 6,
+            "item": {
+              "@type": "Organization",
+              "name": "Peter F. Harlos KG",
+              "url": "https://harlos-auktion.de",
+              "logo": "https://circuitauction.com/img/harlos-logo.jpg",
+              "description": "PETER F. HARLOS trading in German and international postal history for more than 20 years. PETER F. HARLOS holds a permanent stock of more than 200,000 letters and cards from the years 1700 to around 1960, which is constantly renewed and consists almost exclusively of required mail.",
+              "knowsAbout": ["German postal history", "International postal history", "Air mail", "Zeppelin mail", "Field post"]
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 7,
+            "item": {
+              "@type": "Organization",
+              "name": "Romano House of Stamp Sales",
+              "url": "https://romanoauctions.com",
+              "logo": "https://circuitauction.com/img/romano-logo.jpg",
+              "description": "The Romano House of Stamps was founded in 1994 by Moshe and Mira Romano. The business has grown from a stamp store for local collectors to an international auction center for philatelic, numismatic and Judaica items serving collectors and consignors from every continent on the globe.",
+              "foundingDate": "1994",
+              "knowsAbout": ["Philatelic items", "Numismatic items", "Judaica"]
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 8,
+            "item": {
+              "@type": "Organization",
+              "name": "Kedem Auction House",
+              "url": "https://www.kedem-auctions.com",
+              "logo": "https://circuitauction.com/img/kedem-logo.png",
+              "description": "Kedem was established in 2008 by Meron Eren and Avishai Galer, both experienced professionals in the fields of Judaica and Israeliana. Avishai specializes in Jewish religious books (\"Sifrei Kodesh\") and rabbinical manuscripts, while Meron focuses on items related to Jewish and Israeli history and culture.",
+              "foundingDate": "2008",
+              "knowsAbout": ["Judaica", "Israeliana", "Jewish religious books", "Rabbinical manuscripts"]
+            }
+          }
+        ]
+      }
+    }
+    </script>
     
     <style>
         /* Additional styles for the auctioneers page */
