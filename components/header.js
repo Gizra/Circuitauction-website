@@ -15,7 +15,7 @@ class HeaderComponent extends HTMLElement {
             <span></span>
         </div>
         <nav class="nav-links">
-            <a href="index.html">Home</a>
+            <a href="/">Home</a>
             <a href="about.html">About Us</a>
             <a href="features.html">Auction Features</a>
             <a href="faq.html">FAQ</a>
