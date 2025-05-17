@@ -27,50 +27,8 @@ h4 {
 img {
   max-width: 100%;
 }
-/* Responsive Design */
-@media (max-width: 768px) {
-  .header {
-      padding: 0.5rem 1rem;
-      height: 70px;
-  }
-  
-  .header.scrolled {
-      height: 50px;
-  }
-  
-  .logo .main-logo {
-      height: 70px;
-  }
-  
-  .logo .small-logo {
-      height: 50px;
-  }
-  
-  main {
-      margin-top: 70px;
-  }
-  
-  .hero h1 {
-      font-size: 1.2rem;
-  }
-  
-  .hero p {
-      font-size: 1rem;
-  }
-  
-  .section h2 {
-      font-size: 2rem;
-  }
-  
-  .feature-container {
-      flex-direction: column;
-      gap: 1.5rem;
-  }
-  
-  .feature-box {
-      flex: 1 1 100%;
-  }
-}/* Base Styles */
+
+/* Base Styles */
 * {
   margin: 0;
   padding: 0;
@@ -223,6 +181,7 @@ main {
   color: #333;
 }
 
+
 /* dark-strip */
 .dark-strip {
   background: url("../img/App-Background.jpg") no-repeat;
@@ -231,10 +190,15 @@ main {
   text-align: center;
 }
 .dark-text {
-  padding: 4rem;
+  padding: 4rem 2rem;
 }
 .dark-title {
   padding-top: 2rem;
+}
+@media (max-width: 768px) {
+  .dark-title {
+    font-size: 1.2rem;
+  }
 }
 .flex-div {
   display: flex;
@@ -587,7 +551,8 @@ main {
   width: 100%;
   overflow: hidden;
   position: relative;
-  height: 240px; /* Adjust based on your content size */
+  height: auto; 
+  min-height: 250px;
 }
 
 .testimonial-slide {
@@ -637,7 +602,9 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 1rem;
+  margin-top: 1.5rem; 
 }
 
 .testimonial-author-img {
@@ -669,8 +636,16 @@ main {
   color: #fff;
 }
 
+.testimonial-company-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .testimonial-company-logo img {
-  max-height: 50px;
+  max-height: 40px;
+  max-width: 120px; /* Limit width for better appearance */
+  object-fit: contain;
 }
 
 .testimonial-arrow {
@@ -721,26 +696,32 @@ main {
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .testimonial-slider-container {
-    flex-direction: column;
+    flex-direction: row; /* Keep as row */
+    flex-wrap: wrap; /* Allow wrapping */
+    justify-content: center;
   }
   
   .testimonial-slider {
-    height: 400px; /* Taller on mobile */
+    order: unset; /* Remove ordering */
+    width: 100%;
+    margin: 1rem 0;
+    min-height: 620px; /* Taller on mobile */
   }
   
   .testimonial-arrow {
     width: 40px;
     height: 40px;
-    margin: 1rem 0;
+    margin: 0 0.5rem;
+    order: unset; /* Remove ordering */
   }
   
   .testimonial-prev {
-    margin-right: 0;
+    margin: 0 0.5rem;
     order: 2;
   }
   
   .testimonial-next {
-    margin-left: 0;
+    margin: 0 0.5rem;
     order: 3;
   }
   
@@ -750,11 +731,18 @@ main {
   
   .testimonial-author {
     flex-direction: column;
+    align-items: center;
     text-align: center;
+    gap: 0.75rem;
   }
   
   .testimonial-author-info {
     text-align: center;
+    margin: 0.5rem 0;
+  }
+  
+  .testimonial-text {
+    margin-bottom: 1.5rem;
   }
 }
 
@@ -996,6 +984,17 @@ textarea::placeholder {
   gap: 0.5rem;
 }
 
+@media (max-width: 768px) {
+  .counter-element {
+    padding: 0;
+  }
+  .counter-top {
+    font-size: 1.5rem;
+  }
+  .counter-top img {
+    max-width: 70px;
+  }
+}
 .counter-bottom {
   font-size: 1.2rem;
   color: #E5B94E;
@@ -1822,7 +1821,6 @@ footer {
 
 .story-text {
   flex: 1 1 60%;
-  min-width: 300px;
 }
 
 .story-text p {
@@ -2082,7 +2080,7 @@ footer {
 .faq-container {
     max-width: 800px;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .faq-item {
@@ -2127,6 +2125,7 @@ footer {
     background-color: #7063d3;
     color: white;
     width: 24px;
+    min-width: 24px;
     height: 24px;
     border-radius: 50%;
     display: flex;
@@ -2187,103 +2186,148 @@ footer {
     }
 }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header {
+      padding: 0.5rem 1rem;
+      height: 70px;
+  }
+  
+  .header.scrolled {
+      height: 50px;
+  }
+  
+  .logo .main-logo {
+      height: 70px;
+  }
+  
+  .logo .small-logo {
+      height: 50px;
+  }
+  
+  main {
+      margin-top: 70px;
+  }
+  
+  .hero h1 {
+      font-size: 2.5rem;
+  }
+  
+  .hero p {
+      font-size: 1rem;
+  }
+  
+  .section h2 {
+      font-size: 2rem;
+  }
+  
+  .feature-container {
+      flex-direction: column;
+      gap: 1.5rem;
+  }
+  
+  .feature-box {
+      flex: 1 1 100%;
+  }
+}
+
 /* Terms page specific styles */
-        .terms-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 4rem 2rem;
-        }
-        
-        .terms-header {
-            text-align: center;
-            margin-bottom: 3rem;
-        }
-        
-        .terms-header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            color: #333;
-        }
-        
-        .terms-header p {
-            font-size: 1.1rem;
-            color: #666;
-        }
-        
-        .terms-content {
-            background: white;
-            padding: 2.5rem;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-        }
-        
-        .terms-content h2 {
-            font-size: 1.8rem;
-            color: #333;
-            margin: 2rem 0 1rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 1px solid #eee;
-        }
-        
-        .terms-content h2:first-child {
-            margin-top: 0;
-        }
-        
-        .terms-content h3 {
-            font-size: 1.4rem;
-            color: #444;
-            margin: 1.5rem 0 1rem;
-        }
-        
-        .terms-content p {
-            margin-bottom: 1rem;
-            line-height: 1.6;
-            color: #555;
-        }
-        
-        .terms-content ul {
-            margin-bottom: 1.5rem;
-            padding-left: 2rem;
-        }
-        
-        .terms-content li {
-            margin-bottom: 0.5rem;
-            line-height: 1.6;
-        }
-        
-        .terms-content .definitions {
-            background-color: #f9f9f9;
-            padding: 1.5rem;
-            border-radius: 5px;
-            margin-bottom: 1.5rem;
-        }
-        
-        .terms-content .definitions dt {
-            font-weight: bold;
-            margin-bottom: 0.5rem;
-        }
-        
-        .terms-content .definitions dd {
-            margin-bottom: 1.5rem;
-            margin-left: 1rem;
-            padding-left: 1rem;
-            border-left: 3px solid #ddd;
-        }
-        
-        .terms-content .last-updated {
-            margin-top: 3rem;
-            padding-top: 1rem;
-            border-top: 1px solid #eee;
-            font-style: italic;
-            color: #888;
-        }
-        
-        @media (max-width: 768px) {
-            .terms-container {
-                padding: 3rem 1rem;
-            }
-            
-            .terms-content {
-                padding: 1.5rem;
-            }
-        }
+.terms-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+}
+
+.terms-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.terms-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.terms-header p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+.terms-content {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.terms-content h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin: 2rem 0 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #eee;
+}
+
+.terms-content h2:first-child {
+    margin-top: 0;
+}
+
+.terms-content h3 {
+    font-size: 1.4rem;
+    color: #444;
+    margin: 1.5rem 0 1rem;
+}
+
+.terms-content p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+.terms-content ul {
+    margin-bottom: 1.5rem;
+    padding-left: 2rem;
+}
+
+.terms-content li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+.terms-content .definitions {
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+}
+
+.terms-content .definitions dt {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.terms-content .definitions dd {
+    margin-bottom: 1.5rem;
+    margin-left: 1rem;
+    padding-left: 1rem;
+    border-left: 3px solid #ddd;
+}
+
+.terms-content .last-updated {
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+    font-style: italic;
+    color: #888;
+}
+
+@media (max-width: 768px) {
+    .terms-container {
+        padding: 3rem 1rem;
+    }
+    
+    .terms-content {
+        padding: 1.5rem;
+    }
+}
