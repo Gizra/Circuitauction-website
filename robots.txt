@@ -1,0 +1,25 @@
+# robots.txt for circuitauction.com
+# Last updated: May 17, 2025
+
+User-agent: *
+Allow: /
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /private/
+Disallow: /admin/
+Disallow: /includes/
+
+# Allow all bots to access CSS, JS, and image files
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.gif$
+Allow: /*.png$
+Allow: /*.svg$
+
+# Point to sitemap
+Sitemap: https://circuitauction.com/sitemap.xml
+
+# Specify crawl delay for heavy bots (optional)
+# Crawl-delay: 10
