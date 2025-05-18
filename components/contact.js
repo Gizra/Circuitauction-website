@@ -11,7 +11,7 @@ class ContactComponent extends HTMLElement {
         <div class="contact-wrapper">
           <div class="contact-container">
             <div class="contact-bg-left">
-              <img src="img/left-contact.png" alt="Contact Background Left" class="scroll-reveal">
+              <img src="img/left-contact.webp" alt="Contact Background Left" class="scroll-reveal">
             </div>
             
             <div class="form-container">
@@ -48,7 +48,7 @@ class ContactComponent extends HTMLElement {
             </div>
             
             <div class="contact-bg-right">
-              <img src="img/right-contact.png" alt="Contact Background Right" class="scroll-reveal">
+              <img src="img/right-contact.webp" alt="Contact Background Right" class="scroll-reveal">
             </div>
           </div>
         </div>

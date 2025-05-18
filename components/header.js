@@ -5,8 +5,8 @@ class HeaderComponent extends HTMLElement {
       <header class="header">
         <div class="logo">
             <a href="index.html">
-                <img src="img/240-700px-CircuitAuction_main-Logo_rgb.png" class="main-logo" alt="Circuit Auction">
-                <img src="img/4.png" class="small-logo" alt="Circuit Auction">
+                <img src="img/240-700px-CircuitAuction_main-Logo_rgb.webp" class="main-logo" alt="Circuit Auction">
+                <img src="img/4.webp" class="small-logo" alt="Circuit Auction">
             </a>
         </div>
         <div class="mobile-menu-toggle">

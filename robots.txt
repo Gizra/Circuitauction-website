@@ -12,11 +12,12 @@ Disallow: /includes/
 # Allow all bots to access CSS, JS, and image files
 Allow: /*.css$
 Allow: /*.js$
-Allow: /*.jpg$
+Allow: /*.png$
 Allow: /*.jpeg$
 Allow: /*.gif$
-Allow: /*.png$
+Allow: /*.jpg$
 Allow: /*.svg$
+Allow: /*.webp$
 
 # Point to sitemap
 Sitemap: https://circuitauction.com/sitemap.xml

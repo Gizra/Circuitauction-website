@@ -8,7 +8,7 @@ class FooterComponent extends HTMLElement {
           <!-- Column 1: Company Information -->
           <div class="footer-company-info">
             <div class="footer-logo">
-              <img src="img/logo-white.png" alt="Circuit Auction">
+              <img src="img/logo-white.webp" alt="Circuit Auction">
             </div>
             <p class="footer-tagline">Empowering auction houses with our all-in-one, AI-powered auction management system</p>
             <div class="footer-contact-info">

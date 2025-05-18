@@ -229,7 +229,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     logoContainer.innerHTML = `
         <a href="/">
             <img src="${mainLogoSrc}" class="main-logo" alt="Circuit Auction">
-            <img src="img/4.png" class="small-logo" alt="Circuit Auction">
+            <img src="img/4.webp" class="small-logo" alt="Circuit Auction">
         </a>
     `;
 
