@@ -5,7 +5,7 @@ class ContactComponent extends HTMLElement {
       <section id="contact" class="section contact-section">
         <div class="pre-contact-cta">
           <p class="large-text"><span class="cup scroll-reveal">🏆</span> Bottom of Page Achievement Unlocked! <span class="cup scroll-reveal">🏆</span></p> 
-          <p>You're officially auction-software curious. Let's turn that curiosity into your success – use the form below and we'll talk details."</p>
+          <p>You're officially auction-software curious. Let's turn that curiosity into your success – use the form below and we'll talk details.</p>
         </div>
         <h2 class="scroll-reveal">Write to Us</h2>        
         <div class="contact-wrapper">
