@@ -14,7 +14,8 @@ class HeaderComponent extends HTMLElement {
             <span></span>
             <span></span>
         </div>
-        <nav class="nav-links">
+        <nav class="nav-links">        
+            <a href="" class="nav-btn-purple" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/yoav-circuitauction/30min'});return false;">Schedule Demo</a>
             <a href="/">Home</a>
             <a href="about.html">About Us</a>
             <a href="features.html">Auction Features</a>

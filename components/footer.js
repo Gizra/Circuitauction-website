@@ -83,8 +83,8 @@ class FooterComponent extends HTMLElement {
             </div>
             
             <!-- CTA Button -->
-            <a href="#contact" target="_self" class="cta-btn yellow scroll-reveal delay-2 revealed">        
-                <span class="qodef-btn-text">Book Your Demo Now!</span>    
+            <a href="" class="cta-btn yellow scroll-reveal delay-2" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/yoav-circuitauction/30min'});return false;">
+                <span class="qodef-btn-text">Book Your Demo Today</span>    
                 <span class="qodef-btn-text-icon">
                     <i class="qodef-icon-simple-line-icon icon-arrow-right-circle "></i>
                 </span>
