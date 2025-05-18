@@ -12,8 +12,9 @@ class FooterComponent extends HTMLElement {
             </div>
             <p class="footer-tagline">Empowering auction houses with our all-in-one, AI-powered auction management system</p>
             <div class="footer-contact-info">
-              <p><i class="fa fa-map-marker"></i> 12 Ha'asif, Haifa, IL</p>
-              <p><i class="fa fa-phone"></i> +972 54 688 3012</p>
+              <p><i class="fa fa-map-marker"></i> 350 N. Orleans Street<br />
+                    Suite 9000N Chicago, <br />IL 60654, USA</p>
+              <p><i class="fa fa-phone"></i> +1-312-585-7625</p>
               <p><i class="fa fa-envelope"></i> info@circuitauction.com</p>
             </div>
             <div class="footer-social">

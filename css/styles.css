@@ -285,6 +285,11 @@ main {
   overflow: hidden;
   width: 28px;
 }
+@media (max-width: 768px) {
+  .qodef-btn-text-icon {
+    display: none;
+  }
+}
 
 /* Arrow icon */
 .icon-arrow-right-circle {
@@ -1144,7 +1149,7 @@ textarea::placeholder {
   }
   
   .nav-links.active {
-      max-height: 300px;
+      max-height: 395px;
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   }
   
@@ -1528,155 +1533,6 @@ footer {
   }
 }
 
-
-/* Plans page specific styles */
-.plans-intro {
-  text-align: center;
-  max-width: 800px;
-  margin: 0 auto 3rem;
-  padding: 4rem 1rem 0;
-}
-
-.plans-intro h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  color: #333;
-}
-
-.plans-intro p {
-  font-size: 1.1rem;
-  color: #666;
-}
-
-.plans-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-  padding: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.plan-card {
-  flex: 1 1 300px;
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  max-width: 350px;
-}
-
-.plan-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
-}
-
-.plan-header {
-  padding: 2rem;
-  text-align: center;
-  background-color: #f8f8f8;
-  border-bottom: 1px solid #eee;
-}
-
-.plan-name {
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-  color: #333;
-}
-
-.plan-price {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #4285F4;
-  margin-bottom: 0.5rem;
-}
-
-.plan-price-note {
-  font-size: 0.9rem;
-  color: #777;
-}
-
-.plan-features {
-  padding: 2rem;
-}
-
-.features-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.features-list li {
-  padding: 0.5rem 0;
-  border-bottom: 1px solid #f1f1f1;
-  display: flex;
-  align-items: center;
-}
-
-.features-list li:last-child {
-  border-bottom: none;
-}
-
-.features-list li i {
-  color: #4285F4;
-  margin-right: 0.75rem;
-}
-
-.features-list .not-included {
-  color: #999;
-  text-decoration: line-through;
-}
-
-.features-list .not-included i {
-  color: #ccc;
-}
-
-.plan-cta {
-  padding: 1.5rem 2rem;
-  text-align: center;
-}
-
-.enterprise-plan {
-  border-top: 5px solid #4285F4;
-}
-
-.business-plan {
-  border-top: 5px solid #b2dd4c;
-  transform: scale(1.05);
-}
-
-.business-plan .plan-header {
-  background-color: #b2dd4c;
-  color: white;
-}
-
-.business-plan .plan-price {
-  color: white;
-}
-
-.business-plan .plan-price-note {
-  color: rgba(255, 255, 255, 0.8);
-}
-
-.starter-plan {
-  border-top: 5px solid #f0c040;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .plan-card {
-      max-width: 100%;
-  }
-  
-  .business-plan {
-      transform: none;
-      order: -1;
-      margin-bottom: 2rem;
-  }
-}
 /* Features Section Styles */
 .features-grid {
   display: flex;
@@ -2371,5 +2227,325 @@ footer {
     
     .terms-content {
         padding: 1.5rem;
+    }
+}
+
+/* Pricing Page Specific Styles */
+
+/* Plans Intro Section */
+.plans-intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    padding: 4rem 1rem 0;
+}
+
+.plans-intro h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.plans-intro p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Plan Cards */
+.plans-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.plan-card {
+    flex: 1 1 300px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: visible;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 380px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.plan-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.plan-header {
+    padding: 2rem;
+    text-align: center;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #eee;
+}
+
+.plan-name {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.plan-price {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #4285F4;
+    margin-bottom: 0.5rem;
+    line-height: 1;
+}
+
+.plan-price span {
+    font-size: 1.4rem;
+    font-weight: normal;
+}
+
+.plan-price-note {
+    font-size: 1.1rem;
+    color: #777;
+    font-weight: 500;
+}
+
+.plan-features {
+    padding: 2rem;
+}
+
+.plan-subtitle {
+    margin-bottom: 1.5rem;
+    font-size: 1.05rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+.features-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem 0;
+}
+
+.features-list li {
+    padding: 0.7rem 0;
+    border-bottom: 1px solid #f1f1f1;
+    display: flex;
+    align-items: flex-start;
+    line-height: 1.4;
+}
+
+.features-list li:last-child {
+    border-bottom: none;
+}
+
+.features-list li i {
+    color: #4285F4;
+    margin-right: 0.75rem;
+    margin-top: 0.2rem;
+    flex-shrink: 0;
+}
+
+.features-list .not-included {
+    color: #999;
+    text-decoration: line-through;
+}
+
+.features-list .not-included i {
+    color: #ccc;
+}
+
+.plan-perfect-for {
+    font-style: italic;
+    color: #666;
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px dashed #eee;
+}
+
+.plan-cta {
+    padding: 1.5rem 2rem 2rem;
+    text-align: center;
+    margin-top: auto;
+}
+
+.enterprise-plan {
+    border-top: 5px solid #7063d3;
+}
+
+.starter-plan {
+    border-top: 5px solid #E4B951;
+}
+
+.business-plan {
+    transform: scale(1.05);
+    z-index: 10;
+}
+
+.business-plan .plan-header {
+    background-color: #7063d3;
+    color: white;
+}
+
+.business-plan .plan-price {
+    color: white;
+}
+
+.business-plan .plan-price-note {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.popular-badge {
+    position: absolute;
+    top: 0;
+    right: 2rem;
+    background-color: #E4B951;
+    color: #333;
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Guarantee Section */
+.guarantee-section {
+    background-color: #f9f9f9;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.guarantee-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    border-left: 5px solid #E4B951;
+}
+
+.guarantee-icon {
+    font-size: 3rem;
+    color: #E4B951;
+    margin-bottom: 1rem;
+}
+
+.guarantee-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.guarantee-content p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Call to Action Section */
+.cta-section {
+    background: url("../img/App-Background.jpg") no-repeat center center;
+    background-size: cover;
+    padding: 5rem 2rem;
+    text-align: center;
+    color: white;
+}
+
+.cta-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.cta-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: white;
+}
+
+.cta-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .plans-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .plan-card {
+        max-width: 100%;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    
+    .business-plan {
+        transform: none;
+        order: -1;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .cta-buttons .cta-btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .plans-container {
+        padding: 0.5rem;
+    }
+    
+    .plan-card {
+        margin-bottom: 1.5rem;
+        flex: 0 0 auto;
+        height: auto;
+        min-height: 0;
+    }
+    
+    .plan-header {
+        padding: 1.5rem 1rem;
+    }
+    
+    .plan-features {
+        padding: 1.5rem 1rem;
+    }
+    
+    .plan-cta {
+        padding: 1rem 1rem 1.5rem;
+    }
+    
+    .guarantee-content {
+        padding: 1.5rem;
+    }
+    
+    .guarantee-content h2 {
+        font-size: 1.5rem;
+    }
+    
+    .cta-content h2 {
+        font-size: 1.8rem;
     }
 }

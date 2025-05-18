@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // Toggle current answer
             if (isActive) {
                 this.classList.remove('active');
-                answer.style.maxHeight = '0';
+                answer.style.maxHeight = '0px';
                 toggle.className = 'fa fa-plus';
             } else {
                 this.classList.add('active');
