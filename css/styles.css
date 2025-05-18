@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
 body {
   color: #333;
 }
@@ -122,11 +121,23 @@ main {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background: url("../img/auction-hero-homepage.webp") no-repeat center bottom;
+  background: url("../img/auction-hero-homepage-small.webp") no-repeat center bottom;
   background-size: cover;  
   position: relative;
 }
+/* Medium screens */
+@media (min-width: 768px) {
+  .hero {
+    background-image: url("../img/auction-hero-homepage-medium.webp");
+  }
+}
 
+/* Large screens */
+@media (min-width: 1200px) {
+  .hero {
+    background-image: url("../img/auction-hero-homepage.webp");
+  }
+}
 .hero::before {
   content: '';
   position: absolute;
@@ -2210,7 +2221,11 @@ footer {
   }
   
   .hero h1 {
-      font-size: 2.5rem;
+      font-size: 2.1rem;
+  }
+
+  h2 {
+    font-size: 2rem;
   }
   
   .hero p {
