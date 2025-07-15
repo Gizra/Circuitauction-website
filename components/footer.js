@@ -32,6 +32,7 @@ class FooterComponent extends HTMLElement {
               <li><a href="index.html">Home</a></li>
               <li><a href="about.html">About Us</a></li>
               <li><a href="features.html">Auction Features</a></li>
+              <li><a href="collectibles.html">Collectibles</a></li>
               <li><a href="faq.html">FAQ</a></li>
               <li><a href="#contact">Contact</a></li>
               <li><a href="terms.html">Terms & Privacy</a></li>

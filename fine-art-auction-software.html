@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- ─────── Circuit Auction – Fine Art Page ─────── -->
+    <title>Fine Art Auction Management Software | Art Auction Platform</title>
+
+    <meta name="description"
+        content="Professional fine art auction management software for art dealers. Features provenance documentation, condition reporting, artist database integration, exhibition history tracking, and specialized art auction tools.">
+
+    <meta name="keywords"
+        content="art auction software, fine art auction management, art auction platform, provenance tracking, condition reporting, artist database, exhibition history, art authentication, gallery software">
+
+    <!-- Open Graph -->
+    <meta property="og:type"        content="website">
+    <meta property="og:title"       content="Fine Art Auction Management Software | Circuit Auction">
+    <meta property="og:description" content="Specialized auction management software for art dealers with provenance tracking, condition reporting, and artist database integration.">
+    <meta property="og:image"       content="https://circuitauction.com/assets/og-fine-art.jpg">
+    <meta property="og:url"         content="https://circuitauction.com/fine-art-auction-software.html">
+
+    <!-- Twitter -->
+    <meta name="twitter:card"        content="summary_large_image">
+    <meta name="twitter:title"       content="Fine Art Auction Management Software">
+    <meta name="twitter:description" content="Professional art auction platform with provenance documentation, condition reporting, and exhibition history features.">
+
+    <link rel="icon" href="img/Auction-House-Managment-Platform-Favion.webp" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- Include component scripts -->
+    <script src="components/header.js" defer></script>
+    <script src="components/footer.js" defer></script>
+    <script src="components/contact.js" defer></script>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HJYJVP52HM"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-HJYJVP52HM');
+    </script>
+
+    <!-- Schema.org markup for Fine Art Auction Software -->
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Circuit Auction - Fine Art Auction Management Software",
+    "applicationCategory": "BusinessApplication",
+    "applicationSubCategory": "ArtAuctionSoftware",
+    "operatingSystem": "Web",
+    "offers": {
+        "@type": "Offer",
+        "url": "https://circuitauction.com/fine-art-auction-software.html"
+    },
+    "description": "Professional auction management software designed specifically for fine art dealers and art auction houses. Features provenance documentation, condition reporting, artist database integration, and exhibition history tracking.",
+    "featureList": [
+        "Provenance Documentation",
+        "Condition Reporting",
+        "Artist Database Integration",
+        "Exhibition History Tracking",
+        "Authentication Records",
+        "Conservation Documentation",
+        "Medium & Technique Classification",
+        "Catalogue Raisonné References",
+        "Insurance Valuation",
+        "Scholarly Research Integration"
+    ],
+    "targetAudience": {
+        "@type": "Audience",
+        "audienceType": "Art Dealers, Fine Art Auction Houses, Gallery Owners, Art Appraisers"
+    },
+    "about": {
+        "@type": "Thing",
+        "name": "Fine Art Auction Management",
+        "description": "Specialized software for managing fine art auctions with features tailored to the unique needs of art dealers and galleries"
+    }
+    }
+    </script>
+
+    <!-- Breadcrumb Navigation Schema -->
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://circuitauction.com/"
+        },
+        {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Collectibles",
+        "item": "https://circuitauction.com/collectibles.html"
+        },
+        {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Fine Art Auction Software",
+        "item": "https://circuitauction.com/fine-art-auction-software.html"
+        }
+    ]
+    }
+    </script>
+
+    <!-- FAQ Schema for Fine Art -->
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+        "@type": "Question",
+        "name": "Does Circuit Auction track provenance and ownership history?",
+        "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, Circuit Auction provides comprehensive provenance tracking including ownership history, exhibition records, publication history, and authentication documentation essential for fine art sales."
+        }
+        },
+        {
+        "@type": "Question",
+        "name": "Can I create detailed condition reports for artworks?",
+        "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely. Our platform includes professional condition reporting tools with standardized terminology, damage assessment, conservation history, and detailed condition photography integration."
+        }
+        },
+        {
+        "@type": "Question",
+        "name": "How does the artist database integration work?",
+        "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Circuit Auction integrates with major artist databases including Benezit Dictionary, providing biographical information, market records, and catalogue raisonné references for accurate attribution and valuation."
+        }
+        },
+        {
+        "@type": "Question",
+        "name": "Does the software support authentication and scholarly research?",
+        "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, our platform includes authentication documentation, scholarly research integration, expert opinion tracking, and catalogue raisonné references to support proper attribution and authentication of artworks."
+        }
+        }
+    ]
+    }
+    </script>
+</head>
+<body>
+    <header-component></header-component>
+    
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" style="background-image: url('img/fine-art-hero-bg.webp');">
+            <h1 class="scroll-reveal">Professional Fine Art Auction Management Software</h1>
+            <p class="scroll-reveal delay-1">
+                The complete art auction platform designed by art experts for art dealers.<br>
+                Featuring provenance tracking, condition reporting, and specialized fine art tools.
+            </p>
+            <a href="" class="cta-btn yellow scroll-reveal delay-2" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/yoav-circuitauction/30min'});return false;">
+                <span class="qodef-btn-text">Schedule Your Demo</span>    
+                <span class="qodef-btn-text-icon">
+                    <i class="qodef-icon-simple-line-icon icon-arrow-right-circle"></i>
+                </span>
+            </a>
+        </section>
+
+        <!-- Why Fine Art Needs Specialized Software -->
+        <section class="section">
+            <h2 class="scroll-reveal">Why Art Auctions Need Specialized Software</h2>
+            <div class="below-h-tag scroll-reveal"></div>
+            <p class="scroll-reveal delay-1" style="max-width: 900px; margin: 0 auto 3rem; text-align: center; font-size: 1.1rem;">
+                Fine art auctions require detailed provenance documentation, professional condition reporting, and scholarly attribution that generic auction software cannot adequately handle.
+            </p>
+            
+            <div class="benefits">
+                <div class="benefit">
+                    <div class="benefit-icon"><img src="img/art-features/provenance.webp" alt="Provenance Documentation"></div>
+                    <div class="benefit-title">Provenance Documentation</div>
+                    <div class="benefit-text">Comprehensive tracking of ownership history, exhibition records, publication history, and authentication documentation. Essential for establishing authenticity and value.</div>
+                </div>
+                
+                <div class="benefit">
+                    <div class="benefit-icon"><img src="img/art-features/condition-reporting.webp" alt="Condition Reporting"></div>
+                    <div class="benefit-title">Condition Reporting</div>
+                    <div class="benefit-text">Professional condition assessment tools with standardized terminology, damage documentation, and conservation history tracking. Critical for accurate representation and valuation.</div>
+                </div>
+                
+                <div class="benefit">
+                    <div class="benefit-icon"><img src="img/art-features/artist-database.webp" alt="Artist Database Integration"></div>
+                    <div class="benefit-title">Artist Database</div>
+                    <div class="benefit-text">Integration with Benezit Dictionary and major art databases. Access biographical information, market records, and catalogue raisonné references for proper attribution.</div>
+                </div>
+                
+                <div class="benefit">
+                    <div class="benefit-icon"><img src="img/art-features/exhibition-history.webp" alt="Exhibition History Tracking"></div>
+                    <div class="benefit-title">Exhibition History</div>
+                    <div class="benefit-text">Detailed tracking of museum exhibitions, gallery shows, and publication history. Documentation that significantly enhances artwork provenance and market value.</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fine Art-Specific Features -->
+        <section class="features">
+            <h2 class="scroll-reveal">Essential Features for Art Auctions</h2>
+            <div class="below-h-tag scroll-reveal"></div>
+            <p class="scroll-reveal delay-1">Built-in tools that serious art dealers depend on</p>
+            
+            <div class="benefits">
+                <div class="benefit">
+                    <div class="benefit-icon"><img src="img/art-features/authentication.webp" alt="Authentication Records"></div>
+                    <div class="benefit-title">Authentication Records</div>
+                    <div class="benefit-text">Comprehensive tracking of expert opinions, authentication certificates, and scholarly attributions. Essential for establishing authenticity and market confidence.</div>
+                </div>
+                
+                <div class="benefit">
+                    <div class="benefit-icon"><img src="img/art-features/conservation.webp" alt="Conservation Documentation"></div>
+                    <div class="benefit-title">Conservation Documentation</div>
+                    <div class="benefit-text">Detailed conservation history with treatment records, restoration documentation, and conservator reports. Critical information for collectors and institutions.</div>
+                </div>
+                
+                <div class="benefit">
+                    <div class="benefit-icon"><img src="img/art-features/medium-technique.webp" alt="Medium Technique Classification"></div>
+                    <div class="benefit-title">Medium & Technique Classification</div>
+                    <div class="benefit-text">Comprehensive classification system for artistic media, techniques, and materials. Proper categorization essential for accurate cataloging and searching.</div>
+                </div>
+                
+                <div class="benefit">
+                    <div class="benefit-icon"><img src="img/art-features/catalogue-raisonne.webp" alt="Catalogue Raisonne References"></div>
+                    <div class="benefit-title">Catalogue Raisonné References</div>
+                    <div class="benefit-text">Integration with major catalogue raisonnés and scholarly publications. Reference standard works for proper attribution and authentication verification.</div>
+                </div>
+                
+                <div class="benefit">
+                    <div class="benefit-icon"><img src="img/art-features/insurance-valuation.webp" alt="Insurance Valuation"></div>
+                    <div class="benefit-title">Insurance Valuation</div>
+                    <div class="benefit-text">Current insurance valuations and replacement cost estimates. Professional appraisal integration for accurate valuation and insurance documentation.</div>
+                </div>
+                
+                <div class="benefit">
+                    <div class="benefit-icon"><img src="img/art-features/scholarly-research.webp" alt="Scholarly Research Integration"></div>
+                    <div class="benefit-title">Scholarly Research Integration</div>
+                    <div class="benefit-text">Access to art historical databases, academic research, and scholarly publications. Essential references for proper attribution and art historical context.</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Success Stories -->
+        <section class="testimonials">
+            <h2>What Art Dealers Say About Circuit Auction</h2>
+            <p class="testimonial-subtitle">Real results from fine art professionals using our platform</p>
+            
+            <div class="testimonial-slider-container">
+                <div class="testimonial-arrow testimonial-prev">
+                    <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                </div>
+                
+                <div class="testimonial-slider">
+                    <div class="testimonial-slide active">
+                        <div class="testimonial-content">
+                            <div class="testimonial-text">
+                                "The provenance tracking has been transformative for our impressionist auctions. We can document complete ownership histories going back to the artist's studio. Our well-documented works now consistently exceed high estimates."
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="testimonial-author-img">
+                                    <img src="img/testimonials/art-dealer-1.webp" alt="Isabella Fontaine">
+                                </div>
+                                <div class="testimonial-author-info">
+                                    <div class="testimonial-author-name">Isabella Fontaine</div>
+                                    <div class="testimonial-author-title">Fine Art Specialists</div>
+                                </div>
+                                <div class="testimonial-company-logo">
+                                    <img src="img/testimonials/fine-art-specialists-logo.webp" alt="Fine Art Specialists logo">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <div class="testimonial-text">
+                                "The condition reporting tools are exceptional. We can create museum-quality condition reports that give buyers complete confidence. The professional documentation has eliminated condition disputes entirely."
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="testimonial-author-img">
+                                    <img src="img/testimonials/art-dealer-2.webp" alt="Charles Montgomery">
+                                </div>
+                                <div class="testimonial-author-info">
+                                    <div class="testimonial-author-name">Charles Montgomery</div>
+                                    <div class="testimonial-author-title">Montgomery Art Auctions</div>
+                                </div>
+                                <div class="testimonial-company-logo">
+                                    <img src="img/testimonials/montgomery-art-logo.webp" alt="Montgomery Art logo">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <div class="testimonial-text">
+                                "The artist database integration with Benezit has streamlined our cataloging process tremendously. We can verify attributions instantly and access comprehensive biographical data for every artist we handle."
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="testimonial-author-img">
+                                    <img src="img/testimonials/art-dealer-3.webp" alt="Dr. Margaret Chen">
+                                </div>
+                                <div class="testimonial-author-info">
+                                    <div class="testimonial-author-name">Dr. Margaret Chen</div>
+                                    <div class="testimonial-author-title">Contemporary Art Holdings</div>
+                                </div>
+                                <div class="testimonial-company-logo">
+                                    <img src="img/testimonials/contemporary-art-logo.webp" alt="Contemporary Art logo">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-arrow testimonial-next">
+                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                </div>
+            </div>
+            
+            <div class="testimonial-dots">
+                <span class="testimonial-dot active" data-index="0"></span>
+                <span class="testimonial-dot" data-index="1"></span>
+                <span class="testimonial-dot" data-index="2"></span>
+            </div>
+        </section>
+
+        <!-- Competitive Advantages -->
+        <section class="section">
+            <h2 class="scroll-reveal">Why Circuit Auction Beats Generic Platforms</h2>
+            <div class="below-h-tag scroll-reveal"></div>
+            
+            <div class="feature-container">
+                <div class="fade-in-left feature-box">
+                    <h3>Built by Art Market Experts</h3>
+                    <p>Unlike generic auction software, Circuit Auction was designed by people who understand the art market. Our team includes art historians and gallery professionals who know exactly what features art dealers need.</p>
+                    
+                    <h3>Integrates with Art Databases</h3>
+                    <p>Direct integration with Benezit Dictionary, catalogue raisonnés, and scholarly databases. Access to art historical information and market data that generic platforms simply can't provide.</p>
+                    
+                    <h3>Specialized Art Documentation</h3>
+                    <p>Features designed specifically for fine art: provenance tracking, condition reporting, authentication documentation, and proper art historical terminology that generic platforms don't understand.</p>
+                </div>
+                <div class="fade-in-right feature-box">
+                    <img src="img/art-competitive-advantage.webp" alt="Circuit Auction Art Features">
+                </div>
+            </div>
+        </section>
+
+        <!-- Challenges Section -->
+        <section class="section" style="background-color: #f9f9f9;">
+            <h2 class="scroll-reveal">Common Problems Circuit Auction Solves</h2>
+            <div class="below-h-tag scroll-reveal"></div>
+            
+            <div class="benefits">
+                <div class="benefit">
+                    <div class="benefit-icon"><img src="img/challenges/provenance-gaps.webp" alt="Provenance Gaps"></div>
+                    <div class="benefit-title">Incomplete Provenance Records</div>
+                    <div class="benefit-text">Comprehensive provenance tracking with exhibition history, publication records, and ownership documentation. Complete provenance significantly increases artwork values and buyer confidence.</div>
+                </div>
+                
+                <div class="benefit">
+                    <div class="benefit-icon"><img src="img/challenges/condition-disputes.webp" alt="Condition Disputes"></div>
+                    <div class="benefit-title">Condition Disputes</div>
+                    <div class="benefit-text">Professional condition reporting with standardized terminology and detailed photography. Eliminate post-sale disputes with comprehensive condition documentation.</div>
+                </div>
+                
+                <div class="benefit">
+                    <div class="benefit-icon"><img src="img/challenges/attribution-questions.webp" alt="Attribution Questions"></div>
+                    <div class="benefit-title">Attribution Uncertainty</div>
+                    <div class="benefit-text">Access to artist databases, catalogue raisonnés, and scholarly research. Verify attributions with authoritative sources and expert authentication documentation.</div>
+                </div>
+                
+                <div class="benefit">
+                    <div class="benefit-icon"><img src="img/challenges/documentation-loss.webp" alt="Documentation Loss"></div>
+                    <div class="benefit-title">Lost Documentation</div>
+                    <div class="benefit-text">Centralized documentation storage with exhibition records, conservation reports, and authentication certificates. Never lose critical artwork documentation again.</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="section">
+            <h2 class="scroll-reveal">Frequently Asked Questions</h2>
+            <div class="below-h-tag scroll-reveal"></div>
+            
+            <section class="faq-container">
+                <div class="faq-item scroll-reveal">
+                    <div class="faq-question">
+                        <div class="benefit-title">Does Circuit Auction track provenance and ownership history?</div>
+                        <div class="faq-toggle"><i class="fa fa-plus"></i></div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, Circuit Auction provides comprehensive provenance tracking including ownership history, exhibition records, publication history, and authentication documentation essential for fine art sales.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item scroll-reveal">
+                    <div class="faq-question">
+                        <div class="benefit-title">Can I create detailed condition reports for artworks?</div>
+                        <div class="faq-toggle"><i class="fa fa-plus"></i></div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely. Our platform includes professional condition reporting tools with standardized terminology, damage assessment, conservation history, and detailed condition photography integration.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item scroll-reveal">
+                    <div class="faq-question">
+                        <div class="benefit-title">How does the artist database integration work?</div>
+                        <div class="faq-toggle"><i class="fa fa-plus"></i></div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Circuit Auction integrates with major artist databases including Benezit Dictionary, providing biographical information, market records, and catalogue raisonné references for accurate attribution and valuation.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item scroll-reveal">
+                    <div class="faq-question">
+                        <div class="benefit-title">Does the software support authentication and scholarly research?</div>
+                        <div class="faq-toggle"><i class="fa fa-plus"></i></div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, our platform includes authentication documentation, scholarly research integration, expert opinion tracking, and catalogue raisonné references to support proper attribution and authentication of artworks.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item scroll-reveal">
+                    <div class="faq-question">
+                        <div class="benefit-title">Can I track conservation and restoration history?</div>
+                        <div class="faq-toggle"><i class="fa fa-plus"></i></div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, Circuit Auction includes comprehensive conservation documentation with treatment records, restoration history, and conservator reports essential for institutional and collector confidence.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item scroll-reveal">
+                    <div class="faq-question">
+                        <div class="benefit-title">How does the exhibition history tracking work?</div>
+                        <div class="faq-toggle"><i class="fa fa-plus"></i></div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our platform provides detailed tracking of museum exhibitions, gallery shows, and publication history, creating comprehensive exhibition records that significantly enhance artwork provenance and value.</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta-section">
+            <div class="cta-content">
+                <h2>Ready to Transform Your Art Auctions?</h2>
+                <p>Join leading art dealers worldwide who trust Circuit Auction for their fine art auction management. See why our specialized features make all the difference in prestigious art auctions.</p>
+                <div class="cta-buttons">
+                    <a href="" class="cta-btn yellow" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/yoav-circuitauction/30min'});return false;">
+                        <span class="qodef-btn-text">Schedule Demo</span>
+                        <span class="qodef-btn-text-icon">
+                            <i class="qodef-icon-simple-line-icon icon-arrow-right-circle"></i>
+                        </span>
+                    </a>
+                    <a href="#contact" class="cta-btn purple">
+                        <span class="qodef-btn-text">Contact Sales</span>
+                        <span class="qodef-btn-text-icon">
+                            <i class="qodef-icon-simple-line-icon icon-arrow-right-circle"></i>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <contact-component></contact-component>
+    </main>
+    
+    <footer-component></footer-component>
+    
+    <div class="back-to-top">
+        <span class="arrow-up">^</span>
+    </div>
+    
+    <script src="js/main.js"></script>
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    
+</body>
+</html>

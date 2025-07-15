@@ -222,7 +222,7 @@ main {
 
 /* dark-strip */
 .dark-strip {
-  background: url("../img/App-Background.jpg") no-repeat;
+  background: url("../img/App-Background.jpg");
   color: #fff;
   font-size: 1.5rem;
   text-align: center;
@@ -2545,5 +2545,149 @@ footer {
     
     .cta-content h2 {
         font-size: 1.8rem;
+    }
+}
+
+
+/* Collectibles-specific styles */
+.collectibles-intro {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 3rem;
+    padding: 4rem 1rem 0;
+}
+
+.collectibles-intro h1 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.collectibles-intro p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+.collectibles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.collectible-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.collectible-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+    text-decoration: none;
+    color: inherit;
+}
+
+.collectible-header {
+    height: 200px;
+    background: linear-gradient(135deg, #4285F4 0%, #7063d3 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.collectible-header::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(180deg); }
+}
+
+.collectible-icon {
+    font-size: 4rem;
+    color: white;
+    z-index: 2;
+    position: relative;
+}
+
+.collectible-content {
+    padding: 1.5rem;
+}
+
+.collectible-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+    color: #333;
+}
+
+.collectible-description {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.collectible-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.collectible-features li {
+    padding: 0.3rem 0;
+    color: #555;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+}
+
+.collectible-features li::before {
+    content: '✓';
+    color: #4285F4;
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+
+.collectible-cta {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #f0f0f0;
+    text-align: center;
+}
+
+.collectible-cta-text {
+    color: #4285F4;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+    .collectibles-grid {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+    
+    .collectibles-intro h1 {
+        font-size: 2.2rem;
     }
 }

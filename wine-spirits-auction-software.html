@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- ─────── Circuit Auction – Wine & Spirits Page ─────── -->
+    <title>Wine & Spirits Auction Management Software | Fine Wine Auction Platform</title>
+
+    <meta name="description"
+        content="Professional wine and spirits auction management software for fine wine dealers. Features vintage tracking, storage condition monitoring, provenance documentation, tasting notes, and specialized wine auction tools.">
+
+    <meta name="keywords"
+        content="wine auction software, spirits auction management, fine wine auction platform, vintage tracking, wine storage conditions, wine provenance, cellar management, wine auction tools, spirits collection software">
+
+    <!-- Open Graph -->
+    <meta property="og:type"        content="website">
+    <meta property="og:title"       content="Wine & Spirits Auction Management Software | Circuit Auction">
+    <meta property="og:description" content="Specialized auction management software for wine and spirits dealers with vintage tracking, storage monitoring, and provenance documentation.">
+    <meta property="og:image"       content="https://circuitauction.com/assets/og-wine-spirits.jpg">
+    <meta property="og:url"         content="https://circuitauction.com/wine-spirits-auction-software.html">
+
+    <!-- Twitter -->
+    <meta name="twitter:card"        content="summary_large_image">
+    <meta name="twitter:title"       content="Wine & Spirits Auction Management Software">
+    <meta name="twitter:description" content="Professional fine wine auction platform with vintage tracking, storage monitoring, and provenance documentation features.">
+
+    <link rel="icon" href="img/Auction-House-Managment-Platform-Favion.webp" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- Include component scripts -->
+    <script src="components/header.js" defer></script>
+    <script src="components/footer.js" defer></script>
+    <script src="components/contact.js" defer></script>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HJYJVP52HM"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-HJYJVP52HM');
+    </script>
+
+    <!-- Schema.org markup for Wine & Spirits Auction Software -->
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Circuit Auction - Wine & Spirits Auction Management Software",
+    "applicationCategory": "BusinessApplication",
+    "applicationSubCategory": "WineAuctionSoftware",
+    "operatingSystem": "Web",
+    "offers": {
+        "@type": "Offer",
+        "url": "https://circuitauction.com/wine-spirits-auction-software.html"
+    },
+    "description": "Professional auction management software designed specifically for wine and spirits dealers and fine wine auction houses. Features vintage tracking, storage condition monitoring, provenance documentation, and tasting note integration.",
+    "featureList": [
+        "Vintage & Producer Tracking",
+        "Storage Condition Monitoring",
+        "Provenance Documentation",
+        "Tasting Notes Integration",
+        "Cellar Management",
+        "Temperature & Humidity Logs",
+        "Wine Scoring Integration",
+        "Appellation & Region Mapping",
+        "Investment Grade Classification",
+        "Label Condition Assessment"
+    ],
+    "targetAudience": {
+        "@type": "Audience",
+        "audienceType": "Wine Dealers, Fine Wine Auction Houses, Spirits Collectors, Wine Investment Specialists"
+    },
+    "about": {
+        "@type": "Thing",
+        "name": "Fine Wine & Spirits Auction Management",
+        "description": "Specialized software for managing wine and spirits auctions with features tailored to the unique needs of fine wine dealers"
+    }
+    }
+    </script>
+
+    <!-- Breadcrumb Navigation Schema -->
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://circuitauction.com/"
+        },
+        {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Collectibles",
+        "item": "https://circuitauction.com/collectibles.html"
+        },
+        {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Wine & Spirits Auction Software",
+        "item": "https://circuitauction.com/wine-spirits-auction-software.html"
+        }
+    ]
+    }
+    </script>
+
+    <!-- FAQ Schema for Wine & Spirits -->
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+        "@type": "Question",
+        "name": "Does Circuit Auction track vintage and producer information?",
+        "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, Circuit Auction provides comprehensive tracking for vintages, producers, appellations, and regions with detailed databases of wine estates and distilleries worldwide."
+        }
+        },
+        {
+        "@type": "Question",
+        "name": "Can I monitor storage conditions and cellar management?",
+        "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely. Our platform includes storage condition logging with temperature and humidity monitoring, cellar location tracking, and storage history documentation essential for maintaining wine quality."
+        }
+        },
+        {
+        "@type": "Question",
+        "name": "How does the platform handle provenance and authentication?",
+        "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Circuit Auction provides detailed provenance tracking including purchase history, cellar records, and authentication documentation to verify authenticity and proper storage for fine wines and spirits."
+        }
+        },
+        {
+        "@type": "Question",
+        "name": "Does the software integrate with wine scoring systems?",
+        "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, our platform integrates with major wine scoring systems including Robert Parker, Wine Spectator, and Jancis Robinson, displaying scores and tasting notes to help establish market value."
+        }
+        }
+    ]
+    }
+    </script>
+</head>
+<body>
+    <header-component></header-component>
+    
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" style="background-image: url('img/wine-spirits-hero-bg.webp');">
+            <h1 class="scroll-reveal">Professional Wine & Spirits Auction Management Software</h1>
+            <p class="scroll-reveal delay-1">
+                The complete fine wine auction platform designed by wine experts for wine dealers.<br>
+                Featuring vintage tracking, storage monitoring, and specialized wine auction tools.
+            </p>
+            <a href="" class="cta-btn yellow scroll-reveal delay-2" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/yoav-circuitauction/30min'});return false;">
+                <span class="qodef-btn-text">Schedule Your Demo</span>    
+                <span class="qodef-btn-text-icon">
+                    <i class="qodef-icon-simple-line-icon icon-arrow-right-circle"></i>
+                </span>
+            </a>
+        </section>
+
+        <!-- Why Wine & Spirits Need Specialized Software -->
+        <section class="section">
+            <h2 class="scroll-reveal">Why Wine Auctions Need Specialized Software</h2>
+            <div class="below-h-tag scroll-reveal"></div>
+            <p class="scroll-reveal delay-1" style="max-width: 900px; margin: 0 auto 3rem; text-align: center; font-size: 1.1rem;">
+                Fine wine and spirits auctions require detailed vintage tracking, storage condition documentation, and provenance verification that generic auction software cannot adequately provide.
+            </p>
+            
+            <div class="benefits">
+                <div class="benefit">
+                    <div class="benefit-icon"><img src="img/wine-features/vintage-tracking.webp" alt="Vintage Producer Tracking"></div>
+                    <div class="benefit-title">Vintage & Producer Tracking</div>
+                    <div class="benefit-text">Comprehensive databases of wine estates, distilleries, vintages, and appellations. Automatic population of producer information, region details, and vintage characteristics.</div>
+                </div>
+                
+                <div class="benefit">
+                    <div class="benefit-icon"><img src="img/wine-features/storage-conditions.webp" alt="Storage Condition Monitoring"></div>
+                    <div class="benefit-title">Storage Condition Logs</div>
+                    <div class="benefit-text">Detailed tracking of storage conditions including temperature, humidity, and cellar environment. Essential for maintaining wine quality and verifying proper provenance.</div>
+                </div>
+                
+                <div class="benefit">
+                    <div class="benefit-icon"><img src="img/wine-features/provenance.webp" alt="Provenance Documentation"></div>
+                    <div class="benefit-title">Provenance Documentation</div>
+                    <div class="benefit-text">Complete ownership history, purchase records, and cellar documentation. Critical for authenticating rare wines and establishing investment-grade provenance.</div>
+                </div>
+                
+                <div class="benefit">
+                    <div class="benefit-icon"><img src="img/wine-features/tasting-notes.webp" alt="Tasting Notes Integration"></div>
+                    <div class="benefit-title">Tasting Notes</div>
+                    <div class="benefit-text">Integration with professional tasting notes, wine scores, and critic reviews. Display Parker points, Wine Spectator ratings, and detailed flavor profiles.</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Wine & Spirits-Specific Features -->
+        <section class="features">
+            <h2 class="scroll-reveal">Essential Features for Wine Auctions</h2>
+            <div class="below-h-tag scroll-reveal"></div>
+            <p class="scroll-reveal delay-1">Built-in tools that fine wine dealers depend on</p>
+            
+            <div class="benefits">
+                <div class="benefit">
+                    <div class="benefit-icon"><img src="img/wine-features/cellar-management.webp" alt="Cellar Management"></div>
+                    <div class="benefit-title">Cellar Management</div>
+                    <div class="benefit-text">Complete cellar tracking with location mapping, bin numbers, and inventory management. Track multiple storage facilities and transfer histories.</div>
+                </div>
+                
+                <div class="benefit">
+                    <div class="benefit-icon"><img src="img/wine-features/temperature-logs.webp" alt="Temperature Humidity Logs"></div>
+                    <div class="benefit-title">Temperature & Humidity Logs</div>
+                    <div class="benefit-text">Detailed environmental monitoring with temperature and humidity history. Verify optimal storage conditions and document any exposure events.</div>
+                </div>
+                
+                <div class="benefit">
+                    <div class="benefit-icon"><img src="img/wine-features/wine-scoring.webp" alt="Wine Scoring Integration"></div>
+                    <div class="benefit-title">Wine Scoring Integration</div>
+                    <div class="benefit-text">Integration with Robert Parker, Wine Spectator, Jancis Robinson, and other major wine critics. Display scores and professional tasting notes.</div>
+                </div>
+                
+                <div class="benefit">
+                    <div class="benefit-icon"><img src="img/wine-features/appellation.webp" alt="Appellation Region Mapping"></div>
+                    <div class="benefit-title">Appellation & Region Mapping</div>
+                    <div class="benefit-text">Comprehensive mapping of wine regions, appellations, and terroir information. Essential for proper classification and market positioning.</div>
+                </div>
+                
+                <div class="benefit">
+                    <div class="benefit-icon"><img src="img/wine-features/investment-grade.webp" alt="Investment Grade Classification"></div>
+                    <div class="benefit-title">Investment Grade Classification</div>
+                    <div class="benefit-text">Identification of investment-grade wines and spirits with market performance tracking. Help collectors identify wines with appreciation potential.</div>
+                </div>
+                
+                <div class="benefit">
+                    <div class="benefit-icon"><img src="img/wine-features/label-condition.webp" alt="Label Condition Assessment"></div>
+                    <div class="benefit-title">Label Condition Assessment</div>
+                    <div class="benefit-text">Detailed label condition reporting with standardized terminology. Document staining, tears, and label quality that significantly affects value.</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Success Stories -->
+        <section class="testimonials">
+            <h2>What Wine Dealers Say About Circuit Auction</h2>
+            <p class="testimonial-subtitle">Real results from fine wine professionals using our platform</p>
+            
+            <div class="testimonial-slider-container">
+                <div class="testimonial-arrow testimonial-prev">
+                    <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                </div>
+                
+                <div class="testimonial-slider">
+                    <div class="testimonial-slide active">
+                        <div class="testimonial-content">
+                            <div class="testimonial-text">
+                                "The storage condition tracking has been invaluable for our fine wine auctions. We can document perfect cellar conditions going back decades, which serious collectors absolutely demand. Our Bordeaux first growths now consistently exceed estimates."
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="testimonial-author-img">
+                                    <img src="img/testimonials/wine-dealer-1.webp" alt="Alexandre Dubois">
+                                </div>
+                                <div class="testimonial-author-info">
+                                    <div class="testimonial-author-name">Alexandre Dubois</div>
+                                    <div class="testimonial-author-title">Premier Wine Auctions</div>
+                                </div>
+                                <div class="testimonial-company-logo">
+                                    <img src="img/testimonials/premier-wine-logo.webp" alt="Premier Wine logo">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <div class="testimonial-text">
+                                "The Parker score integration has transformed how we present our wines. Buyers can see professional ratings instantly, and our highly-rated bottles now command premium prices. The transparency builds incredible buyer confidence."
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="testimonial-author-img">
+                                    <img src="img/testimonials/wine-dealer-2.webp" alt="Catherine Miller">
+                                </div>
+                                <div class="testimonial-author-info">
+                                    <div class="testimonial-author-name">Catherine Miller</div>
+                                    <div class="testimonial-author-title">Fine Wine Specialists</div>
+                                </div>
+                                <div class="testimonial-company-logo">
+                                    <img src="img/testimonials/fine-wine-specialists-logo.webp" alt="Fine Wine Specialists logo">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <div class="testimonial-text">
+                                "The provenance documentation has added tremendous value to our rare spirits. When we can show an unbroken chain of custody from distillery to auction, collectors are willing to pay significant premiums for authenticity."
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="testimonial-author-img">
+                                    <img src="img/testimonials/spirits-dealer-1.webp" alt="James MacLeod">
+                                </div>
+                                <div class="testimonial-author-info">
+                                    <div class="testimonial-author-name">James MacLeod</div>
+                                    <div class="testimonial-author-title">Rare Spirits & Fine Wine</div>
+                                </div>
+                                <div class="testimonial-company-logo">
+                                    <img src="img/testimonials/rare-spirits-logo.webp" alt="Rare Spirits logo">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-arrow testimonial-next">
+                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                </div>
+            </div>
+            
+            <div class="testimonial-dots">
+                <span class="testimonial-dot active" data-index="0"></span>
+                <span class="testimonial-dot" data-index="1"></span>
+                <span class="testimonial-dot" data-index="2"></span>
+            </div>
+        </section>
+
+        <!-- Competitive Advantages -->
+        <section class="section">
+            <h2 class="scroll-reveal">Why Circuit Auction Beats Generic Platforms</h2>
+            <div class="below-h-tag scroll-reveal"></div>
+            
+            <div class="feature-container">
+                <div class="fade-in-left feature-box">
+                    <h3>Built by Wine Industry Experts</h3>
+                    <p>Unlike generic auction software, Circuit Auction was designed by people who understand fine wine and spirits. Our team includes sommeliers and wine industry professionals who know exactly what features wine dealers need.</p>
+                    
+                    <h3>Integrates with Wine Databases</h3>
+                    <p>Direct integration with wine scoring systems, producer databases, and vintage information. Real-time market data and critic scores that generic platforms simply can't provide.</p>
+                    
+                    <h3>Specialized Wine Knowledge</h3>
+                    <p>Features designed specifically for wine: storage condition tracking, provenance documentation, cellar management, and proper wine terminology that generic platforms don't understand.</p>
+                </div>
+                <div class="fade-in-right feature-box">
+                    <img src="img/wine-competitive-advantage.webp" alt="Circuit Auction Wine Features">
+                </div>
+            </div>
+        </section>
+
+        <!-- Challenges Section -->
+        <section class="section" style="background-color: #f9f9f9;">
+            <h2 class="scroll-reveal">Common Problems Circuit Auction Solves</h2>
+            <div class="below-h-tag scroll-reveal"></div>
+            
+            <div class="benefits">
+                <div class="benefit">
+                    <div class="benefit-icon"><img src="img/challenges/storage-verification.webp" alt="Storage Verification"></div>
+                    <div class="benefit-title">Storage Condition Uncertainty</div>
+                    <div class="benefit-text">Document and verify proper storage conditions with detailed temperature and humidity logs. Build buyer confidence with transparent storage history and cellar documentation.</div>
+                </div>
+                
+                <div class="benefit">
+                    <div class="benefit-icon"><img src="img/challenges/authenticity-wine.webp" alt="Wine Authenticity"></div>
+                    <div class="benefit-title">Authenticity Concerns</div>
+                    <div class="benefit-text">Comprehensive provenance tracking from producer to auction. Document unbroken chain of custody and proper storage to verify authenticity of rare wines and spirits.</div>
+                </div>
+                
+                <div class="benefit">
+                    <div class="benefit-icon"><img src="img/challenges/market-data-wine.webp" alt="Wine Market Data"></div>
+                    <div class="benefit-title">Outdated Market Information</div>
+                    <div class="benefit-text">Access current wine scores, critic reviews, and market performance data. Set competitive estimates based on recent auction results and professional ratings.</div>
+                </div>
+                
+                <div class="benefit">
+                    <div class="benefit-icon"><img src="img/challenges/vintage-confusion.webp" alt="Vintage Confusion"></div>
+                    <div class="benefit-title">Vintage and Producer Confusion</div>
+                    <div class="benefit-text">Comprehensive databases of producers, vintages, and appellations. Automatic population of wine details and regional information for accurate cataloging.</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="section">
+            <h2 class="scroll-reveal">Frequently Asked Questions</h2>
+            <div class="below-h-tag scroll-reveal"></div>
+            
+            <section class="faq-container">
+                <div class="faq-item scroll-reveal">
+                    <div class="faq-question">
+                        <div class="benefit-title">Does Circuit Auction track vintage and producer information?</div>
+                        <div class="faq-toggle"><i class="fa fa-plus"></i></div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, Circuit Auction provides comprehensive tracking for vintages, producers, appellations, and regions with detailed databases of wine estates and distilleries worldwide.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item scroll-reveal">
+                    <div class="faq-question">
+                        <div class="benefit-title">Can I monitor storage conditions and cellar management?</div>
+                        <div class="faq-toggle"><i class="fa fa-plus"></i></div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely. Our platform includes storage condition logging with temperature and humidity monitoring, cellar location tracking, and storage history documentation essential for maintaining wine quality.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item scroll-reveal">
+                    <div class="faq-question">
+                        <div class="benefit-title">How does the platform handle provenance and authentication?</div>
+                        <div class="faq-toggle"><i class="fa fa-plus"></i></div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Circuit Auction provides detailed provenance tracking including purchase history, cellar records, and authentication documentation to verify authenticity and proper storage for fine wines and spirits.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item scroll-reveal">
+                    <div class="faq-question">
+                        <div class="benefit-title">Does the software integrate with wine scoring systems?</div>
+                        <div class="faq-toggle"><i class="fa fa-plus"></i></div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, our platform integrates with major wine scoring systems including Robert Parker, Wine Spectator, and Jancis Robinson, displaying scores and tasting notes to help establish market value.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item scroll-reveal">
+                    <div class="faq-question">
+                        <div class="benefit-title">Can I track cellar locations and inventory?</div>
+                        <div class="faq-toggle"><i class="fa fa-plus"></i></div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, Circuit Auction includes comprehensive cellar management with location mapping, bin numbers, and inventory tracking across multiple storage facilities with complete transfer histories.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item scroll-reveal">
+                    <div class="faq-question">
+                        <div class="benefit-title">How does the label condition assessment work?</div>
+                        <div class="faq-toggle"><i class="fa fa-plus"></i></div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our platform provides standardized label condition terminology and assessment tools to document staining, tears, and overall label quality that significantly affects wine values at auction.</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta-section">
+            <div class="cta-content">
+                <h2>Ready to Transform Your Wine Auctions?</h2>
+                <p>Join leading fine wine dealers worldwide who trust Circuit Auction for their wine and spirits auction management. See why our specialized features make all the difference in prestigious wine auctions.</p>
+                <div class="cta-buttons">
+                    <a href="" class="cta-btn yellow" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/yoav-circuitauction/30min'});return false;">
+                        <span class="qodef-btn-text">Schedule Demo</span>
+                        <span class="qodef-btn-text-icon">
+                            <i class="qodef-icon-simple-line-icon icon-arrow-right-circle"></i>
+                        </span>
+                    </a>
+                    <a href="#contact" class="cta-btn purple">
+                        <span class="qodef-btn-text">Contact Sales</span>
+                        <span class="qodef-btn-text-icon">
+                            <i class="qodef-icon-simple-line-icon icon-arrow-right-circle"></i>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <contact-component></contact-component>
+    </main>
+    
+    <footer-component></footer-component>
+    
+    <div class="back-to-top">
+        <span class="arrow-up">^</span>
+    </div>
+    
+    <script src="js/main.js"></script>
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    
+</body>
+</html>

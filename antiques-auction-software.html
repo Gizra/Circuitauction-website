@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- ─────── Circuit Auction – Antiques Page ─────── -->
+    <title>Antiques Auction Management Software | Antique Auction Platform</title>
+
+    <meta name="description"
+        content="Professional antiques auction management software for antique dealers. Features period classification, maker attribution, condition assessment, style documentation, and specialized antiques auction tools.">
+
+    <meta name="keywords"
+        content="antiques auction software, antique auction management, antique auction platform, period classification, maker attribution, antique appraisal, style documentation, antique dealer software">
+
+    <!-- Open Graph -->
+    <meta property="og:type"        content="website">
+    <meta property="og:title"       content="Antiques Auction Management Software | Circuit Auction">
+    <meta property="og:description" content="Specialized auction management software for antique dealers with period classification, maker attribution, and condition assessment features.">
+    <meta property="og:image"       content="https://circuitauction.com/assets/og-antiques.jpg">
+    <meta property="og:url"         content="https://circuitauction.com/antiques-auction-software.html">
+
+    <!-- Twitter -->
+    <meta name="twitter:card"        content="summary_large_image">
+    <meta name="twitter:title"       content="Antiques Auction Management Software">
+    <meta name="twitter:description" content="Professional antique auction platform with period classification, maker attribution, and style documentation features.">
+
+    <link rel="icon" href="img/Auction-House-Managment-Platform-Favion.webp" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- Include component scripts -->
+    <script src="components/header.js" defer></script>
+    <script src="components/footer.js" defer></script>
+    <script src="components/contact.js" defer></script>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HJYJVP52HM"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-HJYJVP52HM');
+    </script>
+
+    <!-- Schema.org markup for Antiques Auction Software -->
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Circuit Auction - Antiques Auction Management Software",
+    "applicationCategory": "BusinessApplication",
+    "applicationSubCategory": "AntiquesAuctionSoftware",
+    "operatingSystem": "Web",
+    "offers": {
+        "@type": "Offer",
+        "url": "https://circuitauction.com/antiques-auction-software.html"
+    },
+    "description": "Professional auction management software designed specifically for antique dealers and antique auction houses. Features period classification, maker attribution, condition assessment, and style documentation.",
+    "featureList": [
+        "Period Classification",
+        "Maker Attribution",
+        "Condition Assessment",
+        "Style Documentation",
+        "Material & Construction Analysis",
+        "Provenance Tracking",
+        "Age Verification",
+        "Regional Style Identification",
+        "Restoration History",
+        "Market Valuation Tools"
+    ],
+    "targetAudience": {
+        "@type": "Audience",
+        "audienceType": "Antique Dealers, Antique Auction Houses, Estate Sale Companies, Antique Appraisers"
+    },
+    "about": {
+        "@type": "Thing",
+        "name": "Antiques Auction Management",
+        "description": "Specialized software for managing antique auctions with features tailored to the unique needs of antique dealers and collectors"
+    }
+    }
+    </script>
+
+    <!-- Breadcrumb Navigation Schema -->
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://circuitauction.com/"
+        },
+        {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Collectibles",
+        "item": "https://circuitauction.com/collectibles.html"
+        },
+        {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Antiques Auction Software",
+        "item": "https://circuitauction.com/antiques-auction-software.html"
+        }
+    ]
+    }
+    </script>
+
+    <!-- FAQ Schema for Antiques -->
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+        "@type": "Question",
+        "name": "Does Circuit Auction help identify periods and styles of antiques?",
+        "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, Circuit Auction provides comprehensive period classification systems covering major historical periods from Georgian to Mid-Century Modern, with detailed style guides and characteristic features for accurate identification."
+        }
+        },
+        {
+        "@type": "Question",
+        "name": "Can I track maker marks and manufacturer information?",
+        "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely. Our platform includes extensive databases of maker marks, manufacturer information, and attribution resources to help identify and authenticate antique pieces accurately."
+        }
+        },
+        {
+        "@type": "Question",
+        "name": "How does the condition assessment feature work for antiques?",
+        "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Circuit Auction provides standardized condition assessment tools specifically designed for antiques, including wear patterns, restoration identification, and detailed condition reporting that antique collectors understand."
+        }
+        },
+        {
+        "@type": "Question",
+        "name": "Does the software support different antique categories?",
+        "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, our platform supports comprehensive cataloging for furniture, ceramics, glass, silver, textiles, and all major antique categories with category-specific features and terminology for each specialty."
+        }
+        }
+    ]
+    }
+    </script>
+</head>
+<body>
+    <header-component></header-component>
+    
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" style="background-image: url('img/antiques-hero-bg.webp');">
+            <h1 class="scroll-reveal">Professional Antiques Auction Management Software</h1>
+            <p class="scroll-reveal delay-1">
+                The complete antique auction platform designed by antique experts for antique dealers.<br>
+                Featuring period classification, maker attribution, and specialized antiques tools.
+            </p>
+            <a href="" class="cta-btn yellow scroll-reveal delay-2" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/yoav-circuitauction/30min'});return false;">
+                <span class="qodef-btn-text">Schedule Your Demo</span>    
+                <span class="qodef-btn-text-icon">
+                    <i class="qodef-icon-simple-line-icon icon-arrow-right-circle"></i>
+                </span>
+            </a>
+        </section>
+
+        <!-- Why Antiques Need Specialized Software -->
+        <section class="section">
+            <h2 class="scroll-reveal">Why Antique Auctions Need Specialized Software</h2>
+            <div class="below-h-tag scroll-reveal"></div>
+            <p class="scroll-reveal delay-1" style="max-width: 900px; margin: 0 auto 3rem; text-align: center; font-size: 1.1rem;">
+                Antique auctions require detailed period knowledge, maker identification, and condition assessment expertise that generic auction software cannot provide.
+            </p>
+            
+            <div class="benefits">
+                <div class="benefit">
+                    <div class="benefit-icon"><img src="img/antiques-features/period-classification.webp" alt="Period Classification"></div>
+                    <div class="benefit-title">Period Classification</div>
+                    <div class="benefit-text">Comprehensive classification systems covering Georgian, Victorian, Edwardian, Art Deco, and modern periods. Accurate dating and style identification essential for proper valuation.</div>
+                </div>
+                
+                <div class="benefit">
+                    <div class="benefit-icon"><img src="img/antiques-features/maker-attribution.webp" alt="Maker Attribution"></div>
+                    <div class="benefit-title">Maker Attribution</div>
+                    <div class="benefit-text">Extensive databases of maker marks, manufacturer information, and attribution resources. Identify signatures, stamps, and marks that significantly affect antique values.</div>
+                </div>
+                
+                <div class="benefit">
+                    <div class="benefit-icon"><img src="img/antiques-features/condition-assessment.webp" alt="Condition Assessment"></div>
+                    <div class="benefit-title">Condition Assessment</div>
+                    <div class="benefit-text">Specialized condition reporting for antiques including wear patterns, restoration identification, and age-appropriate condition standards that collectors understand.</div>
+                </div>
+                
+                <div class="benefit">
+                    <div class="benefit-icon"><img src="img/antiques-features/style-documentation.webp" alt="Style Documentation"></div>
+                    <div class="benefit-title">Style Documentation</div>
+                    <div class="benefit-text">Detailed style guides and characteristic features for accurate identification. Document design elements, construction methods, and stylistic features that define periods.</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Antiques-Specific Features -->
+        <section class="features">
+            <h2 class="scroll-reveal">Essential Features for Antique Auctions</h2>
+            <div class="below-h-tag scroll-reveal"></div>
+            <p class="scroll-reveal delay-1">Built-in tools that serious antique dealers depend on</p>
+            
+            <div class="benefits">
+                <div class="benefit">
+                    <div class="benefit-icon"><img src="img/antiques-features/material-construction.webp" alt="Material Construction Analysis"></div>
+                    <div class="benefit-title">Material & Construction Analysis</div>
+                    <div class="benefit-text">Detailed documentation of materials, construction techniques, and manufacturing methods. Essential for authentication and period verification of antique pieces.</div>
+                </div>
+                
+                <div class="benefit">
+                    <div class="benefit-icon"><img src="img/antiques-features/provenance-tracking.webp" alt="Provenance Tracking"></div>
+                    <div class="benefit-title">Provenance Tracking</div>
+                    <div class="benefit-text">Comprehensive ownership history and documentation. Track notable previous owners, exhibition history, and collection pedigrees that enhance value.</div>
+                </div>
+                
+                <div class="benefit">
+                    <div class="benefit-icon"><img src="img/antiques-features/age-verification.webp" alt="Age Verification"></div>
+                    <div class="benefit-title">Age Verification</div>
+                    <div class="benefit-text">Tools and guidelines for age authentication including construction methods, materials analysis, and period-appropriate features that verify authenticity.</div>
+                </div>
+                
+                <div class="benefit">
+                    <div class="benefit-icon"><img src="img/antiques-features/regional-styles.webp" alt="Regional Style Identification"></div>
+                    <div class="benefit-title">Regional Style Identification</div>
+                    <div class="benefit-text">Comprehensive databases of regional styles and characteristics. Identify American, European, and Asian antique styles with their distinctive features.</div>
+                </div>
+                
+                <div class="benefit">
+                    <div class="benefit-icon"><img src="img/antiques-features/restoration-history.webp" alt="Restoration History"></div>
+                    <div class="benefit-title">Restoration History</div>
+                    <div class="benefit-text">Detailed tracking of restoration work, repairs, and conservation efforts. Document what's original versus restored for accurate representation to buyers.</div>
+                </div>
+                
+                <div class="benefit">
+                    <div class="benefit-icon"><img src="img/antiques-features/market-valuation.webp" alt="Market Valuation Tools"></div>
+                    <div class="benefit-title">Market Valuation Tools</div>
+                    <div class="benefit-text">Access to antique market data, comparable sales, and valuation guides. Set realistic estimates based on current market conditions and historical sales data.</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Success Stories -->
+        <section class="testimonials">
+            <h2>What Antique Dealers Say About Circuit Auction</h2>
+            <p class="testimonial-subtitle">Real results from antique professionals using our platform</p>
+            
+            <div class="testimonial-slider-container">
+                <div class="testimonial-arrow testimonial-prev">
+                    <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                </div>
+                
+                <div class="testimonial-slider">
+                    <div class="testimonial-slide active">
+                        <div class="testimonial-content">
+                            <div class="testimonial-text">
+                                "The period classification system has revolutionized our cataloging. We can accurately date and attribute pieces with confidence, and our detailed descriptions have increased buyer trust significantly. Our Georgian furniture now sells for premium prices."
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="testimonial-author-img">
+                                    <img src="img/testimonials/antique-dealer-1.webp" alt="Margaret Thornton">
+                                </div>
+                                <div class="testimonial-author-info">
+                                    <div class="testimonial-author-name">Margaret Thornton</div>
+                                    <div class="testimonial-author-title">Heritage Antiques</div>
+                                </div>
+                                <div class="testimonial-company-logo">
+                                    <img src="img/testimonials/heritage-antiques-logo.webp" alt="Heritage Antiques logo">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <div class="testimonial-text">
+                                "The maker mark database is exceptional. We can identify signatures and marks instantly, which has eliminated attribution errors and significantly increased our authentication success rate. Buyers appreciate the detailed documentation."
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="testimonial-author-img">
+                                    <img src="img/testimonials/antique-dealer-2.webp" alt="James Whitfield">
+                                </div>
+                                <div class="testimonial-author-info">
+                                    <div class="testimonial-author-name">James Whitfield</div>
+                                    <div class="testimonial-author-title">Fine Antiques & Estate Sales</div>
+                                </div>
+                                <div class="testimonial-company-logo">
+                                    <img src="img/testimonials/fine-antiques-logo.webp" alt="Fine Antiques logo">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <div class="testimonial-text">
+                                "The condition assessment tools are perfectly suited for antiques. We can document age-appropriate wear versus damage, and our professional condition reports have eliminated post-sale disputes entirely."
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="testimonial-author-img">
+                                    <img src="img/testimonials/antique-dealer-3.webp" alt="Elizabeth Harper">
+                                </div>
+                                <div class="testimonial-author-info">
+                                    <div class="testimonial-author-name">Elizabeth Harper</div>
+                                    <div class="testimonial-author-title">Classical Antiques Auction</div>
+                                </div>
+                                <div class="testimonial-company-logo">
+                                    <img src="img/testimonials/classical-antiques-logo.webp" alt="Classical Antiques logo">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-arrow testimonial-next">
+                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                </div>
+            </div>
+            
+            <div class="testimonial-dots">
+                <span class="testimonial-dot active" data-index="0"></span>
+                <span class="testimonial-dot" data-index="1"></span>
+                <span class="testimonial-dot" data-index="2"></span>
+            </div>
+        </section>
+
+        <!-- Competitive Advantages -->
+        <section class="section">
+            <h2 class="scroll-reveal">Why Circuit Auction Beats Generic Platforms</h2>
+            <div class="below-h-tag scroll-reveal"></div>
+            
+            <div class="feature-container">
+                <div class="fade-in-left feature-box">
+                    <h3>Built by Antique Experts</h3>
+                    <p>Unlike generic auction software, Circuit Auction was designed by people who understand antiques. Our team includes antique specialists and appraisers who know exactly what features antique dealers need.</p>
+                    
+                    <h3>Integrates with Reference Databases</h3>
+                    <p>Direct integration with maker mark databases, style guides, and antique reference materials. Access to specialized knowledge and market data that generic platforms simply can't provide.</p>
+                    
+                    <h3>Specialized Antique Knowledge</h3>
+                    <p>Features designed specifically for antiques: period classification, maker attribution, age verification, and proper antique terminology that generic platforms don't understand.</p>
+                </div>
+                <div class="fade-in-right feature-box">
+                    <img src="img/antiques-competitive-advantage.webp" alt="Circuit Auction Antique Features">
+                </div>
+            </div>
+        </section>
+
+        <!-- Challenges Section -->
+        <section class="section" style="background-color: #f9f9f9;">
+            <h2 class="scroll-reveal">Common Problems Circuit Auction Solves</h2>
+            <div class="below-h-tag scroll-reveal"></div>
+            
+            <div class="benefits">
+                <div class="benefit">
+                    <div class="benefit-icon"><img src="img/challenges/attribution-errors.webp" alt="Attribution Errors"></div>
+                    <div class="benefit-title">Attribution Errors</div>
+                    <div class="benefit-text">Comprehensive maker mark databases and style guides help eliminate attribution mistakes. Accurate identification increases values and reduces returns from disappointed buyers.</div>
+                </div>
+                
+                <div class="benefit">
+                    <div class="benefit-icon"><img src="img/challenges/period-confusion.webp" alt="Period Confusion"></div>
+                    <div class="benefit-title">Period Dating Confusion</div>
+                    <div class="benefit-text">Detailed period classification systems with characteristic features help accurately date antiques. Proper dating is essential for accurate valuation and buyer confidence.</div>
+                </div>
+                
+                <div class="benefit">
+                    <div class="benefit-icon"><img src="img/challenges/condition-misrepresentation.webp" alt="Condition Misrepresentation"></div>
+                    <div class="benefit-title">Condition Misrepresentation</div>
+                    <div class="benefit-text">Standardized condition assessment tools specifically designed for antiques help accurately represent condition and distinguish between age-appropriate wear and damage.</div>
+                </div>
+                
+                <div class="benefit">
+                    <div class="benefit-icon"><img src="img/challenges/market-knowledge.webp" alt="Market Knowledge Gaps"></div>
+                    <div class="benefit-title">Market Knowledge Gaps</div>
+                    <div class="benefit-text">Access to current market data and comparable sales helps set realistic estimates. Understanding market trends and collector preferences improves auction performance.</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="section">
+            <h2 class="scroll-reveal">Frequently Asked Questions</h2>
+            <div class="below-h-tag scroll-reveal"></div>
+            
+            <section class="faq-container">
+                <div class="faq-item scroll-reveal">
+                    <div class="faq-question">
+                        <div class="benefit-title">Does Circuit Auction help identify periods and styles of antiques?</div>
+                        <div class="faq-toggle"><i class="fa fa-plus"></i></div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, Circuit Auction provides comprehensive period classification systems covering major historical periods from Georgian to Mid-Century Modern, with detailed style guides and characteristic features for accurate identification.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item scroll-reveal">
+                    <div class="faq-question">
+                        <div class="benefit-title">Can I track maker marks and manufacturer information?</div>
+                        <div class="faq-toggle"><i class="fa fa-plus"></i></div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely. Our platform includes extensive databases of maker marks, manufacturer information, and attribution resources to help identify and authenticate antique pieces accurately.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item scroll-reveal">
+                    <div class="faq-question">
+                        <div class="benefit-title">How does the condition assessment feature work for antiques?</div>
+                        <div class="faq-toggle"><i class="fa fa-plus"></i></div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Circuit Auction provides standardized condition assessment tools specifically designed for antiques, including wear patterns, restoration identification, and detailed condition reporting that antique collectors understand.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item scroll-reveal">
+                    <div class="faq-question">
+                        <div class="benefit-title">Does the software support different antique categories?</div>
+                        <div class="faq-toggle"><i class="fa fa-plus"></i></div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, our platform supports comprehensive cataloging for furniture, ceramics, glass, silver, textiles, and all major antique categories with category-specific features and terminology for each specialty.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item scroll-reveal">
+                    <div class="faq-question">
+                        <div class="benefit-title">Can I document restoration and repair history?</div>
+                        <div class="faq-toggle"><i class="fa fa-plus"></i></div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, Circuit Auction includes comprehensive restoration tracking, allowing you to document what's original versus restored, repair history, and conservation work essential for accurate representation.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item scroll-reveal">
+                    <div class="faq-question">
+                        <div class="benefit-title">How does the platform handle regional style variations?</div>
+                        <div class="faq-toggle"><i class="fa fa-plus"></i></div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our platform includes comprehensive databases of regional styles covering American, European, and Asian antiques with their distinctive features and characteristics for accurate geographical attribution.</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta-section">
+            <div class="cta-content">
+                <h2>Ready to Transform Your Antique Auctions?</h2>
+                <p>Join leading antique dealers worldwide who trust Circuit Auction for their antique auction management. See why our specialized features make all the difference in professional antique auctions.</p>
+                <div class="cta-buttons">
+                    <a href="" class="cta-btn yellow" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/yoav-circuitauction/30min'});return false;">
+                        <span class="qodef-btn-text">Schedule Demo</span>
+                        <span class="qodef-btn-text-icon">
+                            <i class="qodef-icon-simple-line-icon icon-arrow-right-circle"></i>
+                        </span>
+                    </a>
+                    <a href="#contact" class="cta-btn purple">
+                        <span class="qodef-btn-text">Contact Sales</span>
+                        <span class="qodef-btn-text-icon">
+                            <i class="qodef-icon-simple-line-icon icon-arrow-right-circle"></i>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <contact-component></contact-component>
+    </main>
+    
+    <footer-component></footer-component>
+    
+    <div class="back-to-top">
+        <span class="arrow-up">^</span>
+    </div>
+    
+    <script src="js/main.js"></script>
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    
+</body>
+</html>

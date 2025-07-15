@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- ─────── Circuit Auction – Firearms & Weapons Page ─────── -->
+    <title>Firearms & Weapons Auction Management Software | Licensed Dealers Platform</title>
+
+    <meta name="description"
+        content="Professional firearms and weapons auction management software for licensed dealers. Features serial number tracking, legal compliance documentation, historical classification, condition assessment, and specialized firearms auction tools.">
+
+    <meta name="keywords"
+        content="firearms auction software, weapons auction management, gun auction platform, serial number tracking, legal compliance, historical classification, firearms dealer software, weapon collectibles">
+
+    <!-- Open Graph -->
+    <meta property="og:type"        content="website">
+    <meta property="og:title"       content="Firearms & Weapons Auction Management Software | Circuit Auction">
+    <meta property="og:description" content="Specialized auction management software for licensed firearms dealers with serial tracking, legal compliance, and historical classification.">
+    <meta property="og:image"       content="https://circuitauction.com/assets/og-firearms-weapons.jpg">
+    <meta property="og:url"         content="https://circuitauction.com/firearms-weapons-auction-software.html">
+
+    <!-- Twitter -->
+    <meta name="twitter:card"        content="summary_large_image">
+    <meta name="twitter:title"       content="Firearms & Weapons Auction Management Software">
+    <meta name="twitter:description" content="Professional firearms auction platform with serial tracking, legal compliance, and historical classification features.">
+
+    <link rel="icon" href="img/Auction-House-Managment-Platform-Favion.webp" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- Include component scripts -->
+    <script src="components/header.js" defer></script>
+    <script src="components/footer.js" defer></script>
+    <script src="components/contact.js" defer></script>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HJYJVP52HM"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-HJYJVP52HM');
+    </script>
+
+    <!-- Schema.org markup for Firearms & Weapons Auction Software -->
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Circuit Auction - Firearms & Weapons Auction Management Software",
+    "applicationCategory": "BusinessApplication",
+    "applicationSubCategory": "FirearmsWeaponsAuctionSoftware",
+    "operatingSystem": "Web",
+    "offers": {
+        "@type": "Offer",
+        "url": "https://circuitauction.com/firearms-weapons-auction-software.html"
+    },
+    "description": "Professional auction management software designed specifically for licensed firearms dealers and weapon collectors. Features serial number tracking, legal compliance documentation, historical classification, and condition assessment.",
+    "featureList": [
+        "Serial Number Tracking",
+        "Legal Compliance Documentation",
+        "Historical Classification",
+        "Condition Assessment",
+        "Manufacturer Database",
+        "Era Dating",
+        "Provenance Documentation",
+        "Authentication Records",
+        "Market Valuation",
+        "Regulatory Compliance"
+    ],
+    "targetAudience": {
+        "@type": "Audience",
+        "audienceType": "Licensed Firearms Dealers, Weapon Collectors, Gun Auction Houses, Military Collectors"
+    },
+    "about": {
+        "@type": "Thing",
+        "name": "Firearms & Weapons Auction Management",
+        "description": "Specialized software for managing firearms and weapons auctions with features tailored to the unique needs of licensed dealers and collectors"
+    }
+    }
+    </script>
+
+    <!-- Breadcrumb Navigation Schema -->
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://circuitauction.com/"
+        },
+        {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Collectibles",
+        "item": "https://circuitauction.com/collectibles.html"
+        },
+        {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Firearms & Weapons Auction Software",
+        "item": "https://circuitauction.com/firearms-weapons-auction-software.html"
+        }
+    ]
+    }
+    </script>
+
+    <!-- FAQ Schema for Firearms & Weapons -->
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+        "@type": "Question",
+        "name": "Does Circuit Auction ensure legal compliance for firearms auctions?",
+        "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, Circuit Auction includes comprehensive legal compliance documentation with federal and state regulation tracking, licensing verification, and proper documentation required for licensed firearms dealers."
+        }
+        },
+        {
+        "@type": "Question",
+        "name": "Can the software track serial numbers and manufacturer information?",
+        "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely. Our platform provides detailed serial number tracking with manufacturer databases, model identification, and production documentation essential for firearms identification and legal compliance."
+        }
+        },
+        {
+        "@type": "Question",
+        "name": "How does the historical classification system work?",
+        "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Circuit Auction offers comprehensive historical classification covering all major periods, conflicts, and technological developments with proper documentation for antique and collectible firearms."
+        }
+        },
+        {
+        "@type": "Question",
+        "name": "Does the platform support condition assessment for firearms?",
+        "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, our system includes specialized condition assessment tools for firearms including mechanical function, cosmetic condition, and working order documentation with standardized terminology."
+        }
+        }
+    ]
+    }
+    </script>
+</head>
+<body>
+    <header-component></header-component>
+    
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" style="background-image: url('img/firearms-weapons-hero-bg.webp');">
+            <h1 class="scroll-reveal">Professional Firearms & Weapons Auction Management Software</h1>
+            <p class="scroll-reveal delay-1">
+                The complete firearms auction platform designed by experts for licensed dealers.<br>
+                Featuring serial tracking, legal compliance, and historical classification.
+            </p>
+            <a href="" class="cta-btn yellow scroll-reveal delay-2" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/yoav-circuitauction/30min'});return false;">
+                <span class="qodef-btn-text">Schedule Your Demo</span>    
+                <span class="qodef-btn-text-icon">
+                    <i class="qodef-icon-simple-line-icon icon-arrow-right-circle"></i>
+                </span>
+            </a>
+        </section>
+
+        <!-- Why Firearms & Weapons Need Specialized Software -->
+        <section class="section">
+            <h2 class="scroll-reveal">Why Firearms & Weapons Auctions Need Specialized Software</h2>
+            <div class="below-h-tag scroll-reveal"></div>
+            <p class="scroll-reveal delay-1" style="max-width: 900px; margin: 0 auto 3rem; text-align: center; font-size: 1.1rem;">
+                Firearms auctions require detailed legal compliance, authentication, and historical documentation that generic auction software cannot adequately provide for licensed dealers.
+            </p>
+            
+            <div class="benefits">
+                <div class="benefit">
+                    <div class="benefit-icon"><img src="img/firearms-features/serial-tracking.webp" alt="Serial Number Tracking"></div>
+                    <div class="benefit-title">Serial Number Tracking</div>
+                    <div class="benefit-text">Comprehensive serial number documentation with manufacturer databases, model identification, and production records. Essential for legal compliance, authentication, and proper firearms identification.</div>
+                </div>
+                
+                <div class="benefit">
+                    <div class="benefit-icon"><img src="img/firearms-features/legal-compliance.webp" alt="Legal Compliance Documentation"></div>
+                    <div class="benefit-title">Legal Compliance Documentation</div>
+                    <div class="benefit-text">Complete legal compliance tracking with federal and state regulation documentation, licensing verification, and proper paperwork required for licensed firearms dealers and collectors.</div>
+                </div>
+                
+                <div class="benefit">
+                    <div class="benefit-icon"><img src="img/firearms-features/historical-classification.webp" alt="Historical Classification"></div>
+                    <div class="benefit-title">Historical Classification</div>
+                    <div class="benefit-text">Detailed historical classification covering all major periods, conflicts, and technological developments with proper documentation for antique and collectible firearms valuation.</div>
+                </div>
+                
+                <div class="benefit">
+                    <div class="benefit-icon"><img src="img/firearms-features/condition-assessment.webp" alt="Condition Assessment"></div>
+                    <div class="benefit-title">Condition Assessment</div>
+                    <div class="benefit-text">Specialized condition assessment for firearms including mechanical function, cosmetic condition, working order, and restoration documentation with standardized firearms terminology.</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Firearms & Weapons-Specific Features -->
+        <section class="features">
+            <h2 class="scroll-reveal">Essential Features for Firearms & Weapons Auctions</h2>
+            <div class="below-h-tag scroll-reveal"></div>
+            <p class="scroll-reveal delay-1">Built-in tools that licensed firearms dealers depend on</p>
+            
+            <div class="benefits">
+                <div class="benefit">
+                    <div class="benefit-icon"><img src="img/firearms-features/manufacturer-database.webp" alt="Manufacturer Database"></div>
+                    <div class="benefit-title">Manufacturer Database</div>
+                    <div class="benefit-text">Comprehensive manufacturer databases covering Colt, Smith & Wesson, Winchester, and all major firearms manufacturers with model specifications, production dates, and historical significance.</div>
+                </div>
+                
+                <div class="benefit">
+                    <div class="benefit-icon"><img src="img/firearms-features/era-dating.webp" alt="Era Dating"></div>
+                    <div class="benefit-title">Era Dating</div>
+                    <div class="benefit-text">Accurate era classification with historical context, conflict documentation, and technological developments essential for proper dating and valuation of vintage and antique firearms.</div>
+                </div>
+                
+                <div class="benefit">
+                    <div class="benefit-icon"><img src="img/firearms-features/provenance-documentation.webp" alt="Provenance Documentation"></div>
+                    <div class="benefit-title">Provenance Documentation</div>
+                    <div class="benefit-text">Detailed provenance tracking including ownership history, military service records, and chain of custody documentation essential for establishing authenticity and historical significance.</div>
+                </div>
+                
+                <div class="benefit">
+                    <div class="benefit-icon"><img src="img/firearms-features/authentication-records.webp" alt="Authentication Records"></div>
+                    <div class="benefit-title">Authentication Records</div>
+                    <div class="benefit-text">Comprehensive authentication documentation with expert opinions, certificates of authenticity, and verification records essential for establishing genuine manufacturer attribution.</div>
+                </div>
+                
+                <div class="benefit">
+                    <div class="benefit-icon"><img src="img/firearms-features/market-valuation.webp" alt="Market Valuation"></div>
+                    <div class="benefit-title">Market Valuation</div>
+                    <div class="benefit-text">Access to firearms market data, auction records, and valuation guides with rarity assessment and collector demand information for accurate estimate setting and market analysis.</div>
+                </div>
+                
+                <div class="benefit">
+                    <div class="benefit-icon"><img src="img/firearms-features/regulatory-compliance.webp" alt="Regulatory Compliance"></div>
+                    <div class="benefit-title">Regulatory Compliance</div>
+                    <div class="benefit-text">Complete regulatory compliance tracking with federal, state, and local requirements, licensing documentation, and proper legal procedures for licensed firearms dealers.</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Success Stories -->
+        <section class="testimonials">
+            <h2>What Licensed Firearms Dealers Say About Circuit Auction</h2>
+            <p class="testimonial-subtitle">Real results from firearms professionals using our platform</p>
+            
+            <div class="testimonial-slider-container">
+                <div class="testimonial-arrow testimonial-prev">
+                    <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                </div>
+                
+                <div class="testimonial-slider">
+                    <div class="testimonial-slide active">
+                        <div class="testimonial-content">
+                            <div class="testimonial-text">
+                                "The legal compliance documentation has streamlined our entire process. We can maintain all required federal and state paperwork, ensuring we meet all regulations while focusing on our auctions."
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="testimonial-author-img">
+                                    <img src="img/testimonials/firearms-dealer-1.webp" alt="John Mitchell">
+                                </div>
+                                <div class="testimonial-author-info">
+                                    <div class="testimonial-author-name">John Mitchell</div>
+                                    <div class="testimonial-author-title">Heritage Firearms Auctions</div>
+                                </div>
+                                <div class="testimonial-company-logo">
+                                    <img src="img/testimonials/heritage-firearms-logo.webp" alt="Heritage Firearms logo">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <div class="testimonial-text">
+                                "The serial number tracking and manufacturer database are exceptional. We can instantly identify firearms, verify authenticity, and provide detailed specifications that serious collectors demand."
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="testimonial-author-img">
+                                    <img src="img/testimonials/gun-specialist-1.webp" alt="Sandra Davis">
+                                </div>
+                                <div class="testimonial-author-info">
+                                    <div class="testimonial-author-name">Sandra Davis</div>
+                                    <div class="testimonial-author-title">Classic Arms & Collectibles</div>
+                                </div>
+                                <div class="testimonial-company-logo">
+                                    <img src="img/testimonials/classic-arms-logo.webp" alt="Classic Arms logo">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <div class="testimonial-text">
+                                "The historical classification system is incredible. We can properly document antique firearms, military weapons, and their historical significance with the detailed context collectors appreciate."
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="testimonial-author-img">
+                                    <img src="img/testimonials/military-arms-expert-1.webp" alt="Robert Taylor">
+                                </div>
+                                <div class="testimonial-author-info">
+                                    <div class="testimonial-author-name">Robert Taylor</div>
+                                    <div class="testimonial-author-title">Military Arms Museum</div>
+                                </div>
+                                <div class="testimonial-company-logo">
+                                    <img src="img/testimonials/military-arms-logo.webp" alt="Military Arms logo">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-arrow testimonial-next">
+                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                </div>
+            </div>
+            
+            <div class="testimonial-dots">
+                <span class="testimonial-dot active" data-index="0"></span>
+                <span class="testimonial-dot" data-index="1"></span>
+                <span class="testimonial-dot" data-index="2"></span>
+            </div>
+        </section>
+
+        <!-- Competitive Advantages -->
+        <section class="section">
+            <h2 class="scroll-reveal">Why Circuit Auction Beats Generic Platforms</h2>
+            <div class="below-h-tag scroll-reveal"></div>
+            
+            <div class="feature-container">
+                <div class="fade-in-left feature-box">
+                    <h3>Built by Firearms Experts</h3>
+                    <p>Unlike generic auction software, Circuit Auction was designed by people who understand firearms regulations and the collecting market. Our team includes licensed dealers who know exactly what features are required.</p>
+                    
+                    <h3>Integrates with Legal References</h3>
+                    <p>Direct integration with regulatory databases, manufacturer records, and legal compliance systems. Access to specialized knowledge and documentation that generic platforms simply can't provide.</p>
+                    
+                    <h3>Specialized Firearms Knowledge</h3>
+                    <p>Features designed specifically for firearms: serial tracking, legal compliance, historical classification, and proper firearms terminology that generic platforms don't understand.</p>
+                </div>
+                <div class="fade-in-right feature-box">
+                    <img src="img/firearms-competitive-advantage.webp" alt="Circuit Auction Firearms & Weapons Features">
+                </div>
+            </div>
+        </section>
+
+        <!-- Challenges Section -->
+        <section class="section" style="background-color: #f9f9f9;">
+            <h2 class="scroll-reveal">Common Problems Circuit Auction Solves</h2>
+            <div class="below-h-tag scroll-reveal"></div>
+            
+            <div class="benefits">
+                <div class="benefit">
+                    <div class="benefit-icon"><img src="img/challenges/legal-compliance.webp" alt="Legal Compliance Issues"></div>
+                    <div class="benefit-title">Legal Compliance Issues</div>
+                    <div class="benefit-text">Comprehensive compliance tracking ensures all federal and state regulations are met. Proper documentation prevents legal issues and maintains licensing requirements for dealers.</div>
+                </div>
+                
+                <div class="benefit">
+                    <div class="benefit-icon"><img src="img/challenges/authentication-disputes.webp" alt="Authentication Disputes"></div>
+                    <div class="benefit-title">Authentication Disputes</div>
+                    <div class="benefit-text">Detailed manufacturer databases and serial tracking eliminate authentication disputes. Proper documentation prevents costly verification challenges and buyer complaints.</div>
+                </div>
+                
+                <div class="benefit">
+                    <div class="benefit-icon"><img src="img/challenges/historical-documentation.webp" alt="Poor Historical Documentation"></div>
+                    <div class="benefit-title">Poor Historical Documentation</div>
+                    <div class="benefit-text">Comprehensive historical classification with provenance tracking eliminates documentation gaps. Proper historical records significantly affect antique firearms values.</div>
+                </div>
+                
+                <div class="benefit">
+                    <div class="benefit-icon"><img src="img/challenges/condition-assessment.webp" alt="Condition Assessment Issues"></div>
+                    <div class="benefit-title">Condition Assessment Issues</div>
+                    <div class="benefit-text">Specialized firearms condition standards with detailed assessment eliminate condition disputes. Professional evaluation builds buyer confidence and reduces returns.</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="section">
+            <h2 class="scroll-reveal">Frequently Asked Questions</h2>
+            <div class="below-h-tag scroll-reveal"></div>
+            
+            <section class="faq-container">
+                <div class="faq-item scroll-reveal">
+                    <div class="faq-question">
+                        <div class="benefit-title">Does Circuit Auction ensure legal compliance for firearms auctions?</div>
+                        <div class="faq-toggle"><i class="fa fa-plus"></i></div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, Circuit Auction includes comprehensive legal compliance documentation with federal and state regulation tracking, licensing verification, and proper documentation required for licensed firearms dealers.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item scroll-reveal">
+                    <div class="faq-question">
+                        <div class="benefit-title">Can the software track serial numbers and manufacturer information?</div>
+                        <div class="faq-toggle"><i class="fa fa-plus"></i></div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely. Our platform provides detailed serial number tracking with manufacturer databases, model identification, and production documentation essential for firearms identification and legal compliance.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item scroll-reveal">
+                    <div class="faq-question">
+                        <div class="benefit-title">How does the historical classification system work?</div>
+                        <div class="faq-toggle"><i class="fa fa-plus"></i></div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Circuit Auction offers comprehensive historical classification covering all major periods, conflicts, and technological developments with proper documentation for antique and collectible firearms.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item scroll-reveal">
+                    <div class="faq-question">
+                        <div class="benefit-title">Does the platform support condition assessment for firearms?</div>
+                        <div class="faq-toggle"><i class="fa fa-plus"></i></div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, our system includes specialized condition assessment tools for firearms including mechanical function, cosmetic condition, and working order documentation with standardized terminology.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item scroll-reveal">
+                    <div class="faq-question">
+                        <div class="benefit-title">Can I document provenance and authentication records?</div>
+                        <div class="faq-toggle"><i class="fa fa-plus"></i></div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, Circuit Auction includes detailed provenance tracking with ownership history and comprehensive authentication documentation with expert opinions and certificates of authenticity.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item scroll-reveal">
+                    <div class="faq-question">
+                        <div class="benefit-title">Does the software integrate with regulatory compliance systems?</div>
+                        <div class="faq-toggle"><i class="fa fa-plus"></i></div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we provide complete regulatory compliance tracking with federal, state, and local requirements, licensing documentation, and proper legal procedures for licensed firearms dealers.</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta-section">
+            <div class="cta-content">
+                <h2>Ready to Transform Your Firearms & Weapons Auctions?</h2>
+                <p>Join licensed firearms dealers worldwide who trust Circuit Auction for their weapons auction management. See why our specialized features make all the difference in professional firearms auctions.</p>
+                <div class="cta-buttons">
+                    <a href="" class="cta-btn yellow" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/yoav-circuitauction/30min'});return false;">
+                        <span class="qodef-btn-text">Schedule Demo</span>
+                        <span class="qodef-btn-text-icon">
+                            <i class="qodef-icon-simple-line-icon icon-arrow-right-circle"></i>
+                        </span>
+                    </a>
+                    <a href="#contact" class="cta-btn purple">
+                        <span class="qodef-btn-text">Contact Sales</span>
+                        <span class="qodef-btn-text-icon">
+                            <i class="qodef-icon-simple-line-icon icon-arrow-right-circle"></i>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <contact-component></contact-component>
+    </main>
+    
+    <footer-component></footer-component>
+    
+    <div class="back-to-top">
+        <span class="arrow-up">^</span>
+    </div>
+    
+    <script src="js/main.js"></script>
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    
+</body>
+</html>
