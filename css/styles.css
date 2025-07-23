@@ -473,6 +473,13 @@ main {
 
 }
 
+.feature-box h3 {
+  padding-bottom: 0.5em;
+}
+
+.feature-box p {
+  padding-bottom: 2em;
+}
 
 /* Benefits Section */
 .benefits-section-title {
@@ -2690,4 +2697,15 @@ footer {
     .collectibles-intro h1 {
         font-size: 2.2rem;
     }
+}
+
+
+/* Collectibles Page Specific Styles */
+.collectibles-page .hero::before {
+    background: none
+}
+
+.collectibles-page .hero h1, .collectibles-page .hero p {
+  background: none;
+  color: #fff;
 }
