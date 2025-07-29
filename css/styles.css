@@ -222,7 +222,7 @@ main {
 
 /* dark-strip */
 .dark-strip {
-  background: url("../img/App-Background.jpg");
+  background: url("../img/App-Background.webp");
   color: #fff;
   font-size: 1.5rem;
   text-align: center;
@@ -573,7 +573,7 @@ main {
 .testimonials {
   padding: 3rem 2rem;
   text-align: center;
-  background: url("../img/App-Background.jpg");
+  background: url("../img/App-Background.webp");
 }
 
 .testimonials h2 {
@@ -1009,7 +1009,7 @@ textarea::placeholder {
   flex-wrap: wrap;
   padding: 4rem 2rem;
   color: #fff;
-  background: url("../img/App-Background.jpg");
+  background: url("../img/App-Background.webp");
 }
 
 .counter-element {
@@ -2459,7 +2459,7 @@ footer {
 
 /* Call to Action Section */
 .cta-section {
-    background: url("../img/App-Background.jpg") no-repeat center center;
+    background: url("../img/App-Background.webp") no-repeat center center;
     background-size: cover;
     padding: 5rem 2rem;
     text-align: center;
