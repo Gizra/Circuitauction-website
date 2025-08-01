@@ -1248,7 +1248,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  max-width: 1200px;
+  max-width: 1480px;
   margin: 0 auto;
   gap: 2rem;
 }

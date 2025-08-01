@@ -24,25 +24,7 @@ class FooterComponent extends HTMLElement {
               <a href="#" class="social-icon"><i class="fa fa-instagram"></i></a>
             </div>
           </div>
-          
-          <!-- Column 2: Navigation Links -->
-          <div class="footer-nav">
-            <h4>Site Navigation</h4>
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About Us</a></li>
-              <li><a href="features.html">Auction Features</a></li>
-              <li><a href="collectibles.html">Collectibles</a></li>
-              <li><a href="faq.html">FAQ</a></li>
-              <li><a href="#contact">Contact</a></li>
-              <li><a href="terms.html">Terms & Privacy</a></li>
-              <li><a href="auctioneers.html">auctioneers & auction houses</a></li>
-              <li><a href="https://docs.circuitauction.com/main">Doc & user guide</a></li>
-              
-            </ul>
-          </div>
-          
-          <!-- Column 3: Partnerships & Trust -->
+
           <div class="footer-partners">
             <h4>Trusted Partners</h4>
             
@@ -92,6 +74,53 @@ class FooterComponent extends HTMLElement {
                 </span>
             </a>
           </div>
+          
+          <!-- Column 2: Navigation Links -->
+          <div class="footer-nav">
+            <h4>Site Navigation</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="features.html">Auction Features</a></li>
+              <li><a href="collectibles.html">Collectibles</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="terms.html">Terms & Privacy</a></li>
+              <li><a href="auctioneers.html">auctioneers & auction houses</a></li>
+              <li><a href="https://docs.circuitauction.com/main">Doc & user guide</a></li>
+              
+            </ul>
+          </div>
+
+          <!-- Column 3: Navigation Links -->
+          <div class="footer-nav">
+            <h4>CT</h4>
+            <ul>
+              <li><a href="stamps-auction-software.html">Stamps & Postal History</a></li>
+              <li><a href="coins-auction-software.html">Coins & Currency</a></li>
+              <li><a href="baseball-cards-auction-software.html">Baseball Cards</a></li>
+              <li><a href="sports-memorabilia-auction-software.html">Sports Memorabilia</a></li>
+              <li><a href="watches-jewelry-auction-software.html">Watches & Jewelry</a></li>
+              <li><a href="wine-spirits-auction-software.html">Wine & Spirits</a></li>
+              <li><a href="fine-art-auction-software.html">Fine Art</a></li>
+              <li><a href="antiques-auction-software.html">Antiques</a></li>
+              <li><a href="trading-cards-auction-software.html">Trading Cards</a></li>
+              <li><a href="vintage-posters-auction-software.html">Vintage Posters</a></li>
+              <li><a href="books-auction-software.html">Rare Books & Manuscripts</a></li>
+              <li><a href="postcards-auction-software.html">Postcards</a></li>
+              <li><a href="comic-books-auction-software.html">Comic Books & Graphic Novels</a></li>
+              <li><a href="militaria-auction-software.html">Militaria & War Collectibles</a></li>
+              <li><a href="toys-action-figures-auction-software.html">Toys & Action Figures</a></li>
+              <li><a href="photography-cameras-auction-software.html">Photography & Cameras</a></li>
+              <li><a href="musical-instruments-auction-software.html">Musical Instruments</a></li>
+              <li><a href="autographs-documents-auction-software.html">Autographs & Documents</a></li>
+              <li><a href="firearms-weapons-auction-software.html">Firearms & Weapons</a></li>
+              
+            </ul>
+          </div>
+          
+          <!-- Column 4: Partnerships & Trust -->
+          
         </div>
         
         <!-- Footer Bottom -->
