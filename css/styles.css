@@ -194,7 +194,7 @@ main {
 
 .hero p {
   font-size: 1.2rem;
-  max-width: 840px;
+  max-width: 1040px;
   margin-bottom: 2rem;
   color: #666;
   background-color:rgba(255, 255, 255, 0.8);
@@ -219,7 +219,14 @@ main {
   color: #333;
 }
 
+.section p{
+  font-size: 1.1rem;
+  max-width: 1240px;
+}
 
+.section p.center {
+  text-align: center;
+}
 /* dark-strip */
 .dark-strip {
   background: url("../img/App-Background.webp");
@@ -478,7 +485,7 @@ main {
 }
 
 .feature-box p {
-  padding-bottom: 2em;
+  padding-bottom: 1em;
 }
 
 /* Benefits Section */
@@ -552,6 +559,27 @@ main {
   line-height: 1.6;
 }
 
+.collectors .benefits .benefit {
+  text-align: left;
+}
+.collectors .benefits .benefit h3 {
+  margin-bottom: 10px;
+  font-size: 1.6em;
+}
+.collectors .benefits .benefit li {
+  list-style: none;
+}
+
+.collectors .benefits .benefit li::before {
+    content: '✓';
+    color: #4285F4;
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+.collectors .benefits .benefit a {
+  color: #333;
+  text-decoration: none;
+}
 /* Make responsive */
 @media (max-width: 768px) {
   .benefits {
@@ -2604,8 +2632,6 @@ footer {
 }
 
 .collectible-header {
-    height: 200px;
-    background: linear-gradient(135deg, #4285F4 0%, #7063d3 100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2641,10 +2667,11 @@ footer {
 }
 
 .collectible-title {
-    font-size: 1.4rem;
+    font-size: 1.75rem;
     font-weight: 600;
     margin-bottom: 0.8rem;
     color: #333;
+    text-align: center;
 }
 
 .collectible-description {

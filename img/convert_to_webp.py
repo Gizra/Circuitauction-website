@@ -65,7 +65,7 @@ def main():
     parser = argparse.ArgumentParser(description='Convert images to WebP format with specified max height')
     parser.add_argument('input', help='Input file or directory containing images')
     parser.add_argument('max_height', type=int, help='Maximum height for output images')
-    parser.add_argument('-o', '--output', default='./nitches', help='Output directory (default: ./nitches)')
+    parser.add_argument('-o', '--output', default='./CT-headers', help='Output directory (default: ./CT-headers)')
     parser.add_argument('-q', '--quality', type=int, default=85, help='WebP quality 1-100 (default: 85)')
     
     args = parser.parse_args()
