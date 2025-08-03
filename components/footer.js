@@ -94,7 +94,7 @@ class FooterComponent extends HTMLElement {
 
           <!-- Column 3: Navigation Links -->
           <div class="footer-nav">
-            <h4>CT</h4>
+            <h4>Specialty Auction Markets</h4>
             <ul>
               <li><a href="stamps-auction-software.html">Stamps & Postal History</a></li>
               <li><a href="coins-auction-software.html">Coins & Currency</a></li>
