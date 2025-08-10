@@ -1,6 +1,17 @@
 class ContactComponent extends HTMLElement {
   constructor() {
     super();
+    
+    // Get the base URL for the current domain
+    const baseURL = window.location.protocol + '//' + window.location.host;
+    const currentPath = window.location.pathname;
+    
+    // Determine the correct path prefix based on the current location
+    let pathPrefix = '';
+    if (currentPath.includes('/blog/')) {
+        pathPrefix = '../';
+    }
+    
     this.innerHTML = `      
       <section id="contact" class="section contact-section">
         <div class="pre-contact-cta">
@@ -11,7 +22,7 @@ class ContactComponent extends HTMLElement {
         <div class="contact-wrapper">
           <div class="contact-container">
             <div class="contact-bg-left">
-              <img src="img/left-contact.webp" alt="Contact Background Left" class="scroll-reveal">
+              <img src="${pathPrefix}img/left-contact.webp" alt="Contact Background Left" class="scroll-reveal">
             </div>
             
             <div class="form-container">
@@ -48,7 +59,7 @@ class ContactComponent extends HTMLElement {
             </div>
             
             <div class="contact-bg-right">
-              <img src="img/right-contact.webp" alt="Contact Background Right" class="scroll-reveal">
+              <img src="${pathPrefix}img/right-contact.webp" alt="Contact Background Right" class="scroll-reveal">
             </div>
           </div>
         </div>

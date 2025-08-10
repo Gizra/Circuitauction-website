@@ -229,7 +229,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     logoContainer.innerHTML = `
         <a href="/">
             <img src="${mainLogoSrc}" class="main-logo" alt="Circuit Auction">
-            <img src="img/4.webp" class="small-logo" alt="Circuit Auction">
+            <img src="/img/4.webp" class="small-logo" alt="Circuit Auction">
         </a>
     `;
 
@@ -505,3 +505,29 @@ backToTopButton.addEventListener('click', (e) => {
     behavior: 'smooth'
   });
 });
+
+// Social sharing functions for blog posts
+function shareOnFacebook() {
+    const url = encodeURIComponent(window.location.href);
+    const title = encodeURIComponent(document.title);
+    window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}`, 'facebook-share', 'width=580,height=296');
+}
+
+function shareOnTwitter() {
+    const url = encodeURIComponent(window.location.href);
+    const title = encodeURIComponent(document.title);
+    const hashtags = "AuctionHouse,AuctionRevenue,CircuitAuction";
+    window.open(`https://twitter.com/intent/tweet?url=${url}&text=${title}&hashtags=${hashtags}`, 'twitter-share', 'width=580,height=296');
+}
+
+function shareOnLinkedIn() {
+    const url = encodeURIComponent(window.location.href);
+    const title = encodeURIComponent(document.title);
+    window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${url}`, 'linkedin-share', 'width=580,height=296');
+}
+
+function shareViaEmail() {
+    const subject = encodeURIComponent(document.title);
+    const body = encodeURIComponent(`I thought you might find this article interesting: ${window.location.href}`);
+    window.location.href = `mailto:?subject=${subject}&body=${body}`;
+}

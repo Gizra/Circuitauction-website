@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Auction Management Blog | Expert Insights & Strategies | Circuit Auction</title>
+    
+    <meta name="description" content="Expert insights on auction house management, revenue optimization, and industry best practices.">
+    
+    <link rel="canonical" href="https://circuitauction.com/blog/">
+    <link rel="icon" href="/img/Auction-House-Managment-Platform-Favion.webp" type="image/png">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- Include component scripts -->
+    <script src="/components/header.js" defer></script>
+    <script src="/components/footer.js" defer></script>
+    <script src="/components/contact.js" defer></script>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HJYJVP52HM"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-HJYJVP52HM');
+    </script>
+</head>
+<body>
+    <header-component></header-component>
+    
+    <main>
+        <!-- Blog Hero Section -->
+        <section class="blog-index-hero">
+            <h1>Auction Management Insights</h1>
+            <p>Expert strategies, industry trends, and best practices to help auction houses maximize revenue, engage collectors, and streamline operations.</p>
+        </section>
+        
+        <!-- Loading State -->
+        <div id="loading-state" class="loading-container">
+            <div class="loading-spinner"></div>
+            <p>Loading latest insights...</p>
+        </div>
+        
+        <!-- Featured Posts Section -->
+        <section id="featured-posts-section" class="featured-posts-section" style="display: none;">
+            <div class="blog-container">
+                <h2>Featured Articles</h2>
+                <div class="featured-posts-grid" id="featured-posts-container">
+                    <!-- Featured posts will be loaded here -->
+                </div>
+            </div>
+        </section>
+        
+        <!-- All Posts Section -->
+        <section id="all-posts-section" class="all-posts-section" style="display: none;">
+            <div class="blog-container">
+                <h2>All Articles</h2>
+                <div class="blog-posts-grid" id="blog-posts-container">
+                    <!-- All posts will be loaded here -->
+                </div>
+            </div>
+        </section>
+        
+        <!-- Error State -->
+        <div id="error-state" class="error-container" style="display: none;">
+            <h2>Unable to Load Blog Posts</h2>
+            <p>We're having trouble loading the latest articles. Please try again later.</p>
+        </div>
+        
+        <!-- Newsletter Section -->
+        <section class="section" style="background: #f9f9f9;">
+            <div class="blog-container">
+                <div style="text-align: center; max-width: 600px; margin: 0 auto;">
+                    <h2>Stay Updated with Auction Industry Insights</h2>
+                    <p>Get the latest strategies, tips, and industry trends delivered to your inbox.</p>
+                    
+                    <div style="margin-top: 2rem;">
+                        <a href="/#contact" class="cta-btn purple">
+                            <span class="qodef-btn-text">Get Industry Updates</span>
+                            <span class="qodef-btn-text-icon">
+                                <i class="qodef-icon-simple-line-icon icon-arrow-right-circle"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <contact-component></contact-component>
+    </main>
+    
+    <footer-component></footer-component>
+    
+    <div class="back-to-top">
+        <span class="arrow-up">^</span>
+    </div>
+    
+    <script src="/js/main.js"></script>
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    
+    <script>
+        // Blog management class
+        class BlogManager {
+            constructor() {
+                this.posts = [];
+                this.loadingState = document.getElementById('loading-state');
+                this.errorState = document.getElementById('error-state');
+                this.featuredSection = document.getElementById('featured-posts-section');
+                this.allPostsSection = document.getElementById('all-posts-section');
+                this.featuredContainer = document.getElementById('featured-posts-container');
+                this.allPostsContainer = document.getElementById('blog-posts-container');
+            }
+
+            // Load blog posts from JSON file
+            async loadBlogPosts() {
+                try {
+                    this.showLoading();
+                    
+                    const response = await fetch('/blog/blog-posts.json');
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! status: ${response.status}`);
+                    }
+                    
+                    const data = await response.json();
+                    this.posts = data.posts || [];
+                    
+                    if (this.posts.length === 0) {
+                        this.showNoPosts();
+                        return;
+                    }
+                    
+                    this.renderPosts();
+                    this.hideLoading();
+                    
+                } catch (error) {
+                    console.error('Error loading blog posts:', error);
+                    this.showError();
+                }
+            }
+
+            // Generate HTML for a single blog post
+            generatePostHTML(post, isFeatured = false) {
+                const tagsHTML = post.tags.map(tag => 
+                    `<span class="blog-tag">${this.escapeHtml(tag)}</span>`
+                ).join('');
+                
+                const featuredClass = isFeatured ? ' featured-post' : '';
+                
+                return `
+                    <a href="${this.escapeHtml(post.filename)}" class="blog-post-card${featuredClass}">
+                        <div class="blog-card-image">
+                            <img src="${this.escapeHtml(post.image)}" 
+                                alt="${this.escapeHtml(post.title)}" 
+                                class="blog-card-image-img">
+                        </div>
+                        
+                        <div class="blog-card-content">
+                            <div class="blog-card-meta">
+                                <span class="blog-card-date">${this.escapeHtml(post.displayDate)}</span>
+                                <span class="blog-card-reading-time">
+                                    <i class="fa fa-clock-o"></i> ${this.escapeHtml(post.readingTime)}
+                                </span>
+                            </div>
+                            
+                            <h2 class="blog-card-title">${this.escapeHtml(post.title)}</h2>
+                            
+                            <p class="blog-card-excerpt">${this.escapeHtml(post.excerpt)}...</p>
+                            
+                            <div class="blog-card-tags">
+                                ${tagsHTML}
+                            </div>
+                            
+                            <div class="blog-card-cta">
+                                Read Full Article <i class="fa fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </a>
+                `;
+            }
+
+            // Render all posts
+            renderPosts() {
+                // Sort posts by date (newest first)
+                const sortedPosts = this.posts.sort((a, b) => new Date(b.date) - new Date(a.date));
+                
+                // Get featured posts
+                const featuredPosts = sortedPosts.filter(post => post.featured);
+                
+                // Render featured posts if any exist
+                if (featuredPosts.length > 0) {
+                    const featuredHTML = featuredPosts
+                        .map(post => this.generatePostHTML(post, true))
+                        .join('');
+                    this.featuredContainer.innerHTML = featuredHTML;
+                    this.featuredSection.style.display = 'block';
+                }
+                
+                // Render all posts
+                const allPostsHTML = sortedPosts
+                    .map(post => this.generatePostHTML(post, false))
+                    .join('');
+                this.allPostsContainer.innerHTML = allPostsHTML;
+                this.allPostsSection.style.display = 'block';
+            }
+
+            // Show loading state
+            showLoading() {
+                this.loadingState.style.display = 'block';
+                this.errorState.style.display = 'none';
+                this.featuredSection.style.display = 'none';
+                this.allPostsSection.style.display = 'none';
+            }
+
+            // Hide loading state
+            hideLoading() {
+                this.loadingState.style.display = 'none';
+            }
+
+            // Show error state
+            showError() {
+                this.loadingState.style.display = 'none';
+                this.errorState.style.display = 'block';
+                this.featuredSection.style.display = 'none';
+                this.allPostsSection.style.display = 'none';
+            }
+
+            // Show no posts message
+            showNoPosts() {
+                this.loadingState.style.display = 'none';
+                this.allPostsContainer.innerHTML = `
+                    <div class="no-posts">
+                        <h2>No blog posts available</h2>
+                        <p>Check back soon for the latest auction industry insights.</p>
+                    </div>
+                `;
+                this.allPostsSection.style.display = 'block';
+            }
+
+            // Utility function to escape HTML
+            escapeHtml(text) {
+                const div = document.createElement('div');
+                div.textContent = text;
+                return div.innerHTML;
+            }
+
+            // Get posts by category
+            getPostsByCategory(category) {
+                return this.posts.filter(post => post.category === category);
+            }
+
+            // Get posts by tag
+            getPostsByTag(tag) {
+                return this.posts.filter(post => post.tags.includes(tag));
+            }
+
+            // Search posts
+            searchPosts(query) {
+                const lowerQuery = query.toLowerCase();
+                return this.posts.filter(post => 
+                    post.title.toLowerCase().includes(lowerQuery) ||
+                    post.excerpt.toLowerCase().includes(lowerQuery) ||
+                    post.tags.some(tag => tag.toLowerCase().includes(lowerQuery))
+                );
+            }
+        }
+
+        // Initialize blog manager when DOM is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            const blogManager = new BlogManager();
+            blogManager.loadBlogPosts();
+            
+            // Make blogManager globally available for potential future use
+            window.blogManager = blogManager;
+        });
+    </script>
+</body>
+</html>
