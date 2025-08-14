@@ -6,7 +6,7 @@
       "title": "Maximizing Auction Revenue: 10 Proven Strategies",
       "excerpt": "Running a successful auction house requires more than just acquiring great pieces—it demands strategic thinking about every aspect of your operation",
       "date": "2025-08-09",
-      "displayDate": "August 9, 2025",
+      "displayDate": "August 7, 2025",
       "readingTime": "8 min read",
       "image": "../img/blog/maximizing-auction-revenue-featured.webp",
       "tags": ["auction revenue", "auction strategies", "bidder engagement"],
@@ -20,45 +20,15 @@
       "filename": "building-collector-relationships.html",
       "title": "Building Long-Term Collector Relationships",
       "excerpt": "Discover how successful auction houses create lasting partnerships with collectors that drive consistent consignments and bidding activity",
-      "date": "2025-08-15",
-      "displayDate": "August 15, 2025",
+      "date": "2025-08-14",
+      "displayDate": "August 14, 2025",
       "readingTime": "6 min read",
       "image": "../img/blog/building-collector-relationships-featured.webp",
       "tags": ["collector relationships", "CRM", "customer service"],
-      "featured": true,
+      "featured": false,
       "category": "Customer Relations",
       "author": "Circuit Auction Team",
       "summary": "Learn the proven techniques for developing lasting relationships with collectors that result in repeat consignments and loyal bidding activity."
-    },
-    {
-      "id": "ai-catalog-creation",
-      "filename": "ai-catalog-creation.html",
-      "title": "How AI is Revolutionizing Auction Catalog Creation",
-      "excerpt": "Learn how artificial intelligence is helping auction houses create professional catalogs faster while maintaining accuracy and style consistency",
-      "date": "2025-08-20",
-      "displayDate": "August 20, 2025",
-      "readingTime": "5 min read",
-      "image": "../img/blog/maximizing-auction-revenue-featured.webp",
-      "tags": ["AI technology", "catalog creation", "automation"],
-      "featured": false,
-      "category": "Technology",
-      "author": "Circuit Auction Team",
-      "summary": "Explore how AI technology is transforming catalog creation, making it faster and more accurate while maintaining your auction house's unique style."
-    },
-    {
-      "id": "online-bidding-best-practices",
-      "filename": "online-bidding-best-practices.html",
-      "title": "Online Bidding Best Practices for Auction Houses",
-      "excerpt": "Master the art of online auction management with proven strategies for engaging digital bidders and maximizing participation",
-      "date": "2025-08-25",
-      "displayDate": "August 25, 2025",
-      "readingTime": "7 min read",
-      "image": "../img/blog/maximizing-auction-revenue-featured.webp",
-      "tags": ["online bidding", "digital transformation", "bidder engagement"],
-      "featured": false,
-      "category": "Digital Strategy",
-      "author": "Circuit Auction Team",
-      "summary": "Comprehensive guide to implementing and optimizing online bidding systems that drive higher participation and better results."
     }
   ],
   "categories": [
@@ -70,8 +40,8 @@
     "Operations"
   ],
   "meta": {
-    "totalPosts": 4,
-    "lastUpdated": "2025-08-25",
+    "totalPosts": 2,
+    "lastUpdated": "2025-08-14",
     "version": "1.0"
   }
 }

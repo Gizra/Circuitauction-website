@@ -1,0 +1,34 @@
+ Additional blog posts can be added here following the same structure 
+
+    ,
+    {
+      "id": "ai-catalog-creation",
+      "filename": "ai-catalog-creation.html",
+      "title": "How AI is Revolutionizing Auction Catalog Creation",
+      "excerpt": "Learn how artificial intelligence is helping auction houses create professional catalogs faster while maintaining accuracy and style consistency",
+      "date": "2025-08-20",
+      "displayDate": "August 20, 2025",
+      "readingTime": "5 min read",
+      "image": "../img/blog/maximizing-auction-revenue-featured.webp",
+      "tags": ["AI technology", "catalog creation", "automation"],
+      "featured": false,
+      "category": "Technology",
+      "author": "Circuit Auction Team",
+      "summary": "Explore how AI technology is transforming catalog creation, making it faster and more accurate while maintaining your auction house's unique style."
+    },
+    {
+      "id": "online-bidding-best-practices",
+      "filename": "online-bidding-best-practices.html",
+      "title": "Online Bidding Best Practices for Auction Houses",
+      "excerpt": "Master the art of online auction management with proven strategies for engaging digital bidders and maximizing participation",
+      "date": "2025-08-25",
+      "displayDate": "August 25, 2025",
+      "readingTime": "7 min read",
+      "image": "../img/blog/maximizing-auction-revenue-featured.webp",
+      "tags": ["online bidding", "digital transformation", "bidder engagement"],
+      "featured": false,
+      "category": "Digital Strategy",
+      "author": "Circuit Auction Team",
+      "summary": "Comprehensive guide to implementing and optimizing online bidding systems that drive higher participation and better results."
+    }
+   
