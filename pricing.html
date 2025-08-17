@@ -30,6 +30,48 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
+    <style>
+        .additional-features {
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 2px dashed #eee;
+        }
+        
+        .additional-features h4 {
+            margin-bottom: 1rem;
+            color: #7063d3;
+            font-size: 1.1rem;
+        }
+        
+        .addon-features-list {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 1rem 0;
+        }
+        
+        .addon-features-list li {
+            padding: 0.5rem 0;
+            display: flex;
+            align-items: flex-start;
+            line-height: 1.4;
+            color: #666;
+        }
+        
+        .addon-features-list li i {
+            color: #7063d3;
+            margin-right: 0.75rem;
+            margin-top: 0.2rem;
+            flex-shrink: 0;
+        }
+        
+        .addon-note {
+            font-weight: 600;
+            color: #7063d3;
+            font-size: 0.95rem;
+            margin: 0;
+        }
+    </style>
+    
     <!-- Include component scripts -->
     <script src="components/header.js" defer></script>
     <script src="components/footer.js" defer></script>
@@ -138,13 +180,21 @@
                             <li><i class="fa fa-check-circle"></i> Complete auction management platform</li>
                             <li><i class="fa fa-check-circle"></i> Unlimited auctions and listings</li>
                             <li><i class="fa fa-check-circle"></i> Live bidding system</li>
-                            <li><i class="fa fa-check-circle"></i> AI-powered catalog creation</li>
                             <li><i class="fa fa-check-circle"></i> Full CRM and invoicing</li>
                             <li><i class="fa fa-check-circle"></i> White-label under your domain</li>
                             <li><i class="fa fa-check-circle"></i> Free setup and onboarding</li>
                             <li><i class="fa fa-check-circle"></i> Premium support</li>
                             <li><i class="fa fa-check-circle"></i> Pay only when you sell through the platform</li>
                         </ul>
+                        <div class="additional-features">
+                            <h4>Optional Add-Ons:</h4>
+                            <ul class="addon-features-list">
+                                <li><i class="fa fa-plus-circle"></i> AI-powered catalog creation (+$250/month)</li>
+                                <li><i class="fa fa-plus-circle"></i> Credit card processing integration (+$100/month)</li>
+                                <li><i class="fa fa-plus-circle"></i> Shipping integration (+$75/month)</li>
+                            </ul>
+                            <p class="addon-note">All add-ons: $425/month total</p>
+                        </div>
                         <div class="plan-perfect-for">Perfect for: Auction houses running regular sales with a growing online bidder base</div>
                     </div>
                     <div class="plan-cta">
@@ -169,10 +219,12 @@
                         <div class="plan-subtitle">The predictable, flat-rate solution for established auction houses with consistent high-volume sales.</div>
                         <ul class="features-list">
                             <li><i class="fa fa-check-circle"></i> All features in Standard Plan</li>
+                            <li><i class="fa fa-check-circle"></i> All Standard Plan add-ons included</li>
                             <li><i class="fa fa-check-circle"></i> No commission on any sales</li>
                             <li><i class="fa fa-check-circle"></i> Priority technical support</li>
                             <li><i class="fa fa-check-circle"></i> Dedicated account manager</li>
                             <li><i class="fa fa-check-circle"></i> Custom integration services</li>
+                            <li><i class="fa fa-check-circle"></i> Custom development work</li>
                             <li><i class="fa fa-check-circle"></i> Advanced analytics and reporting</li>
                             <li><i class="fa fa-check-circle"></i> Bulk data migration assistance</li>
                             <li><i class="fa fa-check-circle"></i> Customized staff training</li>
@@ -261,6 +313,26 @@
             <h2 class="scroll-reveal">Pricing FAQ</h2>
             <div class="below-h-tag scroll-reveal"></div>
             <section class="faq-container">
+                <div class="faq-item scroll-reveal">
+                    <div class="faq-question">
+                        <h3>Is custom development work available?</h3>
+                        <div class="faq-toggle"><i class="fa fa-plus"></i></div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Custom development work and specialized integrations are available exclusively with our Enterprise Plan. This ensures we can provide the dedicated resources and ongoing support that custom solutions require.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item scroll-reveal">
+                    <div class="faq-question">
+                        <h3>How do the Standard Plan add-ons work?</h3>
+                        <div class="faq-toggle"><i class="fa fa-plus"></i></div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our Standard Plan includes core auction management features. You can add AI-powered catalog creation ($250/month), credit card processing integration ($100/month), and shipping integration ($75/month). All three add-ons together cost $425/month, bringing your full-featured plan to $575/month total.</p>
+                    </div>
+                </div>
+
                 <div class="faq-item scroll-reveal">
                     <div class="faq-question">
                         <h3>How does the commission structure work?</h3>
