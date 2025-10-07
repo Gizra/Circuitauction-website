@@ -10,7 +10,7 @@
       "readingTime": "8 min read",
       "image": "../img/blog/maximizing-auction-revenue-featured.webp",
       "tags": ["auction revenue", "auction strategies", "bidder engagement"],
-      "featured": true,
+      "featured": false,
       "category": "Revenue Optimization",
       "author": "Circuit Auction Team",
       "summary": "Discover ten proven strategies that leading auction houses use to maximize their revenue while building stronger relationships with both consignors and bidders."
@@ -29,6 +29,36 @@
       "category": "Customer Relations",
       "author": "Circuit Auction Team",
       "summary": "Learn the proven techniques for developing lasting relationships with collectors that result in repeat consignments and loyal bidding activity."
+    },
+    {
+      "id": "ai-catalog-creation",
+      "filename": "ai-catalog-creation.html",
+      "title": "How AI is Revolutionizing Auction Catalog Creation",
+      "excerpt": "Learn how artificial intelligence is helping auction houses create professional catalogs faster while maintaining accuracy and style consistency",
+      "date": "2025-08-20",
+      "displayDate": "Sep 20, 2025",
+      "readingTime": "5 min read",
+      "image": "../img/blog/ai-catalog-creation-featured.webp",
+      "tags": ["AI technology", "catalog creation", "automation"],
+      "featured": true,
+      "category": "Technology",
+      "author": "Circuit Auction Team",
+      "summary": "Explore how AI technology is transforming catalog creation, making it faster and more accurate while maintaining your auction house's unique style."
+    },
+    {
+      "id": "online-bidding-best-practices",
+      "filename": "online-bidding-best-practices.html",
+      "title": "Online Bidding Best Practices for Auction Houses",
+      "excerpt": "Master the art of online auction management with proven strategies for engaging digital bidders and maximizing participation",
+      "date": "2025-08-25",
+      "displayDate": "Oct 3, 2025",
+      "readingTime": "7 min read",
+      "image": "../img/blog/online-bidding-best-practices-featured.webp",
+      "tags": ["online bidding", "digital transformation", "bidder engagement"],
+      "featured": false,
+      "category": "Digital Strategy",
+      "author": "Circuit Auction Team",
+      "summary": "Comprehensive guide to implementing and optimizing online bidding systems that drive higher participation and better results."
     }
   ],
   "categories": [
