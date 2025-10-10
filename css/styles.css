@@ -136,6 +136,13 @@ body {
   color: #7063d3;
 }
 
+.social-links-nav {
+  display: flex;
+  margin-left: -1.25rem;
+}
+.social-icon-header {
+  width: 24px;
+}
 /* Main Content */
 main {
   margin-top: 90px; /* Match header height */

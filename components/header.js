@@ -24,7 +24,11 @@ class HeaderComponent extends HTMLElement {
             <a href="/blog/">Blog</a>
             <a href="/faq.html">FAQ</a>
             <a href="#contact">Contact</a>
-        </nav>
+            <div class="social-links-nav">
+              <a href="https://www.linkedin.com/company/circuit-auction" class="social-icon-header"><img src="/img/linkedin-48.png" alt="Linkedin"></a>
+              <a href="https://www.facebook.com/people/Circuit-Action-AI/61570670905543/" class="social-icon-header"><img src="/img/facebook-48.png" alt="Facebook"></a>
+            </div>
+          </nav>
       </header>
     `;
   }
