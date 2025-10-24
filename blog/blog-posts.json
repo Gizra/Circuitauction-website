@@ -1,6 +1,36 @@
 {
   "posts": [
     {
+      "id": "protecting-bidder-confidence",
+      "filename": "protecting-bidder-confidence.html",
+      "title": "When Timing Becomes the Truth: How Circuit Auction AI Protects Bidder Confidence",
+      "excerpt": "In auctions, milliseconds matter. The smallest delay between a bid placed online and the auctioneer's awareness can create confusion, contradiction, and loss of trust",
+      "date": "2025-10-20",
+      "displayDate": "October 20, 2025",
+      "readingTime": "7 min read",
+      "image": "../img/blog/timing-integrity-featured.webp",
+      "tags": ["auction timing", "bid latency", "timing integrity"],
+      "featured": true,
+      "category": "Technology",
+      "author": "Circuit Auction Team",
+      "summary": "Discover how Circuit Auction AI eliminates timing conflicts in hybrid auctions, ensuring every sale closes with integrity and complete bidder confidence."
+    },
+    {
+      "id": "bidder-confidence-checklist",
+      "filename": "bidder-confidence-checklist.html",
+      "title": "The Bidder Confidence Platform Evaluation Checklist",
+      "excerpt": "Whether you're evaluating a new system or auditing your current one, these questions determine whether your platform protects bidder confidence or undermines it",
+      "date": "2025-10-17",
+      "displayDate": "October 17, 2025",
+      "readingTime": "9 min read",
+      "image": "../img/blog/bidder-confidence-checklist-featured.webp",
+      "tags": ["platform evaluation", "bidder confidence", "auction software"],
+      "featured": false,
+      "category": "Technology",
+      "author": "Circuit Auction Team",
+      "summary": "Essential questions every auctioneer should ask their platform provider. Evaluate if your auction software protects bidder confidence with this comprehensive checklist."
+    },
+    {
       "id": "maximizing-auction-revenue",
       "filename": "maximizing-auction-revenue.html",
       "title": "Maximizing Auction Revenue: 10 Proven Strategies",
@@ -40,7 +70,7 @@
       "readingTime": "5 min read",
       "image": "../img/blog/ai-catalog-creation-featured.webp",
       "tags": ["AI technology", "catalog creation", "automation"],
-      "featured": true,
+      "featured": false,
       "category": "Technology",
       "author": "Circuit Auction Team",
       "summary": "Explore how AI technology is transforming catalog creation, making it faster and more accurate while maintaining your auction house's unique style."
@@ -70,8 +100,8 @@
     "Operations"
   ],
   "meta": {
-    "totalPosts": 2,
-    "lastUpdated": "2025-08-14",
+    "totalPosts": 5,
+    "lastUpdated": "2025-10-14",
     "version": "1.0"
   }
 }
