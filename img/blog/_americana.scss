@@ -1,0 +1,673 @@
+body.single-sale, body.single-item,  {
+    background-color: #f4f4f4 !important;
+    color: #212121 !important;
+}
+.circuit-container {
+    margin: 0 auto;
+    max-width: 95%;
+} 
+
+.single-item {
+    .breadcrumbs {
+        margin: 0.75em 0;
+
+        a {
+            color: #212121;
+            padding: 0 0.5em;
+        }
+        a:first-of-type {
+            padding-left: 0;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+
+
+
+// Single lot
+.single-lot {
+
+    .lot {
+        grid-template-columns: 2.5fr 1fr 1fr;
+        @media only screen and (max-width: $wide-screen) {
+            grid-template-columns: 1fr;
+        }
+
+        .first {
+            background: #000; 
+            padding-top: 3em;
+            padding-bottom: 2em;
+
+            .lot-image {
+                color: #fff;
+
+                .current-zoomed-image {
+                    padding: 0 15px 30px;
+                }
+
+                a {
+                    color: #fff;
+                }
+
+                .lot-image-thumbs {
+                    margin: 0 auto;
+                    max-width: none;
+                    white-space: normal;
+
+                    img {
+                        max-width: 160px;
+                        margin: 5px 10px;
+                    }
+                }
+
+                .no-image {
+                    text-align: center;
+                    img {
+                        max-width: 80%;
+                    }
+                }
+            }
+        }
+        
+        .second {
+            margin-top: 2em;
+
+            .lot-titles {
+                text-align: left;
+                margin-bottom: 15px;
+
+                .title {
+                    justify-content: left;
+                    margin-bottom: 15px;
+                }
+
+            }
+
+            .items-title {
+                text-align: left;
+                font-size: 18px;
+                font-weight: bold;
+                line-height: 1.3;
+            }
+            
+            .sub-title h5 {
+                font-weight: bold;
+            }
+        }
+
+        .third {
+            margin-top: 2em;
+
+            .prices {
+                flex-direction: column;
+                align-items: unset;
+                border: unset;
+                margin-top: 15px;
+            }
+
+            .categories-symbols a {
+                display: block;
+                color: #0074BD;
+                margin-bottom: 1.8em;
+            }
+        }
+        
+
+        
+
+        .body-category-symbols {
+            
+
+            .provenance.margin-bottom {
+                display: flex;
+            }
+        }
+
+        .lot-navigation {
+            order: 6;
+            justify-content: space-between;
+
+            .lot-link a {
+                font-size: 14px;
+                padding-left: 0;
+            }
+        }
+
+        .sale-link {
+            margin: 2em 0;
+            
+
+            a {
+                background: #a68134;
+                color: #fff;
+                font-style: normal;
+                font-size: 16px;
+                padding: 5px 10px 8px;
+                border-radius: 15px;
+                font-size: 14px;
+                margin: 0 2px;
+                line-height: 2.8;
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
+        }
+
+        .bid-frame {
+            border-bottom: solid #a68134 3px;
+            padding-bottom: 12px;
+
+            .logged-out a {
+                background: #a68134;
+                color: #fff;
+                font-style: normal;
+                font-size: 16px;
+                font-weight: bold;
+                padding: 5px 10px 8px;
+                border-radius: 15px;
+                font-size: 14px;
+                margin: 0 2px;
+                line-height: 2.8;
+                text-decoration: none;
+            }
+            .logged-out a:hover {
+                text-decoration: underline;
+            }
+
+            .obscure-bid-block-wrapper {
+                flex-direction: column;
+            }
+        }                    
+
+    }
+}
+
+.bold {
+    font-weight: bold;
+    padding-right: 5px;
+    color: #212121;
+}
+.margin-bottom {
+    margin-bottom: 20px;
+}
+
+.float-left {
+    float: left;
+}
+
+.element-invisible {
+    display: none !important;
+}
+
+// Sale page
+.single-sale {
+    .breadcrumbs {
+        display: none;
+    }
+
+    .entry-header {
+        h1.title {
+            text-align: center;
+            padding: 4em 0 0.75em;
+        }
+        h2.sale-subtitle {
+            text-align: center;
+            padding-bottom: 1em;
+        }
+        .sale-body {
+            text-align: center;
+            padding-bottom: 2em;
+        }
+    }
+
+    .facet {
+
+        .collapsible-toggle {
+            padding: 8px 32px;
+            border: solid 1px #ccc;
+            font-size: 16px;
+            background: #fff;
+            font-weight: 500;
+            text-transform: capitalize;
+            margin-bottom: 2em;
+
+            i {
+                padding-left: 5px;
+                font-size: 16px;
+            }
+
+            .fa.fa-minus {
+                display: none;
+            }
+            .fa.fa-plus {
+                display: inline-block;
+            }
+        }
+
+        .collapsible-toggle.toggle-open {
+            border-bottom: none;
+            margin-bottom: 0;
+
+            .fa.fa-plus {
+                display: none;
+            }
+            .fa.fa-minus {
+                display: inline-block;
+            }
+        }
+
+
+        
+
+        .horizontal-list {
+            display: none;
+            background: #fff;
+            border: solid 1px #ccc;
+            padding: 1em 2em;
+            margin: -1px 0 1em;
+            
+            a {
+                color: #212121;
+                font-size: 16px;
+            }
+        }
+
+        .horizontal-list.toggle-open {
+            display: flex;
+        }
+    }
+
+    .custom-search-form {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        flex-wrap: wrap;
+        margin-right: 4em;
+
+        .views-exposed-widget {
+            text-align: center;
+            padding-right: 15px;
+
+            label {
+                font-size: 13px;
+                padding-right: 1px;
+                padding-left: 6px;
+            }
+
+
+            .form-item-field-lot-number input, 
+            .form-item-openingprice-min input,
+            .form-item-openingprice-max input,
+            .form-item-soldamount-min input,
+            .form-item-soldamount-max input {
+                width: 120px;
+            }
+
+            .form-type-select {
+                padding: 6px 12px;
+                background: #fff;
+
+                select {
+                    background: #fff;
+                    border: none;
+                    color: #888;
+                    font-size: 14px;
+                }
+            }
+
+            .views-widget {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+                flex-wrap: wrap;
+            }
+
+            .views-widget input {
+                font-size: 14px;
+                padding: 8px;
+                border: solid 1px #cccccc;
+            }
+        }
+
+        
+
+        .views-submit-button {
+            margin-left: auto;
+            
+            input {
+                background: #212121;
+                color: #fff;
+                padding: 8px 32px;
+                border: solid 1px #212121;
+                font-size: 14px;
+            }
+
+            input:hover {
+                background: #fff;
+                color: #212121;
+            }
+        }
+
+        .views-reset-button {
+            margin-left: 10px;
+            margin-bottom: 6px;
+            a {
+                background: #fff;
+                color: #212121;
+                padding: 8px 32px;
+                border: solid 1px #212121;
+                font-size: 14px;
+            }
+
+            a:hover {
+                background: #212121;
+                color: #fff;
+            }
+        }
+
+
+        
+    }
+    button.search-toggle {
+        border: none;
+        background: transparent;
+        text-decoration: underline;
+        color: #888;
+        font-size: 14px;
+    }
+    button.search-toggle.open i.fa.fa-minus {
+        display: none;
+    }
+    button.search-toggle.open i.fa.fa-plus {
+        display: inline-block;
+    }
+    button.search-toggle i.fa.fa-plus {
+        display: none;
+    }
+
+    .toggle-wrapper {
+        float: right;
+        margin-right: 4em;
+    }
+
+    .pagination {
+        margin-bottom: 1.5em;
+
+        .page-item {
+            a {
+                color: #212121;
+                padding: 5px 16px 8px;
+                text-decoration: none;
+            }
+
+            a:hover {
+                background-color: #ddd;
+                border-radius: 8px;
+            }
+        }
+
+        .page-item.active .page-link {
+            background-color: #212121;
+            padding: 5px 16px 8px;
+            color: #fff;
+            border-radius: 8px;
+        }
+    }
+
+
+    .sale-nav-top {
+        margin: 1em 0;
+        font-size: 16px;;
+
+        .display-toggle {
+            float: left;
+            padding-right: 30px;
+    
+            .fa {
+                cursor: pointer;
+                margin-right: 8px;
+                font-size: 22px;
+            }
+        }
+    }
+
+    .search-results.row-view {
+        .category-header {
+            padding: 2px 0 4px;
+            font-size: 27px;
+            background: #fff;
+            text-align: center;
+            margin-bottom: 15px; 
+            font-family: 'Montserrat',Helvetica,Arial,Lucida,sans-serif;
+        }
+
+        article.item {
+            margin-bottom: 2em;
+            padding-bottom: 2em;
+            border-bottom: solid 3px #a68134;
+    
+            .lot .second {
+                display: flex;
+                flex-direction: column;
+    
+                .lot-titles {
+                    order: unset;
+                }
+    
+            }
+
+            .lot-link {
+                margin: auto auto 0;
+
+                a {
+                    background: #a68134;
+                    color: #fff;
+                    font-style: normal;
+                    font-size: 16px;
+                    padding: 5px 10px 8px;
+                    border-radius: 15px;
+                    font-size: 14px;
+                    margin: 0 2px;
+                    line-height: 2.8;
+                    text-decoration: none;
+                }
+                a:hover {
+                    text-decoration: underline;
+                }
+            }
+    
+        }
+    }
+
+    .search-results.grid-view {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 0 2em;
+        @media only screen and (max-width: $wide-screen) {
+            grid-template-columns: 1fr;
+        }
+
+        .category-header {
+            @media only screen and (min-width: $wide-screen) {
+                grid-column: span 4;
+            }
+            
+            padding: 2px 0 4px;
+            font-size: 27px;
+            background: #fff;
+            text-align: center;
+            margin-bottom: 15px; 
+            font-family: 'Montserrat',Helvetica,Arial,Lucida,sans-serif;
+        }
+
+        .single-lot {
+            height: 100%;
+
+            .lot {
+                display: flex;
+                height: 100%;
+                flex-direction: column;
+    
+                .lot-image-thumbs, .images-count, .body, .categories-symbols {
+                    display: none;
+                }
+
+                .second {
+                    margin-top: 0;
+                    
+                    .lot-titles .title {
+                        margin-bottom: 0;
+                     }
+                }
+
+
+
+                .third {
+                    margin-top: auto;
+
+                    .prices {
+                        margin-top: 0;
+                    }
+
+                    .bid-frame {
+                        margin-bottom: 0;
+                        border-bottom: none;
+
+                        .logged-out.item-block {
+                            text-align: left;
+                            padding: 0;
+                        }
+
+                    }
+
+
+                    .lot-link {
+                        border-bottom: solid #a68134 3px;
+                        padding-bottom: 12px;
+                        margin-bottom: 30px;
+        
+                        a {
+                            background: #a68134;
+                            color: #fff;
+                            font-style: normal;
+                            font-size: 16px;
+                            padding: 5px 10px 8px;
+                            border-radius: 15px;
+                            font-size: 14px;
+                            margin: 0 2px;
+                            line-height: 2.8;
+                            text-decoration: none;
+                        }
+                        a:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        } 
+
+    }
+
+    
+}
+
+
+
+// User pages
+.elm-processed, #register, #my-account {
+
+
+    .btn.form-submit, .btn.form-submit, .btn.form-submit {
+        background: #a68134;
+        border-color: #a68134;
+        color: #fff;
+        font-style: normal;
+        font-size: 16px;
+        padding: 12px 42px;
+        border-radius: 28px;
+        cursor: pointer;
+        margin: 1em 0;
+    }
+    .btn.form-submit:hover, .btn.form-submit:hover, .btn.form-submit:hover {
+        text-decoration: underline;
+        background: #fff;
+        color: #a68134;
+    }
+}
+
+#login {
+    padding-top: 2em;
+    .user-login {
+        padding-bottom: 4em;
+    }
+
+    .forgot-password-link {
+        text-align: right;
+        a {
+            font-size: 18px;
+            font-style: italic;
+        }
+    }
+}
+
+.forgot-password {
+    margin: 3em auto !important;
+    padding: 1em 2em !important;
+
+    input.form-control {
+        display: inline-block;
+        width: 60%;
+        padding: 6px 12px;
+        line-height: 1.42857143;
+        color: #555;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    }
+}
+
+#register {
+    margin: 4em auto;
+
+    .user-pages {
+        padding: 1em 4em;
+    }
+}
+
+
+.user-block {
+    margin-left: 2em;
+
+    .dropdown .btn {
+        background: #fff;
+        border: solid 1px #ccc;
+        padding: 6px 22px 8px;
+
+        i {
+            padding-left: 8px;
+        }
+    }
+
+
+    .dropdown-menu {
+        display: none;
+    }
+    .dropdown.open .dropdown-menu {
+        display: block;
+        width: 138px;
+        position: absolute;
+        z-index: 100;
+        border: solid 1px #ccc;
+        background: #fff;
+    }
+}
+
+// Fix for following btn
+.single-lot .lot .bid-frame .obscure-bid-block-wrapper .follow-item a.fav {
+    background: #a68134;
+    border-color: #a68134;
+}

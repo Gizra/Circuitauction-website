@@ -1,6 +1,36 @@
 {
   "posts": [
     {
+      "id": "predictive-intelligence-gap",
+      "filename": "predictive-intelligence-gap.html",
+      "title": "Why Auction Houses Miss Millions: The Predictive Intelligence Gap (Part 1)",
+      "excerpt": "How behavioral signals reveal ready buyers—and why most auction systems can't see them. A collector watched for 18 months before consigning $400,000. No one reached out",
+      "date": "2025-11-01",
+      "displayDate": "November 1, 2025",
+      "readingTime": "12 min read",
+      "image": "../img/blog/predictive-intelligence-gap-featured.webp",
+      "tags": ["predictive intelligence", "auction CRM", "bidder behavior"],
+      "featured": true,
+      "category": "Technology",
+      "author": "Circuit Auction Team",
+      "summary": "Most auction houses already capture the data that predicts bidding intent and consignment likelihood. The problem isn't collection—it's interpretation. Learn how behavioral signals reveal ready buyers."
+    },
+    {
+      "id": "predictive-intelligence-toolkit",
+      "filename": "predictive-intelligence-toolkit.html",
+      "title": "Predictive Intelligence Readiness Toolkit (Part 2)",
+      "excerpt": "A practical resource for auction house operators evaluating behavioral tracking, intent scoring, and consignment intelligence. Assess your systems and identify immediate opportunities",
+      "date": "2025-11-01",
+      "displayDate": "November 1, 2025",
+      "readingTime": "14 min read",
+      "image": "../img/blog/predictive-intelligence-toolkit-featured.webp",
+      "tags": ["toolkit", "assessment", "behavioral tracking"],
+      "featured": false,
+      "category": "Technology",
+      "author": "Circuit Auction Team",
+      "summary": "Use these assessments, checklists, and frameworks to evaluate your current systems. Five quick wins you can implement this week with no new software required."
+    },
+    {
       "id": "protecting-bidder-confidence",
       "filename": "protecting-bidder-confidence.html",
       "title": "When Timing Becomes the Truth: How Circuit Auction AI Protects Bidder Confidence",
@@ -10,7 +40,7 @@
       "readingTime": "7 min read",
       "image": "../img/blog/timing-integrity-featured.webp",
       "tags": ["auction timing", "bid latency", "timing integrity"],
-      "featured": true,
+      "featured": false,
       "category": "Technology",
       "author": "Circuit Auction Team",
       "summary": "Discover how Circuit Auction AI eliminates timing conflicts in hybrid auctions, ensuring every sale closes with integrity and complete bidder confidence."
